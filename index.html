@@ -3,122 +3,555 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sanjay Negi | AI Architect & Mentor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Sanjay Negi | AI Architect & Creative Mentor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
   <style>
     :root {
-      --primary: #1f2937;
-      --accent: #2563eb;
-      --bg: #f5f7fa;
-      --card: #ffffff;
+      --primary: #0a0a0a;
+      --accent: #00d4ff;
+      --accent-2: #ff006e;
+      --accent-3: #8338ec;
+      --bg: #000000;
+      --card: rgba(255, 255, 255, 0.03);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --text: #ffffff;
+      --text-muted: rgba(255, 255, 255, 0.7);
     }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
       background: var(--bg);
-      color: var(--primary);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
     }
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 3rem 1rem;
-      text-align: center;
+
+    #canvas-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
-    .profile-img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid white;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    .location {
-      font-size: 1rem;
-      color: #d1d5db;
-      margin-top: 0.3rem;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .card {
+
+    .glass {
       background: var(--card);
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 2rem;
+    }
+
+    .profile-container {
+      position: relative;
       margin-bottom: 2rem;
     }
-    h2 {
-      margin-top: 0;
-      color: var(--primary);
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      transition: all 0.5s ease;
+      filter: grayscale(0.3);
     }
-    ul {
-      padding-left: 1.2rem;
+
+    .profile-img:hover {
+      transform: scale(1.1);
+      filter: grayscale(0);
+      box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
     }
-    a {
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--accent), var(--accent-2), var(--accent-3));
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 3s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .hero-subtitle {
+      font-size: 1.3rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .location {
+      font-size: 1rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+      40% { transform: translateX(-50%) translateY(-10px); }
+      60% { transform: translateX(-50%) translateY(-5px); }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .card {
+      padding: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .card:hover::before {
+      left: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+    }
+
+    .card h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .card p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card li {
+      margin-bottom: 0.8rem;
+    }
+
+    .card a {
+      color: var(--text);
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .card a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    .card a:hover {
+      color: var(--accent);
+    }
+
+    .card a:hover::after {
+      width: 100%;
+    }
+
+    .featured-section {
+      text-align: center;
+      margin: 6rem 0;
+    }
+
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+    }
+
+    .courses-preview {
+      background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
+      padding: 3rem;
+      border-radius: 30px;
+      text-align: center;
+      margin: 4rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .courses-preview::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: float 20s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .courses-preview h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+      position: relative;
+      z-index: 2;
+    }
+
+    .courses-preview p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.9);
+      position: relative;
+      z-index: 2;
+    }
+
+    .connect-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      border: 2px solid var(--accent);
+      background: transparent;
       color: var(--accent);
       text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--accent);
+      transition: left 0.3s ease;
+      z-index: -1;
     }
+
+    .btn:hover::before {
+      left: 0;
+    }
+
+    .btn:hover {
+      color: var(--bg);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+    }
+
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
+      padding: 4rem 2rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--card-border);
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .connect-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 200px;
+      }
+    }
+
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid var(--accent);
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: var(--accent); }
     }
   </style>
 </head>
 <body>
 
+  <div id="canvas-container"></div>
+
   <header>
-    <img src="https://media.licdn.com/dms/image/v2/D5603AQGpyU-TnbdeQg/profile-displayphoto-shrink_200_200/B56ZdDiZOTGoAY-/0/1749184779972?e=1759968000&v=beta&t=yBYIdB5NUqyowPl8Il9lPsLMzz9KS4log2yTQctGCws" alt="Sanjay Negi" class="profile-img" />
-    <h1>Sanjay Negi</h1>
-    <p>AI Architect | LLMOps & RAG Expert | Mentor in AI & Art</p>
+    <div class="profile-container">
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQGpyU-TnbdeQg/profile-displayphoto-shrink_200_200/B56ZdDiZOTGoAY-/0/1749184779972?e=1759968000&v=beta&t=yBYIdB5NUqyowPl8Il9lPsLMzz9KS4log2yTQctGCws" alt="Sanjay Negi" class="profile-img" />
+    </div>
+    <h1 class="hero-title">Sanjay Negi</h1>
+    <p class="hero-subtitle typewriter">AI Architect | Creative Mentor | Innovation Catalyst</p>
     <p class="location">📍 New Delhi, India</p>
+    <div class="scroll-indicator">
+      <div style="font-size: 2rem;">↓</div>
+    </div>
   </header>
 
-  <section>
-    <div class="card">
-      <h2>About Me</h2>
-      <p>With 22+ years of experience building enterprise-scale systems, I specialize in designing and deploying GenAI platforms that move from demo to production. My work spans agentic workflows, LLMOps pipelines, and retrieval-augmented generation (RAG) frameworks.</p>
-      <p>As a practicing artist and mentor, I guide professionals and hobbyists in unlocking creativity through structured exploration. I believe imagination fuels architecture—whether in code or canvas.</p>
-    </div>
+  <main>
+    <section>
+      <div class="featured-section">
+        <h2 class="section-title">Bridging AI & Creativity</h2>
+        <p class="section-subtitle">22+ years of transforming complex systems into elegant solutions</p>
+      </div>
 
-    <div class="card">
-      <h2>Featured Articles</h2>
-      <ul>
-        <li><a href="https://medium.com/@sanjaynegi309/ai-is-not-just-for-devs-65c3211da1da" target="_blank">AI is Not Just for Devs</a></li>
-        <li><a href="https://medium.com/pyjama-papers/my-journey-into-the-soul-of-visual-composition-f0b3630bf260" target="_blank">The Soul of Visual Composition</a></li>
-        <li><a href="https://medium.com/@sanjaynegi309/the-ai-assembly-line-25e0f7ab5ff3">The AI Assembly Line</a></li>
-      </ul>
-    </div>
+      <div class="cards-grid">
+        <div class="card glass">
+          <h2>🤖 AI Architecture</h2>
+          <p>From demo to production, I design GenAI platforms that scale. Specializing in agentic workflows, LLMOps pipelines, and retrieval-augmented generation (RAG) frameworks that deliver real business value.</p>
+        </div>
 
-    <div class="card">
-      <h2>Let’s Connect</h2>
-      <p>Whether you're a recruiter, learner, or fellow creator—I'm always open to conversations about GenAI, creativity, and mentorship.</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/sanjay-negi-ai/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://medium.com/@sanjaynegi309" target="_blank">Medium</a></li>
-        <li><a href="mailto:sanjaynegi@gmail.com">Email Me</a></li>
-      </ul>
-    </div>
+        <div class="card glass">
+          <h2>🎨 Creative Mentorship</h2>
+          <p>As a practicing artist, I guide professionals and hobbyists in unlocking creativity through structured exploration. Because imagination fuels architecture—whether in code or canvas.</p>
+        </div>
 
-    <div class="card">
-      <h2>Courses & Mentorship</h2>
-      <p>Coming soon: A subscription-based AI Engineering course series featuring hands-on labs, custom GPT mentorship, and community-driven learning. Stay tuned!</p>
-    </div>
-  </section>
+        <div class="card glass">
+          <h2>📚 Knowledge Sharing</h2>
+          <p>Through articles and mentorship, I break down complex AI concepts into digestible insights, making cutting-edge technology accessible to creators and builders alike.</p>
+        </div>
+      </div>
+
+      <div class="courses-preview">
+        <h2>🚀 Coming Soon: AI Engineering Mastery</h2>
+        <p>A subscription-based course series featuring hands-on labs, custom GPT mentorship, and community-driven learning. Transform from AI curious to AI architect.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card glass">
+          <h2>Featured Articles</h2>
+          <ul>
+            <li><a href="https://medium.com/@sanjaynegi309/ai-is-not-just-for-devs-65c3211da1da" target="_blank">→ AI is Not Just for Devs</a></li>
+            <li><a href="https://medium.com/pyjama-papers/my-journey-into-the-soul-of-visual-composition-f0b3630bf260" target="_blank">→ The Soul of Visual Composition</a></li>
+            <li><a href="https://medium.com/@sanjaynegi309/the-ai-assembly-line-25e0f7ab5ff3" target="_blank">→ The AI Assembly Line</a></li>
+          </ul>
+        </div>
+
+        <div class="card glass">
+          <h2>Let's Connect</h2>
+          <p>Whether you're a recruiter, learner, or fellow creator—I'm always open to conversations about GenAI, creativity, and the future we're building together.</p>
+          <div class="connect-buttons">
+            <a href="https://www.linkedin.com/in/sanjay-negi-ai/" target="_blank" class="btn">LinkedIn</a>
+            <a href="https://medium.com/@sanjaynegi309" target="_blank" class="btn">Medium</a>
+            <a href="mailto:sanjaynegi@gmail.com" class="btn">Email Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Sanjay Negi. Built with ❤️ and imagination.
+    <p>&copy; 2025 Sanjay Negi. Crafted with passion, powered by imagination.</p>
   </footer>
+
+  <script>
+    let particles = [];
+    let mouse = { x: 0, y: 0 };
+    let canvas;
+
+    function setup() {
+      canvas = createCanvas(windowWidth, windowHeight);
+      canvas.parent('canvas-container');
+
+      // Initialize particles
+      for (let i = 0; i < 100; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function draw() {
+      clear();
+
+      // Update mouse position
+      mouse.x = mouseX;
+      mouse.y = mouseY;
+
+      // Draw connections
+      stroke(0, 212, 255, 30);
+      strokeWeight(1);
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          let distance = dist(particles[i].pos.x, particles[i].pos.y, particles[j].pos.x, particles[j].pos.y);
+          if (distance < 150) {
+            let alpha = map(distance, 0, 150, 50, 0);
+            stroke(0, 212, 255, alpha);
+            line(particles[i].pos.x, particles[i].pos.y, particles[j].pos.x, particles[j].pos.y);
+          }
+        }
+      }
+
+      // Update and draw particles
+      for (let particle of particles) {
+        particle.update();
+        particle.draw();
+        particle.connectToMouse(mouse);
+      }
+    }
+
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+    }
+
+    class Particle {
+      constructor() {
+        this.pos = createVector(random(width), random(height));
+        this.vel = createVector(random(-1, 1), random(-1, 1));
+        this.acc = createVector(0, 0);
+        this.size = random(2, 5);
+        this.color = color(random(100, 255), random(100, 255), 255);
+      }
+
+      update() {
+        this.vel.add(this.acc);
+        this.pos.add(this.vel);
+        this.acc.mult(0);
+
+        // Bounce off edges
+        if (this.pos.x < 0 || this.pos.x > width) this.vel.x *= -1;
+        if (this.pos.y < 0 || this.pos.y > height) this.vel.y *= -1;
+
+        // Keep particles in bounds
+        this.pos.x = constrain(this.pos.x, 0, width);
+        this.pos.y = constrain(this.pos.y, 0, height);
+
+        // Limit velocity
+        this.vel.limit(2);
+      }
+
+      draw() {
+        noStroke();
+        fill(red(this.color), green(this.color), blue(this.color), 150);
+        ellipse(this.pos.x, this.pos.y, this.size);
+
+        // Add glow effect
+        fill(red(this.color), green(this.color), blue(this.color), 50);
+        ellipse(this.pos.x, this.pos.y, this.size * 2);
+      }
+
+      connectToMouse(mouse) {
+        let distance = dist(this.pos.x, this.pos.y, mouse.x, mouse.y);
+        if (distance < 200) {
+          let alpha = map(distance, 0, 200, 100, 0);
+          stroke(255, 0, 110, alpha);
+          strokeWeight(2);
+          line(this.pos.x, this.pos.y, mouse.x, mouse.y);
+
+          // Attract to mouse
+          let force = createVector(mouse.x - this.pos.x, mouse.y - this.pos.y);
+          force.normalize();
+          force.mult(0.01);
+          this.acc.add(force);
+        }
+      }
+    }
+
+    // Smooth scrolling
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
