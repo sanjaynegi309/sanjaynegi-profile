@@ -8,22 +8,32 @@ document.addEventListener("DOMContentLoaded", function() {
             return response.text();
         })
         .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, 'text/html');
+
+            // Inject head content
+            const headContent = doc.head.innerHTML;
+            document.head.insertAdjacentHTML('beforeend', headContent);
+
+            // Inject navigation
+            const navContent = doc.querySelector('nav').outerHTML;
+            const headerPlaceholder = document.getElementById("header-placeholder");
+            if(headerPlaceholder) {
+                headerPlaceholder.innerHTML = navContent;
+            }
+
 
             // --- Navigation Logic ---
-
-            // 1. Active Link Highlighting
             const navLinks = document.querySelectorAll('.nav-links a');
             const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
             navLinks.forEach(link => {
                 if (link.getAttribute('href') === currentPage) {
                     link.classList.add('active');
-                    link.setAttribute('aria-current', 'page'); // for accessibility
+                    link.setAttribute('aria-current', 'page');
                 }
             });
 
-            // 2. Mobile Menu Toggle
             const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
             const navLinksContainer = document.querySelector('.nav-links');
 
@@ -33,18 +43,21 @@ document.addEventListener("DOMContentLoaded", function() {
                     mobileMenuToggle.setAttribute('aria-expanded', isActive);
                     mobileMenuToggle.textContent = isActive ? '✕' : '☰';
                 });
-
-                // Close menu when a link is clicked
-                navLinksContainer.addEventListener('click', (e) => {
-                    if (e.target.tagName === 'A') {
-                        navLinksContainer.classList.remove('active');
-                        mobileMenuToggle.setAttribute('aria-expanded', 'false');
-                        mobileMenuToggle.textContent = '☰';
-                    }
-                });
             }
 
-            // 3. Navbar scroll effect (from index.html)
+            // Dropdown click handling for mobile
+            const dropdowns = document.querySelectorAll('.dropdown .dropbtn');
+            dropdowns.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        const dropdown = this.parentElement;
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            });
+
+
             const nav = document.querySelector('nav');
             if (nav) {
                 let lastScroll = 0;
@@ -72,7 +85,10 @@ document.addEventListener("DOMContentLoaded", function() {
             return response.text();
         })
         .then(data => {
-            document.getElementById("footer-placeholder").innerHTML = data;
+            const footerPlaceholder = document.getElementById("footer-placeholder");
+            if(footerPlaceholder){
+                footerPlaceholder.innerHTML = data;
+            }
         })
         .catch(error => {
             console.error('Error fetching footer:', error);
