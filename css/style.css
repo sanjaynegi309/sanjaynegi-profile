@@ -375,6 +375,79 @@
       outline-offset: 2px;
     }
 
+    .btn-primary {
+      background-color: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-2);
+      border-color: var(--accent-2);
+      color: var(--text);
+    }
+
+    .page-content {
+      padding: 8rem 2rem 4rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .page-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .page-description {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .benefits-list, .resource-list {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+      padding: 2rem;
+      background: var(--card);
+      border-radius: 15px;
+      border-left: 4px solid var(--accent-2);
+    }
+
+    .benefits-list h3, .resource-list h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .benefits-list ul, .resource-list ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefits-list li, .resource-list li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    .resource-list a {
+        color: var(--text);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .resource-list a:hover {
+        color: var(--accent);
+    }
+
     .featured-section {
       text-align: center;
       margin: 6rem 0;
