@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Fetch and inject header
-    fetch("header.html")
+    fetch("/header.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -25,10 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // --- Navigation Logic ---
             const navLinks = document.querySelectorAll('.nav-links a');
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            // Use location.pathname to handle nested paths correctly
+            const currentPage = window.location.pathname;
 
             navLinks.forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
+                const linkPath = link.getAttribute('href');
+                // Check for exact match or if it's the index page
+                if (linkPath === currentPage || (currentPage === '/' && linkPath === '/index.html')) {
                     link.classList.add('active');
                     link.setAttribute('aria-current', 'page');
                 }
@@ -77,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
     // Fetch and inject footer
-    fetch("footer.html")
+    fetch("/footer.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
