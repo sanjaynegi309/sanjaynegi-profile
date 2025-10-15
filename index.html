@@ -702,19 +702,7 @@
   <!-- Skip to main content for accessibility -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Navigation -->
-  <nav role="navigation" aria-label="Main navigation">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo" aria-label="Sanjay Negi - Home">SN</a>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        ☰
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="header-placeholder"></div>
 
   <!-- Background Canvas for p5.js -->
   <div id="canvas-container" aria-hidden="true"></div>
@@ -795,13 +783,10 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <p>&copy; 2025 Sanjay Negi. Crafted with passion, powered by imagination.</p>
-    <p><small>Made with accessibility, performance, and creativity in mind.</small></p>
-  </footer>
+  <div id="footer-placeholder"></div>
 
   <!-- p5.js Animation Script -->
+  <script src="js/main.js"></script>
   <script>
     let particles = [];
     let mouse = { x: 0, y: 0 };
