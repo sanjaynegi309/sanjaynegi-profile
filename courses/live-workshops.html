@@ -12,27 +12,57 @@
 <body>
   <div id="header-placeholder"></div>
 
-  <main id="main-content" class="page-content">
-    <section class="content-section">
-      <h1 class="page-title">Live Workshops</h1>
-      <p class="page-description">
-        Engage in real-time, interactive learning sessions led by Sanjay Negi. These workshops are designed to provide hands-on experience and direct mentorship, helping you master complex topics in a collaborative environment.
-      </p>
+  <!-- Background Canvas for p5.js -->
+  <div id="canvas-container" aria-hidden="true"></div>
 
-      <div class="benefits-list">
-        <h3>Key Benefits:</h3>
-        <ul>
-          <li>✔ Direct access to expert guidance and live Q&A.</li>
-          <li>✔ Collaborative projects with a community of peers.</li>
-          <li>✔ Hands-on labs and real-world case studies.</li>
-          <li>✔ Receive a certificate of completion.</li>
+  <!-- Hero Section -->
+  <header class="hero" role="banner">
+    <h1 class="hero-title">Live Workshops</h1>
+    <p class="hero-subtitle">Interactive sessions with real-time guidance, Q&A, and collaborative learning experiences</p>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+
+    <div class="courses-grid" style="margin-top: 4rem;">
+       <article class="workshop-card">
+        <span class="course-status status-available">FREE: B𝐞𝐟𝐨𝐫𝐞 2025 𝐞𝐧𝐝𝐬</span>
+        <h3>FREE AI Workshop sessions</h3>
+        <p>Weekly drop-in sessions to learn practical GenAI skills, try prompts, and ask questions in real-time. Perfect for beginners and practitioners who want a low-commitment way to explore AI tooling and workflows.</p>
+        <ul class="course-features">
+          <li>Weekly 120-minute live sessions (Zoom)</li>
+          <li>Hands-on demos and mini-exercises</li>
+          <li>Open Q&A and live prompt reviews</li>
+          <li>Recordings available for 7 days</li>
+          <li>Community chat for continued learning</li>
+          <li>Every Saturday - 11 AM to 01 PM (IST)</li>
+          <li>Sessions Starting - 25 Oct 2025</li>
         </ul>
-      </div>
+        <div class="course-footer">
+          <span class="course-duration">Recurring • 2 hour</span>
+          <a href="https://learn.sanjaynegi.in/l/adff39aacd" target="_blank" rel="noopener" class="btn btn-secondary">Join for Free (Register)</a>
+        </div>
+      </article>
 
-      <a href="https://external-course-platform.com/register" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-        Check Details & Register
-      </a>
-    </section>
+      <article class="workshop-card">
+        <span class="course-status status-coming-soon">Next Session: Starting  01 Nov 2025</span>
+        <h3>Becoming  Creative - 12-Week Live Online Creativity Workshop</h3>
+        <p>12-week live online workshop to unlock imagination, overcome creative blocks, and master the art of thinking differently. Perfect for artists, professionals, and anyone seeking fresh inspiration.</p>
+        <ul class="course-features">
+          <li>24 hours of live instruction (2 hrs/week on Saturdays)</li>
+          <li>Small cohort (max 30 participants)</li>
+          <li>1-on-1 personal consultation with Sanjay</li>
+          <li>Downloadable creativity exercises & worksheets</li>
+          <li>Lifetime access to session recordings</li>
+          <li>2-month post-course group meetups</li>
+          <li>Peer community for support & networking</li>
+        </ul>
+        <div class="course-footer">
+          <span class="course-duration">12 days • 24 hours</span>
+          <a href="https://learn.sanjaynegi.in/services/creativityworkshops" target="_blank" rel="noopener" class="btn btn-secondary">Check Details & Register</a>
+        </div>
+      </article>
+    </div>
   </main>
 
   <div id="footer-placeholder"></div>
