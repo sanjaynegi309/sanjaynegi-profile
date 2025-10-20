@@ -375,6 +375,33 @@
       outline-offset: 2px;
     }
 
+    /* Workshop Cards */
+    .workshop-card {
+      background: linear-gradient(135deg, rgba(131, 56, 236, 0.1), rgba(255, 0, 110, 0.1));
+      padding: 2rem;
+      border-radius: 20px;
+      border: 1px solid var(--card-border);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .workshop-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, var(--accent-3), transparent);
+      opacity: 0.3;
+    }
+
+    .workshop-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(131, 56, 236, 0.2);
+    }
+
     .btn-primary {
       background-color: var(--accent);
       color: var(--bg);
