@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nano Banana Creative Lab: Ultimate Collectible Figurine Guide</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 50px 60px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #7f8c8d;
+            font-weight: 300;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            padding-left: 20px;
+            border-left: 6px solid #667eea;
+            position: relative;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+            padding: 0;
+        }
+
+        .step-list li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-left: 80px;
+            transition: transform 0.3s ease;
+        }
+
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
+        }
+
+        .step-list li b {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .key-elements {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .key-elements li {
+            padding: 15px 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+            font-size: 15px;
+        }
+
+        .key-elements li b {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .prompt-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .prompt-box {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 25px;
+            border-radius: 12px;
+            font-family: 'Fira Code', monospace;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-wrap;
+            border-left: 5px solid #f39c12;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .prompt-box::before {
+            content: attr(data-number);
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #f39c12;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            box-shadow: 0 3px 8px rgba(243, 156, 18, 0.4);
+        }
+
+        .prompt-box strong {
+            color: #f39c12;
+            font-weight: 600;
+        }
+
+        .cta-section {
+            margin-top: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-section h2 {
+            color: white;
+            border: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .cta-section h2::before {
+            display: none;
+        }
+
+        .cta-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-box p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .cta-link {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .linkedin-link {
+            background: #0077b5;
+            color: white;
+        }
+
+        .emoji {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 30px;
+                max-width: 100%;
+            }
+
+            h1 {
+                color: #2c3e50;
+                -webkit-text-fill-color: #2c3e50;
+                font-size: 36px;
+            }
+
+            h2 {
+                page-break-after: avoid;
+                color: #2c3e50;
+            }
+
+            h2::before {
+                background: #2c3e50;
+            }
+
+            .section {
+                page-break-inside: avoid;
+                background: #f5f7fa;
+                box-shadow: none;
+            }
+
+            .step-list li {
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+
+            .step-list li::before {
+                background: #2c3e50;
+                box-shadow: none;
+            }
+
+            .prompt-box {
+                page-break-inside: avoid;
+                background: #f8f9fa;
+                color: #2c3e50;
+                border-left-color: #2c3e50;
+                box-shadow: none;
+            }
+
+            .prompt-box::before {
+                background: #2c3e50;
+                box-shadow: none;
+            }
+
+            .prompt-box strong {
+                color: #000;
+            }
+
+            .cta-section {
+                background: #2c3e50;
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+
+            .cta-link {
+                box-shadow: none;
+            }
+
+            .linkedin-link {
+                background: #0077b5;
+            }
+        }
+
+        @page {
+            margin: 1.5cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Nano Banana Figurine Lab</h1>
+            <p class="subtitle">The Ultimate Guide & 15 Experimental Prompts for Creating Professional Collectible-Style Figurines</p>
+            <p class="subtitle" style="margin-top: 15px;">Master the art of digital collectibles using Gemini's Nano Banana image model. Focus on refining <strong>Scale, Material, and Environment</strong> for stunning results.</p>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ Instructions: Sculpting Your Digital Collectible</h2>
+            <ul class="step-list">
+                <li>
+                    <b>Launch Gemini</b>
+                    Open the Gemini application or web interface to begin your creative journey.
+                </li>
+                <li>
+                    <b>Activate Nano Banana</b>
+                    Ensure you're using the image generation feature powered by the <strong>Gemini 2.5 Flash / Nano Banana model</strong>. This specific style is the key to achieving professional collectible aesthetics.
+                    <br />
+                    <img src="nano_banana.png" style="width: 80%; vertical-align: middle;"/>
+                </li>
+                <li>
+                    <b>Upload Source Image</b>
+                    Select and upload a clear, well-lit photograph of yourself, a pet, or an object. The AI uses this as the base identity for your figurine.
+                </li>
+                <li>
+                    <b>Write Your Prompt</b>
+                    Craft a detailed prompt describing the desired figurine style. Use the uploaded image as the subject (e.g., "Transform this photo of me into..."). <strong>Be specific about material, scale, and setting.</strong>
+                </li>
+                <li>
+                    <b>Generate and Refine</b>
+                    Submit the prompt. If the result isn't perfect, use the <strong>Refine/Edit</strong> feature to adjust specific elements (e.g., "Change the base from metal to wood" or "Increase the scale to 1/6").
+                </li>
+                <li>
+                    <b>Download & Share</b>
+                    Once satisfied with your creation, download your unique collectible image and share it with the world!
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🧠 Prompt Engineering: Key Elements</h2>
+            <p style="margin-bottom: 20px;">Master the collectible aesthetic by including these specific descriptors in your prompts:</p>
+            <ul class="key-elements">
+                <li>
+                    <b>Scale</b>
+                    1/6 scale, 1/12 scale, 45mm, life-size
+                </li>
+                <li>
+                    <b>Material/Finish</b>
+                    Matte vinyl, clear acrylic, painted resin, aged copper, hand-carved wood
+                </li>
+                <li>
+                    <b>Base/Stand</b>
+                    Round acrylic base, wooden pedestal, detailed diorama base, floating
+                </li>
+                <li>
+                    <b>Environment/Packaging</b>
+                    Inside toy box with clear window, sealed blister pack, art gallery pedestal
+                </li>
+                <li>
+                    <b>Lighting</b>
+                    Soft studio lighting, harsh direct flash, atmospheric neon glow, warm golden light
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>💡 The 15 Experimental Prompts: Collectible Style Bank</h2>
+            <p style="margin-bottom: 20px;">Use these prompts by inserting your subject (e.g., "Transform this image into...") at the start. Experiment with swapping keywords (e.g., changing 'brass' to 'silver').</p>
+
+            <h3>Core & Artistic Styles (Prompts 1-5)</h3>
+            <div class="prompt-grid">
+                <div class="prompt-box" data-number="PROMPT 1">Create a <strong>1/8 scale unpainted resin kit</strong> collectible figurine of the subject. The style should be hyper-realistic with sharp edges and intricate detail, like a <strong>garage kit model</strong>. Place the parts <strong>neatly laid out on a blueprint drawing</strong> on a workbench. Use <strong>studio lighting</strong>.</div>
+
+                <div class="prompt-box" data-number="PROMPT 2">Turn the subject into a chunky, <strong>limited-edition vinyl toy</strong> figurine. Give it <strong>smooth, rounded edges</strong> and a highly stylized, <strong>matte finish</strong>. Use a <strong>two-tone pop art color scheme</strong>. The figurine is sealed in its original, vibrant <strong>blister packaging</strong> with bold Japanese text.</div>
+
+                <div class="prompt-box" data-number="PROMPT 3">Create a tiny <strong>45mm (gacha size) collectible figure</strong> of the subject, molded from cheap, brightly colored plastic. The figurine is partially visible <strong>inside a clear plastic sphere (gacha capsule)</strong>, sitting on a colorful display shelf. Apply a <strong>direct flash lighting</strong> style.</div>
+
+                <div class="prompt-box" data-number="PROMPT 4">Transform the image into a <strong>hand-carved wooden figurine</strong>. The texture should show <strong>visible chisel marks</strong> and a <strong>natural, unfinished wood grain</strong>. The figurine is displayed on a <strong>minimalist black pedestal</strong> under a single, warm <strong>spotlight</strong> in an art gallery setting.</div>
+
+                <div class="prompt-box" data-number="PROMPT 5">Convert the subject into a <strong>1/35 scale diorama figure</strong> placed in an abandoned, rain-slicked Tokyo street alley. The scene should include <strong>miniature water puddles, tiny graffiti, and mist</strong>. Use <strong>deep atmospheric lighting</strong>—neon signs reflecting off the wet pavement.</div>
+            </div>
+
+            <h3>Advanced & Material Focus Styles (Prompts 6-15)</h3>
+            <div class="prompt-grid">
+                <div class="prompt-box" data-number="PROMPT 6">Transform the subject into a <strong>chibi-style claymation figurine</strong>. The surface should have a slightly <strong>textured, matte finish</strong> with visible 'fingerprint' imperfections. Place it in a stop-motion-inspired miniature garden diorama. Use <strong>soft, diffused lighting</strong>.</div>
+
+                <div class="prompt-box" data-number="PROMPT 7">Convert the image into a <strong>1/10 scale collectible figurine carved from a single piece of translucent amethyst</strong>. The figurine should have sharp facets and internal light refractions. It's displayed on a minimalist, <strong>illuminated black light box</strong>, making the gem glow.</div>
+
+                <div class="prompt-box" data-number="PROMPT 8">Turn the subject into an intricate <strong>1/7 scale steampunk automaton figurine</strong>, constructed from polished brass and aged copper, with visible gears. It stands on a heavy, riveted iron base. Illuminated by the warm, flickering glow of a <strong>gas lamp</strong>.</div>
+
+                <div class="prompt-box" data-number="PROMPT 9">Create a <strong>low-poly, pixel art style 3D printed figurine</strong> of the subject, with clearly defined flat surfaces and sharp angles. The material is a vibrant, matte blue plastic. It is shown fresh off a 3D printer bed, surrounded by residual support structures.</div>
+
+                <div class="prompt-box" data-number="PROMPT 10">Imagine the subject as a massive, <strong>helium-filled parade balloon figurine</strong>, captured mid-float above a bustling city street. The material is shiny, brightly colored PVC, with visible seams. Use bright, <strong>natural daylight</strong> with clear blue skies.</div>
+
+                <div class="prompt-box" data-number="PROMPT 11">Transform the subject into a heavily articulated <strong>1/12 scale die-cast metal action figure</strong>, with visible joints and a battle-worn, scratched metallic paint finish. Posed dynamically within a futuristic industrial hangar. Use dramatic, <strong>high-contrast lighting</strong>.</div>
+
+                <div class="prompt-box" data-number="PROMPT 12">Create a delicate <strong>frosted glass sculpture</strong> of the subject, with elegant, flowing lines and a subtle, translucent quality. It sits on a smooth, grey concrete plinth. <strong>Soft, ambient light filters through a large window</strong>, creating subtle highlights.</div>
+
+                <div class="prompt-box" data-number="PROMPT 13">Convert the subject into a simplified, traditional <strong>Japanese Kokeshi doll-style figurine</strong>. It should be turned wood, with minimal painted details. Display it on a tatami mat next to a delicate bonsai tree, lit by the gentle glow of a <strong>Shoji screen</strong>.</div>
+
+                <div class="prompt-box" data-number="PROMPT 14">Transform the subject into a fearsome <strong>Gothic gargoyle statue</strong>, carved from weathered grey stone, with moss and cracks. It's perched on a cathedral rooftop, overlooking a stormy, moonlit city. Dramatic, <strong>low-key lighting</strong> emphasizes its silhouette.</div>
+
+                <div class="prompt-box" data-number="PROMPT 15">Create a <strong>pop-up book diorama</strong> where the subject is the central figure. The entire scene should appear as if constructed from intricately folded and cut paper, with visible creases. The 'book' is open on a wooden table, lit by a <strong>warm desk lamp</strong>.</div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>🚀 Stay Updated & Connect!</h2>
+
+            <div class="cta-box">
+                <p><span class="emoji">📚</span><strong>Want to learn more and stay ahead?</strong></p>
+                <p>Get the latest courses, exclusive content, and special discounts delivered straight to you!</p>
+                <p style="font-size: 16px; margin-top: 20px;">Just click the <strong>"𝐆𝐞𝐭 𝐄𝐚𝐫𝐥𝐲 𝐀𝐜𝐜𝐞𝐬𝐬"</strong> button on my site (end of page) and register:</p>
+                <a href="https://sanjaynegi.in/courses.html" target="_null" class="cta-link">🎓 Visit Courses Page</a>
+            </div>
+
+            <div class="cta-box" style="margin-top: 30px;">
+                <p><span class="emoji">💼</span><strong>Let's Connect Professionally!</strong></p>
+                <p>Join my network on LinkedIn for AI insights, industry updates, and professional collaboration.</p>
+                <a href="https://www.linkedin.com/in/sanjay-negi-ai" target="_null" class="cta-link linkedin-link">🔗 Connect on LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
