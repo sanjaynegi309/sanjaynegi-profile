@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-   <!-- Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
-   <script>
-  	   window.dataLayer = window.dataLayer || [];
-  	   function gtag(){dataLayer.push(arguments);}
-  	   gtag('js', new Date());
-
-  	   gtag('config', 'G-NNJRMTPHZK');
-  </script>
-  <!-- Essential Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#00d4ff" />
-
   <!-- SEO Meta Tags -->
   <title>Courses & Workshops - Sanjay Negi | AI Engineering Mastery</title>
   <meta name="description" content="Discover AI Engineering courses and creative workshops by Sanjay Negi. From GenAI fundamentals to advanced RAG systems - transform your AI skills with hands-on learning." />
@@ -35,17 +21,6 @@
   <meta name="twitter:title" content="AI Courses & Workshops - Sanjay Negi" />
   <meta name="twitter:description" content="Master AI Engineering with hands-on courses covering GenAI, LLMOps, and creative applications." />
   <meta name="twitter:image" content="https://media.licdn.com/dms/image/v2/D5603AQGpyU-TnbdeQg/profile-displayphoto-shrink_200_200/B56ZdDiZOTGoAY-/0/1749184779972?e=1759968000&v=beta&t=yBYIdB5NUqyowPl8Il9lPsLMzz9KS4log2yTQctGCws" />
-
-  <!-- Preload Critical Resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <!-- p5.js Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
@@ -699,21 +674,7 @@
   <!-- Skip to main content for accessibility -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Navigation -->
-  <nav role="navigation" aria-label="Main navigation">
-    <div class="nav-container">
-      <a href="index.html" class="logo">SN</a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html" class="active" aria-current="page">Courses</a></li>
-      </ul>
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
+  <div id="header-placeholder"></div>
 
   <!-- Background Canvas for p5.js -->
   <div id="canvas-container" aria-hidden="true"></div>
@@ -883,182 +844,10 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <p>&copy; 2025 Sanjay Negi. Crafted with passion, powered by imagination.</p>
-    <p><small>Courses designed with accessibility, practical application, and career growth in mind.</small></p>
-  </footer>
+  <div id="footer-placeholder"></div>
 
   <!-- p5.js Animation Script -->
-  <script>
-    let particles = [];
-    let mouse = { x: 0, y: 0 };
-    let canvas;
-
-    function setup() {
-      canvas = createCanvas(windowWidth, windowHeight);
-      canvas.parent('canvas-container');
-
-      // Responsive particle count for performance
-      const isMobile = window.innerWidth < 768;
-      const particleCount = isMobile ? 30 : 80;
-
-      for (let i = 0; i < particleCount; i++) {
-        particles.push(new Particle());
-      }
-    }
-
-    function draw() {
-      clear();
-
-      // Update mouse position
-      mouse.x = mouseX;
-      mouse.y = mouseY;
-
-      // Draw particle connections with course-themed colors
-      stroke(0, 212, 255, 20);
-      strokeWeight(1);
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          let distance = dist(particles[i].pos.x, particles[i].pos.y, particles[j].pos.x, particles[j].pos.y);
-          if (distance < 120) {
-            let alpha = map(distance, 0, 120, 40, 0);
-            // Cycle through accent colors
-            let colorIndex = (i + j) % 3;
-            if (colorIndex === 0) stroke(0, 212, 255, alpha);
-            else if (colorIndex === 1) stroke(255, 0, 110, alpha);
-            else stroke(131, 56, 236, alpha);
-            line(particles[i].pos.x, particles[i].pos.y, particles[j].pos.x, particles[j].pos.y);
-          }
-        }
-      }
-
-      // Update and draw particles
-      for (let particle of particles) {
-        particle.update();
-        particle.draw();
-        particle.connectToMouse(mouse);
-      }
-    }
-
-    function windowResized() {
-      resizeCanvas(windowWidth, windowHeight);
-    }
-
-    class Particle {
-      constructor() {
-        this.pos = createVector(random(width), random(height));
-        this.vel = createVector(random(-0.8, 0.8), random(-0.8, 0.8));
-        this.acc = createVector(0, 0);
-        this.size = random(2, 4);
-        // Use course theme colors
-        const colors = [
-          [0, 212, 255],    // accent
-          [255, 0, 110],    // accent-2
-          [131, 56, 236],   // accent-3
-          [58, 134, 255],   // accent-4
-          [6, 255, 165]     // accent-5
-        ];
-        const selectedColor = random(colors);
-        this.color = color(selectedColor[0], selectedColor[1], selectedColor[2]);
-      }
-
-      update() {
-        this.vel.add(this.acc);
-        this.pos.add(this.vel);
-        this.acc.mult(0);
-
-        // Bounce off edges
-        if (this.pos.x < 0 || this.pos.x > width) this.vel.x *= -1;
-        if (this.pos.y < 0 || this.pos.y > height) this.vel.y *= -1;
-
-        // Keep particles in bounds
-        this.pos.x = constrain(this.pos.x, 0, width);
-        this.pos.y = constrain(this.pos.y, 0, height);
-
-        // Limit velocity
-        this.vel.limit(1.5);
-      }
-
-      draw() {
-        noStroke();
-        fill(red(this.color), green(this.color), blue(this.color), 180);
-        ellipse(this.pos.x, this.pos.y, this.size);
-
-        // Add subtle glow effect
-        fill(red(this.color), green(this.color), blue(this.color), 60);
-        ellipse(this.pos.x, this.pos.y, this.size * 1.8);
-      }
-
-      connectToMouse(mouse) {
-        let distance = dist(this.pos.x, this.pos.y, mouse.x, mouse.y);
-        if (distance < 150) {
-          let alpha = map(distance, 0, 150, 80, 0);
-          stroke(red(this.color), green(this.color), blue(this.color), alpha);
-          strokeWeight(1.5);
-          line(this.pos.x, this.pos.y, mouse.x, mouse.y);
-
-          // Gentle attraction to mouse
-          let force = createVector(mouse.x - this.pos.x, mouse.y - this.pos.y);
-          force.normalize();
-          force.mult(0.008);
-          this.acc.add(force);
-        }
-      }
-    }
-
-    // Mobile Navigation Toggle
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileToggle = document.getElementById('mobile-toggle');
-      const navLinks = document.getElementById('nav-links');
-
-      mobileToggle.addEventListener('click', function() {
-        mobileToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-
-        // Update ARIA attributes
-        const isExpanded = navLinks.classList.contains('active');
-        mobileToggle.setAttribute('aria-expanded', isExpanded);
-      });
-
-      // Close mobile menu when clicking on a link
-      navLinks.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
-          mobileToggle.classList.remove('active');
-          navLinks.classList.remove('active');
-          mobileToggle.setAttribute('aria-expanded', false);
-        }
-      });
-
-      // Close mobile menu when clicking outside
-      document.addEventListener('click', function(e) {
-        if (!e.target.closest('nav')) {
-          mobileToggle.classList.remove('active');
-          navLinks.classList.remove('active');
-          mobileToggle.setAttribute('aria-expanded', false);
-        }
-      });
-    });
-
-    // Smooth scrolling for anchor links
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
-        });
-      });
-    });
-
-    // Handle reduced motion preference
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      // Disable p5.js animations for users who prefer reduced motion
-      function setup() {}
-      function draw() {}
-    }
-  </script>
+  <script src="/js/main.js"></script>
+  <script src="/js/particles.js"></script>
 </body>
 </html>
