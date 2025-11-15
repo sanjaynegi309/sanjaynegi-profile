@@ -1,0 +1,38 @@
+[
+  {
+    "id": "inst-1",
+    "name": "Dr. Evelyn Reed",
+    "photo": "assets/images/instructor-reed.jpg",
+    "bio": "Evelyn is a leading researcher in machine learning and has published numerous papers on the topic.",
+    "expertise": ["Machine Learning", "AI Ethics"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/evelynreed",
+      "twitter": "https://twitter.com/evelynreed"
+    },
+    "courses": ["ai-eng-101"]
+  },
+  {
+    "id": "inst-2",
+    "name": "David Chen",
+    "photo": "assets/images/instructor-chen.jpg",
+    "bio": "David is a DevOps expert with over 15 years of experience building scalable infrastructure.",
+    "expertise": ["DevOps", "CI/CD", "Cloud Architecture"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/davidchen",
+      "twitter": "https://twitter.com/davidchen"
+    },
+    "courses": ["dev-tools-201"]
+  },
+  {
+    "id": "inst-3",
+    "name": "Maria Garcia",
+    "photo": "assets/images/instructor-garcia.jpg",
+    "bio": "Maria is a data scientist and artist who specializes in creating beautiful and informative data visualizations.",
+    "expertise": ["Data Visualization", "D3.js", "JavaScript"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/mariagarcia",
+      "twitter": "https://twitter.com/mariagarcia"
+    },
+    "courses": ["data-viz-301"]
+  }
+]

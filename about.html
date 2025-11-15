@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUp with Sanjay - About Us</title>
+    <meta name="description" content="Learn more about our mission, our team, and our story at SkillUp with Sanjay.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/about.html">
+    <meta property="og:title" content="SkillUp with Sanjay - About Us">
+    <meta property="og:description" content="Learn more about our mission, our team, and our story at SkillUp with Sanjay.">
+    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/about.html">
+    <meta property="twitter:title" content="SkillUp with Sanjay - About Us">
+    <meta property="twitter:description" content="Learn more about our mission, our team, and our story at SkillUp with Sanjay.">
+    <meta property="twitter:image" content="https://example.com/assets/images/og-image.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+ <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
+  <script>
+	   window.dataLayer = window.dataLayer || [];
+	   function gtag(){dataLayer.push(arguments);}
+	   gtag('js', new Date());
+
+	   gtag('config', 'G-NNJRMTPHZK');
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class=" antialiased font-sans">
+    <div id="canvas-container"></div>
+    <a href="#main-content" class="sr-only focus:not-sr-only text-indigo-400">Skip to main content</a>
+
+    <header class="bg-transparent sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center"><img src="assets/images/logo.png" alt="SkillUp with Sanjay Logo" class="h-10"></a>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                <a href="courses.html" class="text-gray-300 hover:text-white transition-colors">Courses</a>
+                <a href="workshops.html" class="text-gray-300 hover:text-white transition-colors">Workshops</a>
+                <!-- <a href="ai_engineering.html" class="text-gray-300 hover:text-white transition-colors">AI Engineering</a> -->
+                <a href="resources.html" class="text-gray-300 hover:text-white transition-colors">Resources</a>
+                <!--
+                <a href="instructors.html" class="text-gray-300 hover:text-white transition-colors">Instructors</a>
+                <a href="dashboard.html" class="text-gray-300 hover:text-white transition-colors">Dashboard</a>
+                -->
+                <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="btn-glow">Login</a>
+            </div>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 glass-card">
+            <a href="index.html" class="block text-gray-300 hover:text-white">Home</a>
+            <a href="courses.html" class="block text-gray-300 hover:text-white">Courses</a>
+            <a href="workshops.html" class="block text-gray-300 hover:text-white">Workshops</a>
+            <!-- <a href="ai_engineering.html" class="block text-gray-300 hover:text-white">AI Engineering</a> -->
+            <a href="resources.html" class="block text-gray-300 hover:text-white">Resources</a>
+            <a href="about.html" class="block text-gray-300 hover:text-white">About</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+            <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="block btn-glow text-center mt-2">Login</a>
+        </div>
+    </header>
+
+    <main id="main-content" class="container mx-auto px-6 py-12 text-white relative z-10">
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animated-gradient-text">About SkillUp with Sanjay</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Helping senior engineers become the GenAI architects companies rely on.</p>
+        </section>
+
+        <section class="glass-card p-8 mb-12">
+            <h2 class="text-3xl font-bold mb-4 animated-gradient-text">Our Mission</h2>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                AI is changing how software is designed, built, and shipped. But most senior engineers don’t need to “start over” — they need to <strong>translate their existing architecture experience into GenAI systems</strong>.
+			</p>
+			<p class="text-gray-300 leading-relaxed mb-4">
+				At SkillUp with Sanjay, our mission is simple: <strong>To help experienced engineers become production-ready GenAI Architects — with clarity, confidence, and real deployed systems.</strong>
+			</p>
+			<p class="text-gray-300 leading-relaxed mb-4">
+
+			</p>
+			<p class="text-gray-300 leading-relaxed mb-4">
+				<strong>We believe learning must be:</strong>
+			</p>
+			<p class="text-gray-300 leading-relaxed mb-4">
+			    - Practical, not theoretical<br>
+				- Production-first, not tutorial-first<br>
+				- Architect-driven, not model-driven<br>
+				- Hands-on with real systems, not toy notebooks</p>
+
+			<p class="text-gray-300 leading-relaxed mb-4">
+				<strong>Our programs are built to help you:</strong>
+			</p>
+			<p class="text-gray-300 leading-relaxed mb-4">
+				- Understand GenAI through the architecture lens<br>
+				- Design AI systems that actually work in enterprise environments<br>
+				- Deploy production systems with observability, guardrails, and reliability<br>
+				- Build a portfolio that hiring managers trust<br>
+				- Move into architect, staff, and principal-level AI roles
+			</p>
+
+			<p><em>Because real transformation doesn’t happen from watching videos — it happens when knowledge meets action, and when experience is translated, not discarded.</em></p>
+            </p>
+
+        </section>
+
+        <section class="glass-card p-8">
+            <h2 class="text-3xl font-bold mb-4 animated-gradient-text">Meet Sanjay — Your AI Mentor</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/4 mb-4 md:mb-0 md:mr-8">
+                    <img src="assets/images/sanjay_full_pic.png" alt="Sanjay Negi" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                <div class="md:w-3/4">
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                    	I’m <strong>Sanjay Negi</strong>, GenAI Architect and Mentor, with <strong>22+ years of experience</strong> building and scaling enterprise systems — and helping senior engineers transition to high-impact architecture roles.
+                    </p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">For most of my career, I worked deep in the backend stack:<br />
+						Java, REST, distributed systems, integrations, deployments, monitoring — the entire lifecycle. I’ve led architecture, coding, testing, automation, observability, and production operations across large-scale environments.
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						But when AI exploded, I went through what many senior engineers feel today:
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						<em><strong>
+						“Where do I even begin?<br />
+						Why does all AI learning feel disconnected from real software architecture?”
+						</strong></em>
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						Most tutorials taught toy notebooks.<br />
+						Most courses ignored production.<br />
+						Most GenAI examples didn’t match real enterprise constraints.
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						So I rebuilt my learning from scratch — but this time through an architect’s lens:
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						<strong>
+						• RAG systems that scale<br>
+						• LLMOps pipelines that survive production failures<br>
+						• Multi-agent workflows tied to business value<br>
+						• Monitoring, cost controls, safety layers, and observability<br>
+						• Deployment patterns that real teams can trust
+						</strong>
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						Today, I mentor senior engineers (8–20+ years experience) to do the same.
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						My teaching approach is:
+					</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+					• <strong>Hands-on</strong> (design and deploy together)<br>
+					• <strong>Architecture-centric</strong> (patterns, tradeoffs, decision logs)<br>
+					• <strong>Outcome-driven</strong> (6 architectures + 2 production systems)<br>
+					• <strong>Deeply personalized</strong> to your background and goals</p>
+
+					<p class="text-gray-300 leading-relaxed mb-4">
+						SkillUp with Sanjay isn’t a course library — it’s a career accelerator where experienced engineers learn to lead GenAI initiatives with confidence, clarity, and proof.
+					</p>
+					<p class="text-gray-300 leading-relaxed mb-4">
+						If you want to connect the dots between your existing experience and the next chapter in AI architecture, you’ll find a practical, structured, and supportive learning path here.
+					</p>
+					<p class="text-gray-300 leading-relaxed mb-4">
+						<em>Let’s build, deploy, and grow — together.</em>
+					</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white relative z-10 mt-12">
+        <div class="container mx-auto px-6 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">SkillUp with Sanjay</h3>
+                    <p class="text-gray-400">Upskilling the next generation of tech leaders.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                         <!--
+						<li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+						<li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        -->
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Connect With Us</h3>
+                    <div class="flex space-x-4 social-icons">
+						<a href="https://www.youtube.com/@skillupwithsanjay" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://www.linkedin.com/in/sanjay-negi-ai/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/skillup_with_sanjay/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.facebook.com/skillupwithsanjay/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 SkillUp with Sanjay. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <label for="animation-toggle" class="mr-2">Disable Animations:</label>
+                    <input type="checkbox" id="animation-toggle">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" defer></script>
+    <script src="assets/js/p5-particles.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+</body>
+</html>

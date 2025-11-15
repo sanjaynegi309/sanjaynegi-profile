@@ -1,0 +1,694 @@
+{
+  "program": {
+        "title": "Generative & Agentic AI Engineering — 1 Year Live Workshop Series",
+        "tagline": "Build, deploy, and master AI systems in 12 months — from foundations to enterprise-ready agentic systems.",
+         "startDate": "2026-01-03",
+          "duration": [
+      "6 months",
+      "Live weekly sessions + self-paced labs + capstone",
+      "Live Zoom sessions every Saturday and Sunday (8–10 am)"
+    ],
+    "format": [
+      "Live weekly workshops",
+      "Self-paced micro-courses",
+      "Hands-on labs",
+      "Projects"
+    ],
+    "tracks": [
+      "Code-first",
+      "No-code"
+    ],
+    "idealFor": [
+      "Developers",
+      "Product Managers",
+      "Entrepreneurs",
+      "Working Professionals"
+    ],
+        "outcomes": [
+            "Design and build grounded Generative AI systems (RAG)",
+            "Create single-agent and multi-agent workflows that call tools and maintain memory",
+            "Finetune and adapt models for domain needs using PEFT/LoRA",
+            "Deploy and operate LLM-based systems with observability, guardrails and cost controls",
+            "Build no-code AI flows and integrate with business apps",
+            "Deliver an enterprise-grade capstone system and portfolio case study"
+        ]
+    },
+  "phases": [
+    {
+      "phaseId": 0,
+      "phaseTitle": "Phase 0 — Fast Start: Get AI-Ready",
+      "courses": [
+        {
+          "courseId": "AIE-P0-C1",
+          "title": "AI Essentials for Everyone",
+		                      "duration": "2 weeks",
+		                      "level": "Beginner",
+		                      "description": "High level overview of Generative AI, practical exposure to chat models and no-code flows.",
+		                      "lessons": [
+		                          "Introduction to Generative AI (LLMs, LMMs, Diffusion)",
+		                          "Core concepts: tokens, context window, temperature, top-p",
+		                          "Major providers & playgrounds (ChatGPT, Claude, Gemini, open-source alternatives)",
+		                          "Identifying product/operational use-cases for AI",
+		                          "No-code demo: build a simple chat-driven workflow"
+		                      ],
+		                      "handsOnProjects": [
+		                          {
+		                              "title": "AI-powered Daily Assistant",
+		                              "description": "Design and configure a no-code assistant that summarizes, schedules, and ideates for a day’s work."
+		                          }
+		                      ],
+		                      "tools": [
+		                          "ChatGPT / Playground",
+		                          "Flowise (demo)",
+		                          "Dify (demo)"
+		                      ],
+		                      "learningOutcomes": [
+		                          "Recognize Generative AI capabilities and limits",
+		                          "Map AI use cases to business value",
+		                          "Build a basic no-code AI workflow"
+		                      ],
+                    "badge": "AI Essentials"
+        },
+        {
+          "courseId": "AIE-P0-C2",
+           "title": "Python for Generative AI Fast-Track",
+		                      "duration": "3 weeks",
+		                      "level": "Beginner → Intermediate",
+		                      "description": "Rapid hands-on Python primer targeted at OOP developers for GenAI projects.",
+		                      "lessons": [
+		                          "Virtual environments, pip/poetry, notebooks",
+		                          "Basic Python for data I/O, JSON, YAML",
+		                          "HTTP APIs, async basics (httpx), SDK usage",
+		                          "Parsing & validating model outputs with Pydantic",
+		                          "Introduction to FastAPI and simple endpoint creation"
+		                      ],
+		                      "handsOnProjects": [
+		                          {
+		                              "title": "Web Article Summarizer",
+		                              "description": "A Python service that fetches a URL, extracts content, calls an LLM API, and returns a structured summary."
+		                          }
+		                      ],
+		                      "tools": [
+		                          "Python",
+		                          "Jupyter / Colab",
+		                          "FastAPI",
+		                          "OpenAI SDK (or similar)"
+		                      ],
+		                      "learningOutcomes": [
+		                          "Be productive in Python for GenAI tasks",
+		                          "Integrate LLM APIs and validate structured outputs",
+		                          "Ship a simple API-backed GenAI microservice"
+		                      ],
+                    "badge": "Python for GenAI"
+        }
+      ]
+    },
+    {
+      "phaseId": 1,
+      "phaseTitle": "Phase 1 — Prompt Engineering & Generative Creation",
+      "courses": [
+        {
+          "courseId": "AIE-P1-C1",
+          "title": "Prompt Engineering Fundamentals",
+		                     "duration": "3 weeks",
+		                     "level": "Beginner → Intermediate",
+		                     "description": "Fundamental patterns for reliable LLM behavior, prompt anatomy and debugging.",
+		                     "lessons": [
+		                         "What is a prompt? System vs user prompts",
+		                         "Instruction design, role prompts, delimiters",
+		                         "Zero-shot, few-shot, in-context learning",
+		                         "Chain-of-Thought (CoT), ReAct, Reflexion patterns",
+		                         "Prompt debugging techniques and common pitfalls"
+		                     ],
+		                     "handsOnProjects": [
+		                         {
+		                             "title": "Prompt Cookbook",
+		                             "description": "Create a reusable library of 10 prompt templates for summarization, idea generation, classification and Q&A."
+		                         }
+		                     ],
+		                     "tools": [
+		                         "OpenAI Playground",
+		                         "Guidance / LMQL (demo)",
+		                         "Prompt version control (concept)"
+		                     ],
+		                     "learningOutcomes": [
+		                         "Design clear, reliable prompts for general tasks",
+		                         "Apply advanced prompting patterns for reasoning",
+		                         "Create a reusable prompt library"
+		                     ],
+                    "badge": "Prompt Fundamentals"
+        },
+        {
+          "courseId": "AIE-P1-C2",
+           "title": "Structured Outputs & Programmatic Prompting",
+		                      "duration": "2 weeks",
+		                      "level": "Intermediate",
+		                      "description": "Techniques to force LLMs into structured, machine-parseable outputs and programmatic prompt orchestration.",
+		                      "lessons": [
+		                          "Delimiters, JSON schemas, and output shaping",
+		                          "Pydantic validation and post-processing",
+		                          "Declarative prompting with DSPy & LMQL (concepts and examples)",
+		                          "Automating prompt-eval cycles"
+		                      ],
+		                      "handsOnProjects": [
+		                          {
+		                              "title": "Market Research Extractor",
+		                              "description": "Pipeline that converts free-form analyst notes into structured JSON market reports with validation."
+		                          }
+		                      ],
+		                      "tools": [
+		                          "Pydantic",
+		                          "DSPy / LMQL (examples)",
+		                          "OpenAI / HF APIs"
+		                      ],
+		                      "learningOutcomes": [
+		                          "Produce consistently structured API-ready responses",
+		                          "Automate prompt pipelines and validation",
+		                          "Integrate schema validation into production flows"
+		                      ],
+                    "badge": "Structured Prompting"
+        },
+        {
+          "courseId": "AIE-P1-C3",
+           "title": "Domain Prompting Series (Choose one or more)",
+		                      "duration": "2 weeks each (per specialization)",
+		                      "level": "Intermediate → Applied",
+		                      "description": "Action-oriented specializations: adapt prompting techniques to business domains and content types.",
+		                      "lessons": [
+		                         "Tone & format for social platforms (LinkedIn, X, Instagram)",
+								 "Hooks, CTAs, and virality patterns",
+                                "Iterative A/B prompt testing for campaigns"
+		                      ],
+		                      "handsOnProjects": [
+		                          {
+		                              "title": "Market Content Generator",
+		                              "description": "Auto-generate LinkedIn carousel posts + captions + schedule"
+		                          }
+		                      ],
+		                      "tools": [
+		                          "OpenAI / Claude",
+                                "Canva (integration ideas)"
+		                      ],
+		                      "learningOutcomes": [
+		                          "Generate platform-tailored marketing content at scale"
+		                      ],
+                    "badge": "Structured Prompting"
+        }
+      ]
+    },
+    {
+	            "phaseId": 2,
+	            "phaseTitle": "Phase 2 — RAG & Context Engineering",
+	            "courses": [
+	                {
+	                    "courseId": "2.1",
+	                    "title": "RAG Foundations",
+	                    "duration": "3 weeks",
+	                    "level": "Intermediate",
+	                    "description": "How to ground LLMs with retrieval — chunking, embeddings, and vector search basics.",
+	                    "lessons": [
+	                        "Why RAG: hallucinations vs grounding",
+	                        "Embeddings: choice, dimensionality and providers",
+	                        "Chunking strategies and metadata practices",
+	                        "Intro to vector stores (FAISS, Chroma, Pinecone)"
+	                    ],
+	                    "handsOnProjects": [
+	                        {
+	                            "title": "Company Handbook Q&A Assistant",
+	                            "description": "Ingest company docs, build index, and serve a Q&A assistant with citations."
+	                        }
+	                    ],
+	                    "tools": [
+	                        "FAISS",
+	                        "Chroma",
+	                        "Pinecone",
+	                        "LangChain / LlamaIndex (demo)"
+	                    ],
+	                    "learningOutcomes": [
+	                        "Choose chunking & embedding strategies for datasets",
+	                        "Build a basic RAG pipeline",
+	                        "Evaluate retrieval fidelity and citation quality"
+	                    ],
+	                    "badge": "RAG Foundations"
+	                },
+	                {
+	                    "courseId": "2.2",
+	                    "title": "Advanced RAG Pipelines & Evaluation",
+	                    "duration": "3 weeks",
+	                    "level": "Intermediate → Advanced",
+	                    "description": "Multi-vector/hybrid search, rerankers, multimodal RAG and evaluation techniques.",
+	                    "lessons": [
+	                        "Hybrid search (BM25 + vectors) and weighted rerankers",
+	                        "SQL + semantic joins, structured sources",
+	                        "Multimodal RAG (images, tables, PDFs)",
+	                        "Evaluating groundedness (Ragas, TruLens) and building golden sets"
+	                    ],
+	                    "handsOnProjects": [
+	                        {
+	                            "title": "E-commerce Knowledge Assistant",
+	                            "description": "RAG over product manuals, reviews and FAQs with citations and reranking for best answers."
+	                        }
+	                    ],
+	                    "tools": [
+	                        "Haystack",
+	                        "LlamaIndex",
+	                        "Ragas",
+	                        "TruLens"
+	                    ],
+	                    "learningOutcomes": [
+	                        "Implement hybrid retrieval strategies",
+	                        "Integrate multimodal sources into RAG",
+	                        "Run evaluation pipelines to measure faithfulness"
+	                    ],
+	                    "badge": "Advanced RAG Engineer"
+	                }
+	            ]
+        },
+        {
+            "phaseId": 3,
+            "phaseTitle": "Phase 3 — Agents & Multi-Agent Systems",
+            "courses": [
+                {
+                    "courseId": "3.1",
+                    "title": "Building Your First AI Agent",
+                    "duration": "2 weeks",
+                    "level": "Intermediate",
+                    "description": "Designing simple agents with tool calls, planning and memory patterns.",
+                    "lessons": [
+                        "Agent anatomy: Perception → Planning → Action → Feedback",
+                        "Tool design & safe function calling",
+                        "Short-term vs semantic memory",
+                        "Simple planning loops and retries"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Research & Email Agent",
+                            "description": "An agent that fetches articles, summarizes, and drafts an email reply or brief."
+                        }
+                    ],
+                    "tools": [
+                        "LangChain Agents",
+                        "OpenAI Function Calling",
+                        "Simple DB for memory (Redis / Chroma)"
+                    ],
+                    "learningOutcomes": [
+                        "Design agent control loops",
+                        "Implement secure tool calling and structured outputs",
+                        "Add basic memory to improve agent performance"
+                    ],
+                    "badge": "Agent Builder I"
+                },
+                {
+                    "courseId": "3.2",
+                    "title": "Multi-Agent Systems & Collaboration",
+                    "duration": "3 weeks",
+                    "level": "Advanced",
+                    "description": "Role specialization, negotiation, orchestration and multi-agent topologies.",
+                    "lessons": [
+                        "Topologies: hub-and-spoke, marketplace, hierarchy, swarm",
+                        "Role definition: Researcher, Planner, Executor, Reviewer",
+                        "CrewAI, AutoGen and Swarm patterns (conceptual + demos)",
+                        "Coordination, synchronization, and conflict resolution"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Growth Squad Multi-Agent System",
+                            "description": "Researcher + Writer + Reviewer agents that collaborate to produce and validate weekly growth reports."
+                        }
+                    ],
+                    "tools": [
+                        "CrewAI (concept/demo)",
+                        "AutoGen (concept/demo)",
+                        "LangGraph (for state/flows)"
+                    ],
+                    "learningOutcomes": [
+                        "Design multi-agent workflows for real tasks",
+                        "Implement inter-agent communication and role negotiation",
+                        "Add review/quality-check layers to reduce hallucinations"
+                    ],
+                    "badge": "Multi-Agent Orchestrator"
+                },
+                {
+                    "courseId": "3.3",
+                    "title": "Safety, Observability & Guardrails for Agents",
+                    "duration": "2 weeks",
+                    "level": "Advanced",
+                    "description": "Tracing, auditing, guardrails and policy enforcement for agentic systems.",
+                    "lessons": [
+                        "Observability: traces, logs, and telemetry (LangSmith, Phoenix)",
+                        "Guardrails: NeMo Guardrails, Llama Guard, policy gates",
+                        "Audit trails and HITL checkpoints",
+                        "Testing and stress scenarios for agents"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Safe Research Assistant",
+                            "description": "An agent instrumented with audit logs, safety checks, and an approval flow."
+                        }
+                    ],
+                    "tools": [
+                        "LangSmith",
+                        "Phoenix",
+                        "NeMo Guardrails",
+                        "OpenTelemetry"
+                    ],
+                    "learningOutcomes": [
+                        "Instrument agents for observability",
+                        "Implement guardrails and policy enforcement",
+                        "Design HITL workflows for critical operations"
+                    ],
+                    "badge": "Agent Safety Specialist"
+                }
+            ]
+        },
+        {
+            "phaseId": 4,
+            "phaseTitle": "Phase 4 — Finetuning, Dataset Engineering & Optimization",
+            "courses": [
+                {
+                    "courseId": "4.1",
+                    "title": "Finetuning & Model Adaptation",
+                    "duration": "3 weeks",
+                    "level": "Advanced",
+                    "description": "When to finetune vs use RAG, and how to adapt models efficiently.",
+                    "lessons": [
+                        "Decision framework: finetune vs RAG vs prompting",
+                        "Parameter-efficient finetuning (LoRA, Adapters)",
+                        "Model merging and multi-task finetuning concepts",
+                        "Handling memory and compute constraints"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Domain Support Bot Finetuning",
+                            "description": "LoRA finetune a model on domain support tickets and measure improvements."
+                        }
+                    ],
+                    "tools": [
+                        "Hugging Face Transformers",
+                        "BitsAndBytes",
+                        "PEFT libraries"
+                    ],
+                    "learningOutcomes": [
+                        "Decide when finetuning is beneficial",
+                        "Run a PEFT finetuning workflow",
+                        "Measure finetuning impact with evaluation harness"
+                    ],
+                    "badge": "Model Adaptation Specialist"
+                },
+                {
+                    "courseId": "4.2",
+                    "title": "Dataset Engineering & Synthetic Data",
+                    "duration": "2 weeks",
+                    "level": "Advanced",
+                    "description": "Data curation, augmentation, deduplication, and synthetic data generation using LLMs.",
+                    "lessons": [
+                        "Data quality metrics and coverage analysis",
+                        "Annotation strategies and deduplication",
+                        "Synthetic data generation with LLMs and filtering",
+                        "Data pipelines for finetuning"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Synthetic Training Dataset",
+                            "description": "Create and filter a synthetic dataset for a target domain and evaluate model improvements."
+                        }
+                    ],
+                    "tools": [
+                        "Python data tooling (pandas)",
+                        "LLM-based synthesis pipelines"
+                    ],
+                    "learningOutcomes": [
+                        "Produce high-quality training sets",
+                        "Apply synthetic data effectively",
+                        "Integrate dataset engineering into model workflows"
+                    ],
+                    "badge": "Dataset Engineer"
+                },
+                {
+                    "courseId": "4.3",
+                    "title": "Inference Optimization & Serving",
+                    "duration": "2 weeks",
+                    "level": "Advanced",
+                    "description": "Techniques to reduce latency and cost for serving LLMs and agent systems.",
+                    "lessons": [
+                        "vLLM, TGI, Ray Serve architectures",
+                        "Quantization, pruning and speculative decoding",
+                        "Semantic caching and idempotency",
+                        "Throughput, p95 latency planning and benchmarking"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Optimize Assistant for Latency & Cost",
+                            "description": "Compare different serving options, add semantic cache and report on cost/latency trade-offs."
+                        }
+                    ],
+                    "tools": [
+                        "vLLM",
+                        "Ray Serve",
+                        "Redis / semantic cache"
+                    ],
+                    "learningOutcomes": [
+                        "Choose serving architectures for scale",
+                        "Apply quantization and caching strategies",
+                        "Benchmark and optimize production systems"
+                    ],
+                    "badge": "LLMOps Engineer"
+                }
+            ]
+        },
+        {
+            "phaseId": 5,
+            "phaseTitle": "Phase 5 — AI Systems, LLMOps & Governance",
+            "courses": [
+                {
+                    "courseId": "5.1",
+                    "title": "AI System Architecture & Routing",
+                    "duration": "3 weeks",
+                    "level": "Advanced",
+                    "description": "Design end-to-end AI pipelines covering routing, gateways, caching and model selection.",
+                    "lessons": [
+                        "Model gateway & router patterns",
+                        "Context management, session state and streaming",
+                        "Traffic shaping: routing by cost, latency, capability",
+                        "Security basics: key management and PII handling"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Multi-Agent Helpdesk System",
+                            "description": "Deploy a routed system that selects models & tools based on request types, with streaming responses."
+                        }
+                    ],
+                    "tools": [
+                        "FastAPI",
+                        "Model routers (concepts)",
+                        "OpenTelemetry"
+                    ],
+                    "learningOutcomes": [
+                        "Architect scalable AI pipelines",
+                        "Implement model routing & streaming",
+                        "Integrate basic security and PII handling"
+                    ],
+                    "badge": "AI Systems Architect"
+                },
+                {
+                    "courseId": "5.2",
+                    "title": "Monitoring, Guardrails & Feedback Loops",
+                    "duration": "2 weeks",
+                    "level": "Advanced",
+                    "description": "Observability, feedback pipelines, A/B testing and governance for AI systems.",
+                    "lessons": [
+                        "Tracing & metrics: LangSmith, Phoenix",
+                        "Golden sets, online vs offline evals, CI for prompts",
+                        "Human-in-the-loop (HITL) and approval flows",
+                        "Policy governance, audit trails and compliance"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Feedback & Eval Dashboard",
+                            "description": "Add feedback capture, evaluate with automated tests, and create an operational dashboard."
+                        }
+                    ],
+                    "tools": [
+                        "LangSmith",
+                        "Phoenix",
+                        "TruLens",
+                        "Ragas"
+                    ],
+                    "learningOutcomes": [
+                        "Set up evaluation pipelines and dashboards",
+                        "Create HITL feedback loops and approval flows",
+                        "Operationalize continuous improvement"
+                    ],
+                    "badge": "LLMOps & Governance Specialist"
+                }
+            ]
+        },
+        {
+            "phaseId": 6,
+            "phaseTitle": "Phase 6 — Democratization & No-Code AI",
+            "courses": [
+                {
+                    "courseId": "6.1",
+                    "title": "Building Agents with No-Code Tools (Flowise & Dify)",
+                    "duration": "2 weeks",
+                    "level": "Beginner → Intermediate",
+                    "description": "Design business-ready agent flows without heavy code using visual builders.",
+                    "lessons": [
+                        "No-code vs code-first tradeoffs",
+                        "Flowise & Dify walkthroughs (building blocks, memory, variables)",
+                        "Testing, sandboxing and exporting flows",
+                        "Connecting to data sources (Google Drive, Notion, Sheets)"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Flowise Research Automation Bot",
+                            "description": "End-to-end no-code bot to fetch docs, summarize and post to Slack/Notion."
+                        }
+                    ],
+                    "tools": [
+                        "Flowise",
+                        "Dify",
+                        "Zapier / Make (integrations)"
+                    ],
+                    "learningOutcomes": [
+                        "Deliver production-ready no-code workflows",
+                        "Integrate no-code flows with business apps",
+                        "Maintain and iterate no-code automations"
+                    ],
+                    "badge": "No-Code AI Specialist"
+                },
+                {
+                    "courseId": "6.2",
+                    "title": "Integrating Business Apps & Enterprise Automation",
+                    "duration": "2 weeks",
+                    "level": "Intermediate",
+                    "description": "Practical integration of agents and workflows with business systems and CRMs.",
+                    "lessons": [
+                        "Connectors: Notion, Slack, Sheets, Airtable, Salesforce (concepts)",
+                        "Automating leads, tickets, and team notifications",
+                        "Security & access patterns for integrations",
+                        "Measuring business impact and ROI"
+                    ],
+                    "handsOnProjects": [
+                        {
+                            "title": "Lead Automation & Slack Integration",
+                            "description": "Capture leads, enrich via LLM, route to Slack & CRM with automated summaries."
+                        }
+                    ],
+                    "tools": [
+                        "Zapier",
+                        "Make (Integromat)",
+                        "Relevance AI"
+                    ],
+                    "learningOutcomes": [
+                        "Build integrations that automate core business processes",
+                        "Measure and present business impact",
+                        "Adopt enterprise-safe integration patterns"
+                    ],
+                    "badge": "Enterprise Integration Specialist"
+                }
+            ]
+        }
+  ],
+    "capstone": {
+        "title": "Capstone — Protocol-Aware Enterprise Agent",
+        "duration": "4 weeks",
+        "description": "End-to-end project integrating RAG, multi-agent orchestration, guardrails, observability and both code & no-code delivery.",
+        "coreRequirements": [
+            "RAG-backed knowledge base with citation & reranking",
+            "At least one multi-agent workflow (Researcher / Writer / Reviewer)",
+            "Observability & evaluation dashboard (traces, golden sets)",
+            "Guardrails & HITL approval flow",
+            "Deployment as an API + no-code flow (Flowise or Dify)",
+            "Business case writeup and ROI estimation"
+        ],
+        "deliverable": "Working system + technical writeup + 10-minute demo video + portfolio case study"
+    },
+  "certificationTracks": [
+        {
+            "id": "cert-PE",
+            "title": "Prompt Engineering Mastery",
+            "includes": [
+                "1.1",
+                "1.2",
+                "1.3 (choose 1 domain)"
+            ],
+            "outcome": "Prompt Engineer Certificate"
+        },
+        {
+            "id": "cert-RAG",
+            "title": "RAG & Context Engineering",
+            "includes": [
+                "2.1",
+                "2.2"
+            ],
+            "outcome": "RAG Engineer Certificate"
+        },
+        {
+            "id": "cert-Agent",
+            "title": "Agentic AI Developer",
+            "includes": [
+                "3.1",
+                "3.2",
+                "3.3"
+            ],
+            "outcome": "Agent Builder Certificate"
+        },
+        {
+            "id": "cert-LLMOps",
+            "title": "Model & Ops Engineer",
+            "includes": [
+                "4.1",
+                "4.2",
+                "4.3",
+                "5.1",
+                "5.2"
+            ],
+            "outcome": "LLMOps Professional"
+        },
+        {
+            "id": "cert-NoCode",
+            "title": "No-Code AI Specialist",
+            "includes": [
+                "6.1",
+                "6.2"
+            ],
+            "outcome": "No-Code AI Engineer"
+        },
+        {
+            "id": "cert-Full",
+            "title": "Certified Generative & Agentic AI Engineer",
+            "includes": "All phases + Capstone",
+            "outcome": "Full Program Certification"
+        }
+    ],
+  "programFeatures": {
+         "liveWorkshops": "Weekly live sessions for each module with hands-on walkthroughs and Q&A",
+         "labs": "Guided labs using real APIs, toolkits and datasets",
+         "projects": "12+ portfolio projects across domains and techniques",
+         "mentorship": "Community forums + periodic mentor office hours",
+         "updates": "Quarterly content refreshes and live 'What's New' sessions",
+         "delivery": "Materials provided as video + slides + notebooks + lab guides + project rubrics"
+     },
+     "enrollmentBenefits": [
+         "Lifetime access to course materials and content updates for enrolled tracks",
+         "Exclusive live update sessions when major AI changes are included",
+         "Portfolio review and feedback for capstone and selected projects",
+         "Badges and shareable certificates on completion"
+     ],
+     "termsAndLearningContinuityPolicy": {
+         "headline": "Terms & Learning Continuity Policy (Living Curriculum)",
+         "policy": [
+             "Continuous Updates: The course content is a living curriculum. If new models, frameworks, libraries or significant platform changes emerge, we will update or replace affected modules so learners receive current, practical training.",
+             "Quarterly Review Cadence: Core modules will be reviewed at least quarterly. Minor updates (e.g., API examples) will be pushed as they arise. Major shifts in tooling or best-practice will be covered in dedicated update sessions.",
+             "Learner Access: Enrolled learners receive access to updated content for the tracks they are enrolled in. Major curriculum revisions will be accompanied by a live webinar that explains what changed and why.",
+             "Principle-First Teaching: While we teach practical tools and frameworks, our curriculum emphasizes enduring engineering principles (prompting logic, evaluation methodology, context engineering, observability, and governance). This ensures skills remain relevant despite tooling changes.",
+             "Replacement of Tools: If a better or more popular framework replaces an existing one in a given module, we will adopt the new framework in the live curriculum and provide migration notes and code examples for learners to map old patterns to new ones.",
+             "Expert Oversight: All updates are reviewed by our AI engineering faculty and validated against real-world applicability, security, and ethical considerations.",
+             "Ethics & Compliance: If new regulatory or ethical frameworks (for example region- or industry-specific guidance) become relevant, they will be integrated promptly into applicable modules.",
+             "Communication: Learners will be notified via email/portal of material changes, and a changelog with dates and a short description will be maintained.",
+             "Scope: The policy covers curriculum content, example implementations, and recommended tooling. It does not guarantee support for custom third-party integrations beyond the scope of provided labs, but we will provide guidance and migration patterns."
+         ],
+         "shortPromise": "Tools will evolve. The curriculum will adapt. Your core skills will remain durable — and you’ll be kept up-to-date."
+    }
+}
