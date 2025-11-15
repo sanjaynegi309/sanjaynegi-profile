@@ -1,0 +1,407 @@
+[
+  {
+    "id": "aie-p0-c1",
+    "title": "AI Essentials for Everyone",
+    "level": "Beginner",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Recognize Generative AI capabilities and limits",
+      "Map AI use cases to business value",
+      "Build a basic no-code AI workflow"
+    ],
+    "tags": [
+      "ChatGPT / Playground",
+      "Flowise",
+      "Dify",
+      "AI Essentials"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/aie-p0-c1.png",
+    "lms_details_url": "/courses/aie-p0-c1",
+    "lms_enroll_url": "/enroll/aie-p0-c1",
+    "status": "coming_soon"
+  },
+  {
+    "id": "aie-p0-c2",
+    "title": "Python for Generative AI Fast-Track",
+    "level": "Intermediate",
+    "effort": "3 weeks",
+    "outcomes": [
+      "Be productive in Python for GenAI tasks",
+      "Integrate LLM APIs and validate structured outputs",
+      "Ship a simple API-backed GenAI microservice"
+    ],
+    "tags": [
+      "Python",
+      "Jupyter / Colab",
+      "FastAPI",
+      "OpenAI SDK",
+      "Python for GenAI"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/aie-p0-c2.png",
+    "lms_details_url": "/courses/aie-p0-c2",
+    "lms_enroll_url": "/enroll/aie-p0-c2",
+    "status": "coming_soon"
+  },
+  {
+    "id": "aie-p1-c1",
+    "title": "Prompt Engineering Fundamentals",
+    "level": "Intermediate",
+    "effort": "3 weeks",
+    "outcomes": [
+      "Design clear, reliable prompts for general tasks",
+      "Apply advanced prompting patterns for reasoning",
+      "Create a reusable prompt library"
+    ],
+    "tags": [
+      "OpenAI Playground",
+      "Guidance",
+      "LMQL",
+      "Prompt Fundamentals"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/aie-p1-c1.png",
+    "lms_details_url": "/courses/aie-p1-c1",
+    "lms_enroll_url": "/enroll/aie-p1-c1",
+    "status": "coming_soon"
+  },
+  {
+    "id": "aie-p1-c2",
+    "title": "Structured Outputs & Programmatic Prompting",
+    "level": "Advanced",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Produce consistently structured API-ready responses",
+      "Automate prompt pipelines and validation",
+      "Integrate schema validation into production flows"
+    ],
+    "tags": [
+      "Pydantic",
+      "DSPy",
+      "LMQL",
+      "OpenAI / HF APIs",
+      "Structured Prompting"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/aie-p1-c2.png",
+    "lms_details_url": "/courses/aie-p1-c2",
+    "lms_enroll_url": "/enroll/aie-p1-c2",
+    "status": "coming_soon"
+  },
+  {
+    "id": "aie-p1-c3",
+    "title": "Domain Prompting Series (Choose one or more)",
+    "level": "Advanced",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Generate platform-tailored marketing content at scale"
+    ],
+    "tags": [
+      "OpenAI",
+      "Claude",
+      "Canva",
+      "Structured Prompting"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/aie-p1-c3.png",
+    "lms_details_url": "/courses/aie-p1-c3",
+    "lms_enroll_url": "/enroll/aie-p1-c3",
+    "status": "coming_soon"
+  },
+  {
+    "id": "2.1",
+    "title": "RAG Foundations",
+    "level": "Intermediate",
+    "effort": "3 weeks",
+    "outcomes": [
+      "Choose chunking & embedding strategies for datasets",
+      "Build a basic RAG pipeline",
+      "Evaluate retrieval fidelity and citation quality"
+    ],
+    "tags": [
+      "FAISS",
+      "Chroma",
+      "Pinecone",
+      "LangChain",
+      "LlamaIndex",
+      "RAG Foundations"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/2.1.png",
+    "lms_details_url": "/courses/2.1",
+    "lms_enroll_url": "/enroll/2.1",
+    "status": "coming_soon"
+  },
+  {
+    "id": "2.2",
+    "title": "Advanced RAG Pipelines & Evaluation",
+    "level": "Advanced",
+    "effort": "3 weeks",
+    "outcomes": [
+      "Implement hybrid retrieval strategies",
+      "Integrate multimodal sources into RAG",
+      "Run evaluation pipelines to measure faithfulness"
+    ],
+    "tags": [
+      "Haystack",
+      "LlamaIndex",
+      "Ragas",
+      "TruLens",
+      "Advanced RAG Engineer"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/2.2.png",
+    "lms_details_url": "/courses/2.2",
+    "lms_enroll_url": "/enroll/2.2",
+    "status": "coming_soon"
+  },
+  {
+    "id": "3.1",
+    "title": "Building Your First AI Agent",
+    "level": "Intermediate",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Design agent control loops",
+      "Implement secure tool calling and structured outputs",
+      "Add basic memory to improve agent performance"
+    ],
+    "tags": [
+      "LangChain Agents",
+      "OpenAI Function Calling",
+      "Redis",
+      "Chroma",
+      "Agent Builder I"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/3.1.png",
+    "lms_details_url": "/courses/3.1",
+    "lms_enroll_url": "/enroll/3.1",
+    "status": "coming_soon"
+  },
+  {
+    "id": "3.2",
+    "title": "Multi-Agent Systems & Collaboration",
+    "level": "Advanced",
+    "effort": "3 weeks",
+    "outcomes": [
+      "Design multi-agent workflows for real tasks",
+      "Implement inter-agent communication and role negotiation",
+      "Add review/quality-check layers to reduce hallucinations"
+    ],
+    "tags": [
+      "CrewAI",
+      "AutoGen",
+      "LangGraph",
+      "Multi-Agent Orchestrator"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/3.2.png",
+    "lms_details_url": "/courses/3.2",
+    "lms_enroll_url": "/enroll/3.2",
+    "status": "coming_soon"
+  },
+  {
+    "id": "3.3",
+    "title": "Safety, Observability & Guardrails for Agents",
+    "level": "Advanced",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Instrument agents for observability",
+      "Implement guardrails and policy enforcement",
+      "Design HITL workflows for critical operations"
+    ],
+    "tags": [
+      "LangSmith",
+      "Phoenix",
+      "NeMo Guardrails",
+      "OpenTelemetry",
+      "Agent Safety Specialist"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/3.3.png",
+    "lms_details_url": "/courses/3.3",
+    "lms_enroll_url": "/enroll/3.3",
+    "status": "coming_soon"
+  },
+  {
+    "id": "4.1",
+    "title": "Finetuning & Model Adaptation",
+    "level": "Advanced",
+    "effort": "3 weeks",
+    "outcomes": [
+      "Decide when finetuning is beneficial",
+      "Run a PEFT finetuning workflow",
+      "Measure finetuning impact with evaluation harness"
+    ],
+    "tags": [
+      "Hugging Face Transformers",
+      "BitsAndBytes",
+      "PEFT",
+      "Model Adaptation Specialist"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/4.1.png",
+    "lms_details_url": "/courses/4.1",
+    "lms_enroll_url": "/enroll/4.1",
+    "status": "coming_soon"
+  },
+  {
+    "id": "4.2",
+    "title": "Dataset Engineering & Synthetic Data",
+    "level": "Advanced",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Produce high-quality training sets",
+      "Apply synthetic data effectively",
+      "Integrate dataset engineering into model workflows"
+    ],
+    "tags": [
+      "pandas",
+      "LLM-based synthesis",
+      "Dataset Engineer"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/4.2.png",
+    "lms_details_url": "/courses/4.2",
+    "lms_enroll_url": "/enroll/4.2",
+    "status": "coming_soon"
+  },
+  {
+    "id": "4.3",
+    "title": "Inference Optimization & Serving",
+    "level": "Advanced",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Choose serving architectures for scale",
+      "Apply quantization and caching strategies",
+      "Benchmark and optimize production systems"
+    ],
+    "tags": [
+      "vLLM",
+      "Ray Serve",
+      "Redis",
+      "LLMOps Engineer"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/4.3.png",
+    "lms_details_url": "/courses/4.3",
+    "lms_enroll_url": "/enroll/4.3",
+    "status": "coming_soon"
+  },
+  {
+    "id": "5.1",
+    "title": "AI System Architecture & Routing",
+    "level": "Advanced",
+    "effort": "3 weeks",
+    "outcomes": [
+      "Architect scalable AI pipelines",
+      "Implement model routing & streaming",
+      "Integrate basic security and PII handling"
+    ],
+    "tags": [
+      "FastAPI",
+      "Model routing",
+      "OpenTelemetry",
+      "AI Systems Architect"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/5.1.png",
+    "lms_details_url": "/courses/5.1",
+    "lms_enroll_url": "/enroll/5.1",
+    "status": "coming_soon"
+  },
+  {
+    "id": "5.2",
+    "title": "Monitoring, Guardrails & Feedback Loops",
+    "level": "Advanced",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Set up evaluation pipelines and dashboards",
+      "Create HITL feedback loops and approval flows",
+      "Operationalize continuous improvement"
+    ],
+    "tags": [
+      "LangSmith",
+      "Phoenix",
+      "TruLens",
+      "Ragas",
+      "LLMOps & Governance Specialist"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/5.2.png",
+    "lms_details_url": "/courses/5.2",
+    "lms_enroll_url": "/enroll/5.2",
+    "status": "coming_soon"
+  },
+  {
+    "id": "6.1",
+    "title": "Building Agents with No-Code Tools",
+    "level": "Intermediate",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Deliver production-ready no-code workflows",
+      "Integrate no-code flows with business apps",
+      "Maintain and iterate no-code automations"
+    ],
+    "tags": [
+      "Flowise",
+      "Dify",
+      "Zapier",
+      "No-Code AI Specialist"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/6.1.png",
+    "lms_details_url": "/courses/6.1",
+    "lms_enroll_url": "/enroll/6.1",
+    "status": "coming_soon"
+  },
+  {
+    "id": "6.2",
+    "title": "Integrating Business Apps & Enterprise Automation",
+    "level": "Intermediate",
+    "effort": "2 weeks",
+    "outcomes": [
+      "Build integrations that automate core business processes",
+      "Measure and present business impact",
+      "Adopt enterprise-safe integration patterns"
+    ],
+    "tags": [
+      "Zapier",
+      "Make",
+      "Relevance AI",
+      "Enterprise Integration Specialist"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/6.2.png",
+    "lms_details_url": "/courses/6.2",
+    "lms_enroll_url": "/enroll/6.2",
+    "status": "coming_soon"
+  },
+  {
+    "id": "capstone",
+    "title": "Capstone — Protocol-Aware Enterprise Agent",
+    "level": "Advanced",
+    "effort": "4 weeks",
+    "outcomes": [
+      "RAG-backed knowledge base with citation & reranking",
+      "At least one multi-agent workflow (Researcher / Writer / Reviewer)",
+      "Observability & evaluation dashboard (traces, golden sets)",
+      "Guardrails & HITL approval flow",
+      "Deployment as an API + no-code flow",
+      "Business case writeup and ROI estimation"
+    ],
+    "tags": [
+      "RAG",
+      "Multi-Agent",
+      "Observability",
+      "Guardrails",
+      "Capstone"
+    ],
+    "price": "",
+    "thumbnail": "/assets/images/capstone.png",
+    "lms_details_url": "/courses/capstone",
+    "lms_enroll_url": "/enroll/capstone",
+    "status": "coming_soon"
+  }
+]

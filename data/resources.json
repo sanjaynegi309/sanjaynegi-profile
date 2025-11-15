@@ -1,0 +1,50 @@
+[
+  {
+    "id": "res-1",
+    "title": "The Future of AI Engineering",
+    "category": "AI Engineering",
+    "type": "Article",
+    "description": "An in-depth look at the trends shaping the future of AI engineering.",
+    "url": "#"
+  },
+  {
+    "id": "res-2",
+    "title": "Getting Started with Docker",
+    "category": "Dev Tools",
+    "type": "Video",
+    "description": "A beginner-friendly video tutorial on getting started with Docker.",
+    "url": "#"
+  },
+  {
+    "id": "res-3",
+    "title": "Case Study: Implementing a CI/CD Pipeline",
+    "category": "Case Studies",
+    "type": "Article",
+    "description": "How a leading tech company built a robust CI/CD pipeline.",
+    "url": "#"
+  },
+  {
+    "id": "res-4",
+    "title": "Advanced Git Techniques",
+    "category": "Dev Tools",
+    "type": "Notebook",
+    "description": "An interactive notebook covering advanced Git commands and workflows.",
+    "url": "#"
+  },
+  {
+    "id": "res-5",
+    "title": "The Ethics of AI",
+    "category": "AI Engineering",
+    "type": "Article",
+    "description": "A thought-provoking article on the ethical considerations of AI.",
+    "url": "#"
+  },
+  {
+    "id": "res-6",
+    "title": "Case Study: AdTech at Scale",
+    "category": "Case Studies",
+    "type": "Video",
+    "description": "A video presentation on how a major retailer built their AdTech platform.",
+    "url": "#"
+  }
+]

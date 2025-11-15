@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillUp with Sanjay - Courses</title>
-    <meta name="description" content="Browse our self-paced courses in AI, software development, and ad technology.">
+    <title>AI Engineering Program - SkillUp with Sanjay</title>
+    <meta name="description" content="Join our 1-year live workshop on Generative & Agentic AI Engineering.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/courses.html">
-    <meta property="og:title" content="SkillUp with Sanjay - Courses">
-    <meta property="og:description" content="Browse our self-paced courses in AI, software development, and ad technology.">
-    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://example.com/ai_engineering.html">
+    <meta property="og:title" content="AI Engineering Program - SkillUp with Sanjay">
+    <meta property="og:description" content="Join our 1-year live workshop on Generative & Agentic AI Engineering.">
+    <meta property="og:image" content="https://example.com/assets/images/og-image-ai-eng.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://example.com/courses.html">
-    <meta property="twitter:title" content="SkillUp with Sanjay - Courses">
-    <meta property="twitter:description" content="Browse our self-paced courses in AI, software development, and ad technology.">
-    <meta property="twitter:image" content="https://example.com/assets/images/og-image.jpg">
+    <meta property="twitter:url" content="https://example.com/ai_engineering.html">
+    <meta property="twitter:title" content="AI Engineering Program - SkillUp with Sanjay">
+    <meta property="twitter:description" content="Join our 1-year live workshop on Generative & Agentic AI Engineering.">
+    <meta property="twitter:image" content="https://example.com/assets/images/og-image-ai-eng.jpg">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -33,13 +33,6 @@
 	   gtag('config', 'G-NNJRMTPHZK');
   </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": []
-    }
-    </script>
 </head>
 <body class="antialiased font-sans">
     <div id="canvas-container"></div>
@@ -52,14 +45,10 @@
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
-                <a href="courses.html" class="text-gray-300 hover:text-white transition-colors" aria-current="page">Courses</a>
+                <a href="courses.html" class="text-gray-300 hover:text-white transition-colors">Courses</a>
                 <a href="workshops.html" class="text-gray-300 hover:text-white transition-colors">Workshops</a>
-                <!-- <a href="ai_engineering.html" class="text-gray-300 hover:text-white transition-colors">AI Engineering</a> -->
+                <a href="ai_engineering.html" class="text-gray-300 hover:text-white transition-colors" aria-current="page">AI Engineering</a>
                 <a href="resources.html" class="text-gray-300 hover:text-white transition-colors">Resources</a>
-                <!--
-                <a href="instructors.html" class="text-gray-300 hover:text-white transition-colors">Instructors</a>
-                <a href="dashboard.html" class="text-gray-300 hover:text-white transition-colors">Dashboard</a>
-                -->
                 <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
                 <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
             </div>
@@ -81,20 +70,55 @@
             <a href="index.html" class="block text-gray-300 hover:text-white">Home</a>
             <a href="courses.html" class="block text-gray-300 hover:text-white">Courses</a>
             <a href="workshops.html" class="block text-gray-300 hover:text-white">Workshops</a>
-            <!-- <a href="ai_engineering.html" class="block text-gray-300 hover:text-white">AI Engineering</a> -->
+            <a href="ai_engineering.html" class="block text-gray-300 hover:text-white" aria-current="page">AI Engineering</a>
             <a href="resources.html" class="block text-gray-300 hover:text-white">Resources</a>
-            <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
-            <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
-            <a href="https-lms.example.com/login" target="_blank" rel="noopener noreferrer" class="block btn-glow text-center mt-2">Login</a>
+            <a href="about.html" class="block text-gray-300 hover:text-white">About</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+            <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="block btn-glow text-center mt-2">Login</a>
         </div>
     </header>
 
     <main id="main-content" class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-center mb-8">Our Courses</h1>
-        <p class="text-center text-xl font-semibold text-white-600 mb-8 hot-badge">Coming Soon!</p>
-        <div id="courses-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Courses will be loaded here by site.js -->
-        </div>
+        <section id="program-hero" class="text-center py-12">
+            <h1 id="program-title" class="text-4xl md:text-6xl font-bold mb-4"></h1>
+            <p id="program-tagline" class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-300"></p>
+        </section>
+
+        <section id="program-highlights" class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card">
+                    <h3 class="font-bold text-lg mb-2">Format</h3>
+                    <div id="program-format"></div>
+                </div>
+                <div class="glass-card">
+                    <h3 class="font-bold text-lg mb-2">Duration</h3>
+                    <div id="program-duration"></div>
+                </div>
+                <div class="glass-card">
+                    <h3 class="font-bold text-lg mb-2">Ideal For</h3>
+                    <ul id="program-ideal-for" class="list-disc list-inside"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="course-details" class="mb-12">
+            <div class="text-center mb-8">
+                <a href="#" class="btn-glow">Check Course Fee & Register</a>
+            </div>
+            <div id="phases-container" class="space-y-12">
+                <!-- Phases and courses will be injected here by JavaScript -->
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="btn-glow">Check Course Fee & Register</a>
+            </div>
+        </section>
+
+        <section id="terms-and-conditions" class="glass-card">
+            <h2 class="text-2xl font-bold mb-4" id="terms-headline"></h2>
+            <div id="terms-policy" class="space-y-2"></div>
+            <p class="mt-4" id="terms-short-promise"></p>
+        </section>
+
     </main>
 
     <footer class="bg-transparent text-white">
@@ -134,5 +158,6 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js" defer></script>
     <script src="assets/js/p5-particles.js" defer></script>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/ai_engineering.js" defer></script>
 </body>
 </html>

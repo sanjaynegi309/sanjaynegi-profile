@@ -1,0 +1,254 @@
+:root {
+    --primary: #0a0a0a;
+    --accent: #00d4ff;
+    --accent-2: #ff006e;
+    --accent-3: #8338ec;
+    --bg: #000000;
+    --card: rgba(255, 255, 255, 0.03);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --text: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+h1, h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(45deg, var(--accent), var(--accent-2), var(--accent-3));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.btn-glow {
+    padding: 1rem 2rem;
+    border: 2px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--accent);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.btn-glow:hover::before {
+    left: 0;
+}
+
+.btn-glow:hover {
+    color: var(--bg);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+}
+
+.glass-card {
+    background: var(--card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    transition: left 0.5s ease;
+}
+
+.glass-card:hover::before {
+    left: 100%;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+}
+
+.glass-card-hot {
+    background: #1a0f13; /* A dark, reddish-black background */
+    border: 1px solid #ff006e; /* Use the main accent color for the border */
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 25px rgba(255, 0, 110, 0.4); /* Make the glow a bit stronger */
+}
+.glass-card-hot:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 40px rgba(255, 0, 110, 0.6); /* Enhance hover shadow */
+    background: #2b1720; /* Slightly lighten background on hover */
+}
+
+.hot-badge {
+    background-color: #ff006e; /* --accent-2 */
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    animation: pulse 1.5s infinite;
+}
+
+.btn-glow-hot {
+    padding: 0.8rem 1.8rem;
+    border: 2px solid #ff006e;
+    background: transparent;
+    color: #ff006e;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.glass-card-hot:hover .btn-glow-hot {
+    background: #ff006e;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 0, 110, 0.4);
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 110, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px 15px rgba(255, 0, 110, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 110, 0);
+    }
+}
+
+.highlight-date-time {
+    background: var(--accent-3);
+    color: var(--text);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-top: 0.5rem;
+    box-shadow: 0 0 15px rgba(131, 56, 236, 0.5); /* Corresponds to --accent-3 */
+    animation: pulse-purple 2s infinite;
+}
+
+@keyframes pulse-purple {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(131, 56, 236, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(131, 56, 236, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(131, 56, 236, 0.5);
+    }
+}
+
+.social-icons a {
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-linkedin:hover {
+    color: #0A66C2;
+}
+
+.fa-instagram:hover {
+    color: #E4405F;
+}
+
+.fa-facebook:hover {
+    color: #1877F2;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.tag-blue {
+    background-color: rgba(0, 212, 255, 0.2); /* --accent with alpha */
+    border: 1px solid rgba(0, 212, 255, 0.4);
+}
+
+.tag-purple {
+    background-color: rgba(131, 56, 236, 0.2); /* --accent-3 with alpha */
+    border: 1px solid rgba(131, 56, 236, 0.4);
+}

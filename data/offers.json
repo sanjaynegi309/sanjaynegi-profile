@@ -1,0 +1,14 @@
+[
+  {
+    "id": "offer-1",
+    "title": "Early Bird Discount",
+    "description": "Get 20% off any workshop when you register 30 days in advance.",
+    "promo_code": "EARLYBIRD20"
+  },
+  {
+    "id": "offer-2",
+    "title": "Bundle & Save",
+    "description": "Enroll in any 3 courses and get 15% off the total price.",
+    "promo_code": "BUNDLE15"
+  }
+]

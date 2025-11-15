@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillUp with Sanjay - Courses</title>
-    <meta name="description" content="Browse our self-paced courses in AI, software development, and ad technology.">
+    <title>SkillUp with Sanjay - Resources</title>
+    <meta name="description" content="Explore free resources, articles, and tutorials on AI, AdTech, and more from SkillUp with Sanjay.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/courses.html">
-    <meta property="og:title" content="SkillUp with Sanjay - Courses">
-    <meta property="og:description" content="Browse our self-paced courses in AI, software development, and ad technology.">
+    <meta property="og:url" content="https://example.com/resources.html">
+    <meta property="og:title" content="SkillUp with Sanjay - Resources">
+    <meta property="og:description" content="Explore free resources, articles, and tutorials on AI, AdTech, and more from SkillUp with Sanjay.">
     <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://example.com/courses.html">
-    <meta property="twitter:title" content="SkillUp with Sanjay - Courses">
-    <meta property="twitter:description" content="Browse our self-paced courses in AI, software development, and ad technology.">
+    <meta property="twitter:url" content="https://example.com/resources.html">
+    <meta property="twitter:title" content="SkillUp with Sanjay - Resources">
+    <meta property="twitter:description" content="Explore free resources, articles, and tutorials on AI, AdTech, and more from SkillUp with Sanjay.">
     <meta property="twitter:image" content="https://example.com/assets/images/og-image.jpg">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
   <script>
@@ -33,29 +32,21 @@
 	   gtag('config', 'G-NNJRMTPHZK');
   </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": []
-    }
-    </script>
 </head>
-<body class="antialiased font-sans">
+<body class=" antialiased font-sans">
     <div id="canvas-container"></div>
-    <a href="#main-content" class="sr-only focus:not-sr-only text-indigo-600">Skip to main content</a>
+    <a href="#main-content" class="sr-only focus:not-sr-only text-indigo-400">Skip to main content</a>
 
     <header class="bg-transparent sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center"><img src="assets/images/logo.png" alt="SkillUp with Sanjay Logo" class="h-10"></a>
 
-            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-6">
                 <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
-                <a href="courses.html" class="text-gray-300 hover:text-white transition-colors" aria-current="page">Courses</a>
+                <a href="courses.html" class="text-gray-300 hover:text-white transition-colors">Courses</a>
                 <a href="workshops.html" class="text-gray-300 hover:text-white transition-colors">Workshops</a>
                 <!-- <a href="ai_engineering.html" class="text-gray-300 hover:text-white transition-colors">AI Engineering</a> -->
-                <a href="resources.html" class="text-gray-300 hover:text-white transition-colors">Resources</a>
+                <a href="resources.html" class="text-gray-300 hover:text-white transition-colors" aria-current="page">Resources</a>
                 <!--
                 <a href="instructors.html" class="text-gray-300 hover:text-white transition-colors">Instructors</a>
                 <a href="dashboard.html" class="text-gray-300 hover:text-white transition-colors">Dashboard</a>
@@ -68,47 +59,75 @@
                 <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="btn-glow">Login</a>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </nav>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 glass-card">
             <a href="index.html" class="block text-gray-300 hover:text-white">Home</a>
             <a href="courses.html" class="block text-gray-300 hover:text-white">Courses</a>
             <a href="workshops.html" class="block text-gray-300 hover:text-white">Workshops</a>
             <!-- <a href="ai_engineering.html" class="block text-gray-300 hover:text-white">AI Engineering</a> -->
-            <a href="resources.html" class="block text-gray-300 hover:text-white">Resources</a>
-            <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
-            <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
-            <a href="https-lms.example.com/login" target="_blank" rel="noopener noreferrer" class="block btn-glow text-center mt-2">Login</a>
+            <a href="resources.html" class="block text-gray-300 hover:text-white" aria-current="page">Resources</a>
+            <a href="about.html" class="block text-gray-300 hover:text-white">About</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+            <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="block btn-glow text-center mt-2">Login</a>
         </div>
     </header>
 
-    <main id="main-content" class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold text-center mb-8">Our Courses</h1>
-        <p class="text-center text-xl font-semibold text-white-600 mb-8 hot-badge">Coming Soon!</p>
-        <div id="courses-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Courses will be loaded here by site.js -->
-        </div>
+
+    <main id="main-content" class="container mx-auto px-6 py-12 text-white relative z-10">
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animated-gradient-text">Resource Library</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Your hub for insightful articles, tools, and guides.</p>
+        </section>
+		<!--
+        <section class="mb-12">
+            <div class="flex flex-col md:flex-row gap-4 max-w-4xl mx-auto">
+                <input type="search" id="search-box" placeholder="Search resources..." class="form-input flex-grow">
+                <select id="category-filter" class="form-input">
+                    <option value="all">All Categories</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="resources-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        </section>
+        -->
+        <section class="mb-16">
+          <h2 class="text-3xl font-bold text-center mb-8 animated-gradient-text">Featured Resources</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="https://www.promptingguide.ai/" target="_blank" rel="noopener noreferrer" class="glass-card p-6 block hover:border-indigo-400 transition-colors">
+              <h3 class="text-xl font-bold mb-2">Prompt Engineering Guide</h3>
+              <p class="text-gray-400">A comprehensive guide to prompt engineering techniques.</p>
+            </a>
+            <a href="https://brightpool.notion.site/ChatGPT-Prompt-Pack-ddaaee466a434527a58a4d6fc3027fb5?pvs=143" target="_blank" rel="noopener noreferrer" class="glass-card p-6 block hover:border-indigo-400 transition-colors">
+              <h3 class="text-xl font-bold mb-2">ChatGPT Prompt Pack</h3>
+              <p class="text-gray-400">A collection of prompts for various tasks with ChatGPT.</p>
+            </a>
+            <a href="resources/nano-banana-sample-prompts.html"  target="_blank"  class="glass-card p-6 block hover:border-indigo-400 transition-colors">
+              <h3 class="text-xl font-bold mb-2">Nano Banana Figurine Lab</h3>
+              <p class="text-gray-400">A fun lab to generate prompts for creating nano banana figurines.</p>
+            </a>
+          </div>
+        </section>
     </main>
 
-    <footer class="bg-transparent text-white">
+    <footer class="text-white relative z-10 mt-12">
         <div class="container mx-auto px-6 py-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <div>
                     <h3 class="font-bold text-lg mb-2">SkillUp with Sanjay</h3>
                     <p class="text-gray-400">Upskilling the next generation of tech leaders.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-lg mb-2">Quick Links</h3>
-                    <ul>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                          <!--
 						<li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
 						<li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
@@ -122,16 +141,20 @@
 						<a href="https://www.linkedin.com/in/sanjay-negi-ai/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
 						<a href="https://www.instagram.com/skillup_with_sanjay/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
 						<a href="https://www.facebook.com/skillupwithsanjay/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
+					</div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-6 flex justify-between items-center text-sm text-gray-400">
+            <div class="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                 <p>&copy; 2025 SkillUp with Sanjay. All rights reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    <label for="animation-toggle" class="mr-2">Disable Animations:</label>
+                    <input type="checkbox" id="animation-toggle">
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" defer></script>
     <script src="assets/js/p5-particles.js" defer></script>
     <script src="assets/js/site.js" defer></script>
 </body>
