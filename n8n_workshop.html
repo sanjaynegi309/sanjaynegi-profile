@@ -3,93 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Workflow Automation with n8n — 6-Day Live Sprint (Seats Full)</title>
-  <meta name="description" content="6-session live n8n sprint: build real automations connecting Gmail, Notion, Slack, Google Sheets + LLM agents. Live on Zoom.">
+  <title>Workflow Automation with n8n — 6-Day Live Sprint</title>
+  <meta name="description" content="6-session live n8n sprint: build real automations connecting Gmail, Notion, Slack, Google Sheets + LLM agents. Live on Zoom. Starts Dec 13, 2025.">
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- preserved original stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css">
-
-  <style>
-    /* TOP banner */
-    #seats-full-banner {
-      position: sticky;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 99999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      padding: 18px 12px;
-      background: linear-gradient(90deg,#ff3b30,#ff8a00);
-      color: white;
-      font-weight: 800;
-      font-family: 'Space Grotesk', sans-serif;
-      letter-spacing: 0.03em;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-      text-align: center;
-      flex-wrap: wrap;
-    }
-    #seats-full-banner .sub {
-      font-weight: 600;
-      font-size: 0.95rem;
-      opacity: 0.95;
-    }
-    #seats-full-banner .dot {
-      width:10px;height:10px;border-radius:50%;background:#fff;opacity:.9;
-    }
-
-    /* disable visuals for CTAs */
-    .disabled-cta {
-      pointer-events: none !important;
-      opacity: 0.45 !important;
-      filter: grayscale(60%) contrast(.9) !important;
-      cursor: not-allowed !important;
-      user-select: none !important;
-    }
-    .disabled-cta[aria-disabled="true"] { box-shadow: none !important; }
-
-    /* blocker overlay placed above the button area */
-    .cta-blocker {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: .6rem;
-      pointer-events: auto;
-      background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.4));
-      color: white;
-      font-weight: 700;
-      font-size: 0.95rem;
-      border-radius: 999px;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      z-index: 99998;
-    }
-    .cta-blocker svg { width: 22px; height: 22px; flex: 0 0 22px; }
-    .cta-wrapper { position: relative; display: inline-block; }
-    .sr-seats { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-    @media (max-width: 640px) {
-      #seats-full-banner { padding: 14px 8px; font-size: 0.95rem; }
-      #seats-full-banner .sub { font-size: 0.85rem; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
 <body class="antialiased font-sans bg-gray-900 text-gray-200">
-  <!-- TOP: Seats Full Banner -->
-  <div id="seats-full-banner" role="status" aria-live="polite">
-    <div class="dot" aria-hidden="true"></div>
-    <div style="display:flex;flex-direction:column;align-items:center;">
-      <div style="font-size:1.25rem;">SEATS FULL</div>
-      <div class="sub" style="font-size:0.95rem;">This was the last batch of 2025 — we will update this page when the next batch is planned.</div>
-    </div>
-  </div>
-
-  <div class="sr-seats" aria-hidden="false">Seats are full. This page will be updated when the next batch is planned.</div>
-
   <main class="container mx-auto px-6 py-12">
     <!-- HERO -->
     <section class="hero text-center py-12">
@@ -97,14 +17,9 @@
       <h1 class="text-4xl md:text-5xl font-bold my-4">Workflow Automation with <span class="text-indigo-300">n8n</span></h1>
       <p class="text-lg md:text-xl mb-6 max-w-3xl mx-auto text-gray-300">6-Day Live Sprint to build real automations — connect apps, move data, and ship AI-powered workflows step-by-step. No theory dumps. 100% hands-on.</p>
 
-      <div class="cta-row flex justify-center space-x-4" id="hero-ctas">
-        <span class="cta-wrapper">
-          <a class="btn-glow btn" href="https://learn.sanjaynegi.in/l/5d29a0fbc4" target="_blank">Reserve My Spot →</a>
-        </span>
-
-        <span class="cta-wrapper">
-          <a class="btn-glow-secondary btn" href="#curriculum">See What You Build →</a>
-        </span>
+      <div class="cta-row flex justify-center space-x-4">
+        <a class="btn-glow" href="https://learn.sanjaynegi.in/l/5d29a0fbc4" target="_blank">Reserve My Spot →</a>
+        <a class="btn-glow-secondary btn-glow" href="#curriculum">See What You Build →</a>
       </div>
 
       <div class="hero-meta mt-8 flex justify-center space-x-4 text-gray-400">
@@ -144,9 +59,7 @@
       </div>
 
       <div class="mt-6 text-center">
-        <span class="cta-wrapper">
-          <a class="btn-glow btn" href="https://learn.sanjaynegi.in/l/5d29a0fbc4" target="_blank">Reserve My Spot →</a>
-        </span>
+        <a class="btn-glow" href="https://learn.sanjaynegi.in/l/5d29a0fbc4" target="_blank">Reserve My Spot →</a>
       </div>
     </section>
 
@@ -173,15 +86,55 @@
 
     <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
 
+    <!-- WHO IS THIS FOR -->
+    <section class="py-8">
+      <h2 class="text-2xl font-bold text-center mb-6">Who this is for</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 text-center">
+          <strong>Developers & Founders</strong>
+          <p class="text-gray-400 mt-2">Automate repetitive work, connect services, ship integrations fast.</p>
+        </div>
+        <div class="glass-card p-6 text-center">
+          <strong>AI & No-code Enthusiasts</strong>
+          <p class="text-gray-400 mt-2">Learn how to combine LLMs with workflows and ship agents that act for you.</p>
+        </div>
+        <div class="glass-card p-6 text-center">
+          <strong>Anyone who wants to save time</strong>
+          <p class="text-gray-400 mt-2">Business owners, creators, and operators who want reliable automation without getting lost in code.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
+
+    <!-- INCLUDES -->
+    <section class="py-8">
+      <h2 class="text-2xl font-bold text-center mb-6">What's included</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card p-6">
+          <h4 class="font-bold mb-2">Live Sessions</h4>
+          <p class="text-gray-400">6 live Zoom workshops (2 hours each) — follow and build along.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h4 class="font-bold mb-2">Recordings</h4>
+          <p class="text-gray-400">1-week replay access for each session so you can catch up.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h4 class="font-bold mb-2">Templates & Files</h4>
+          <p class="text-gray-400">Downloadable workflow files, example integrations, and docs.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
+
     <!-- CTA BLOCK -->
     <section id="register" class="text-center py-8">
       <div class="glass-card p-8 max-w-2xl mx-auto">
         <h3 class="text-2xl font-bold mb-3">Before 2025 ends — make one game-changing move</h3>
         <p class="text-gray-400 mb-6">Start mastering automation the right way. No experience needed — just curiosity and 2 hours a week.</p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <span class="cta-wrapper">
-            <a class="btn-glow btn" href="https://learn.sanjaynegi.in/l/5d29a0fbc4" target="_blank">Reserve My Spot →</a>
-          </span>
+          <a class="btn-glow" href="https://learn.sanjaynegi.in/l/5d29a0fbc4" target="_blank">Reserve My Spot →</a>
         </div>
         <div class="mt-4 text-gray-400">Recording access for 1 week · Templates included · Zoom link after registration</div>
       </div>
@@ -189,15 +142,16 @@
 
     <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
 
-    <!-- MENTOR -->
+    <!-- MENTOR / HOST -->
     <section aria-label="Mentor">
         <h2 class="text-3xl font-bold text-center mb-8">Meet your mentor</h2>
         <div class="mentor-card glass-card p-8 md:flex items-center">
             <img src="assets/images/sanjay_mentor.jpg" alt="Sanjay Negi" class="w-32 h-32 rounded-full mx-auto md:mx-0 md:mr-8">
             <div>
                 <h3 class="text-2xl font-bold">Sanjay Negi</h3>
-                <p class="text-gray-400 mt-4">GenAI Architect & Mentor • 22+ years building enterprise backend systems.</p>
+                <p class="text-gray-400 mt-4">GenAI Architect & Mentor • 22+ years building enterprise backend systems. Sanjay mentors senior engineers to translate architecture instincts into production GenAI systems — RAG, LLMOps, multi-agent orchestration and observability.</p>
                 <div class="mt-6 flex space-x-4">
+
                     <a class="btn-glow-secondary" href="#story">Read origin story</a>
                 </div>
             </div>
@@ -205,133 +159,15 @@
 
         <div id="story" class="glass-card p-8 mt-8">
             <h3 class="text-2xl font-bold">Why I teach this</h3>
-            <p class="text-gray-400 mt-4">I spent 22 years building backend systems. When AI arrived, I felt oddly irrelevant — I failed at self-paced learning three times before discovering a production-first path that works.</p>
+            <p class="text-gray-400 mt-4">I spent 22 years building backend systems. When AI arrived, I felt oddly irrelevant — I failed at self-paced learning three times before discovering a production-first path that works. I learned to translate experience into architect-level decisions and ship systems that matter.</p>
+            <p class="text-gray-400 mt-4">This program is the path I wished I had: live mentorship, architecture-first training, and the accountability to ship — not tutorials or shallow projects.</p>
         </div>
+
     </section>
+
+    <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
+
   </main>
-
-  <!-- short helper -->
-  <script>document.getElementById('year')?.textContent = new Date().getFullYear();</script>
-
-  <!-- Reworked "disable CTAs" script: lightweight, non-blocking -->
-  <script>
-    (function () {
-      const SELECTOR_CTA = 'a.btn, a.btn-glow, a.btn-glow-secondary, .btn';
-      const processed = new WeakSet();
-      const MAX_PERIODIC_RUNS = 20;   // limit how many times periodic check runs
-      const PERIOD_MS = 1500;         // 1.5s between periodic checks
-      let periodicRuns = 0;
-
-      const lockSVG = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M17 9V7a5 5 0 00-10 0v2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="9" width="16" height="11" rx="2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="15" r="1.2" fill="white"/></svg>';
-
-      function createBlockerElement() {
-        const span = document.createElement('span');
-        span.className = 'cta-blocker';
-        span.setAttribute('aria-hidden', 'true');
-        span.innerHTML = lockSVG + '<span>Seats Full</span>';
-        return span;
-      }
-
-      function wrapIfNeeded(el) {
-        if (el.closest && el.closest('.cta-wrapper')) return el.closest('.cta-wrapper');
-        const wrapper = document.createElement('span');
-        wrapper.className = 'cta-wrapper';
-        wrapper.style.display = 'inline-block';
-        el.parentNode.insertBefore(wrapper, el);
-        wrapper.appendChild(el);
-        return wrapper;
-      }
-
-      function preventAction(e) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-        return false;
-      }
-
-      function disableSingleElement(el) {
-        if (!el || processed.has(el)) return;
-        processed.add(el);
-        try {
-          el.setAttribute('aria-disabled', 'true');
-          el.setAttribute('data-disabled', 'true');
-          el.setAttribute('tabindex', '-1');
-          el.classList.add('disabled-cta');
-          // remove href to prevent navigation
-          if (el.hasAttribute('href')) el.removeAttribute('href');
-          el.addEventListener('click', preventAction, true);
-        } catch (e) { /* ignore */ }
-
-        // overlay blocker
-        try {
-          const wrapper = wrapIfNeeded(el);
-          if (!wrapper.querySelector('.cta-blocker')) {
-            wrapper.appendChild(createBlockerElement());
-          }
-        } catch (e) { /* ignore */ }
-      }
-
-      function disableAllCTAs() {
-        // try to be minimal: query likely CTAs only
-        const nodes = document.querySelectorAll(SELECTOR_CTA);
-        if (!nodes || nodes.length === 0) return;
-        nodes.forEach(disableSingleElement);
-
-        // also neutralize external anchors of interest (defensive)
-        const anchors = document.querySelectorAll('a[href]');
-        anchors.forEach(a => {
-          try {
-            const href = a.getAttribute('href') || '';
-            if (href.includes('learn.sanjaynegi.in') || href.startsWith('http')) {
-              disableSingleElement(a);
-            }
-          } catch (e) {}
-        });
-      }
-
-      // Run once when DOM is ready
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-          disableAllCTAs();
-        });
-      } else {
-        disableAllCTAs();
-      }
-
-      // Periodic lightweight check to handle dynamic content.
-      // This is intentionally rate-limited and capped to avoid long-running CPU usage.
-      const periodicId = setInterval(() => {
-        periodicRuns++;
-        // re-run the small disable pass
-        disableAllCTAs();
-        if (periodicRuns >= MAX_PERIODIC_RUNS) {
-          clearInterval(periodicId);
-        }
-      }, PERIOD_MS);
-
-      // Additional defensive handlers (keyboard + document-level clicks)
-      document.addEventListener('click', function (ev) {
-        const a = ev.target.closest && ev.target.closest('a');
-        if (!a) return;
-        if (a.getAttribute('data-disabled') === 'true' || a.getAttribute('aria-disabled') === 'true' || a.classList.contains('disabled-cta')) {
-          ev.preventDefault();
-          ev.stopPropagation();
-        }
-      }, true);
-
-      document.addEventListener('keydown', function (ev) {
-        if (ev.key === 'Enter') {
-          const active = document.activeElement;
-          if (active && (active.matches && active.matches('a') || active.classList.contains('btn'))) {
-            if (active.getAttribute('aria-disabled') === 'true' || active.classList.contains('disabled-cta')) {
-              ev.preventDefault();
-              ev.stopPropagation();
-            }
-          }
-        }
-      }, true);
-
-    })();
-  </script>
-
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
