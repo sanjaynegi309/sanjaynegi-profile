@@ -74,6 +74,31 @@
     "url": "ai_architect_cohort.html"
   },
   {
+    "id": "ai-at-work-awareness-to-automation-feb-2026",
+    "title": "AI at Work: From Awareness to Automation",
+    "summary": "A 10-day live, no-code workshop designed to help professionals across roles confidently use AI at work. Learn how to use ChatGPT, build Custom GPTs, automate repetitive tasks, and understand GenAI concepts like RAG and AI Agents—without coding or technical overload.",
+    "features": [
+      "Understand the AI landscape and how GenAI fits into everyday work",
+      "Learn practical prompt engineering frameworks that work across roles",
+      "Build Custom GPTs tailored to your job (HR, Product, Finance, Ops, Dev, Support)",
+      "Design AI workflows that go beyond one-off prompts",
+      "Automate repetitive tasks using no-code workflows with n8n",
+      "Understand core concepts of GenAI, RAG, and AI Agents without technical complexity",
+      "See real AI automation and agent workflows implemented using no-code tools",
+      "Create a personal 30-day AI adoption plan for your role",
+      "Feb 2 - Feb 13, 2026. Weekdays only, 7:00 PM – 8:30 PM EST"
+    ],
+    "duration": "10-Day Live Workshop (Weekdays · 90 minutes each)",
+    "dates": "Feb 2 - Feb 13, 2026",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online (Zoom)",
+    "price": "",
+    "tags": [],
+    "image": "assets/images/ai-at-work-awareness-to-automation.png",
+    "url": "ai_at_work.html"
+  },
+
+  {
     "id": "w-privacy-2025-q1",
     "title": "Becoming Creative - 12-Week Workshop",
     "summary": "Unlock imagination, overcome creative blocks, and master the art of thinking differently. Perfect for artists, professionals, and anyone seeking fresh inspiration.",
