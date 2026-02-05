@@ -1,80 +1,37 @@
 [
-  {
-  "id": "work-auto-n8n-nov-2025",
-  "title": "Workflow Automation with n8n",
-  "summary": "A 6-session hands-on workshop to master workflow automation using n8n. Learn to build, integrate, and deploy smart automations that connect APIs, databases, and cloud tools—without writing full code.",
-  "features": [
-    "Understand n8n’s core concepts, interface, and workflow structure",
-       "Learn to use different triggers, actions, and integrations effectively",
-       "Work with APIs, webhooks, and data transformations inside n8n",
-       "Implement control flows, conditions, and error handling for robust automations",
-       "Integrate external tools and databases securely using credentials and OAuth2",
-       "Develop and reuse modular workflows for scalable automation systems",
-    "Gain best practices for workflow management, versioning, and deployment",
-    "Dec 13 - Dec 28, 2025. Every Saturday & Sunday, 6 PM – 8 PM IST"
-  ],
-  "duration": "6 Sessions (2 hours each).",
-  "dates": "Dec 13 - Dec 28, 2025",
-  "instructor": "Sanjay Negi",
-  "format": "Live Online (Zoom)",
-  "price": "",
-  "tags": [],
-  "image": "assets/images/n8n-workshop.png",
-  "url": "n8n_workshop.html"
-},
-{
-    "id": "5day-genai-workshop-jan-2026",
-    "title": "5-Day GenAI Architecture Workshop",
-    "summary": "A practical 5-day live workshop to learn how to design, architect, and blueprint production-grade GenAI systems using RAG, LLMOps, and agentic patterns. Perfect for working engineers and tech leads who want clarity and practical skills—without theory overload.",
-    "features": [
-      "Understand the core building blocks of GenAI system design",
-	  "Learn RAG fundamentals: chunking, embeddings, vector DBs, reranking",
-	  "Master LLMOps essentials: evaluation, monitoring, guardrails",
-	  "Explore multi-agent and orchestration patterns",
-	  "Build production-ready architecture diagrams",
-	  "Learn deployment considerations: infra, latency, observability, cost",
-	  "Get architecture templates and design checklists",
-	  "Mentor feedback on your assignment",
-	  "Recordings included for lifetime access",
-	  "Jan 03 - Jan 17, 2026. Every Sat & Sun, 08 AM – 10 AM IST"
-    ],
-    "duration": "5-Day Workshop (Sat & Sun | 8am-10am IST)",
-    "dates": "Jan 3 - Jan 17, 2026",
-    "instructor": "Sanjay Negi",
-    "format": "Live Online (Zoom)",
-    "price": "",
-    "tags": [],
-    "image": "assets/images/5day-genAI-Jan2026.png",
-    "url": "genai_workshop.html"
-  }
-,
-  {
-    "id": "6mon-aiarc-agentic-systems-jan-2026",
-    "title": "AI Architecture & Agentic Systems (6-Month Live Cohort)",
-    "summary": "A career-rewriting program to help experienced engineers (QA, DEV, Product, Manager, DevOps, SRE, Cloud, Support, DB etc) transition into AI architects by translating their existing 5–20 years of engineering experience into production-grade AI systems.",
-    "features": [
-      "Translate your engineering experience to AI system design using the Architecture Lens Framework",
-	  "Master 5 Agentic AI design patterns and where each fits in real-world systems",
-	  "Design 6 production-grade systems including Customer Support AI, Financial Advisory AI, Multi-Agent Flows & more",
-	  "Deploy 2 full production systems to AWS/GCP and capture live metrics (required for graduation)",
-	  "Hands-on implementation: pipelines, orchestration, monitoring, observability & cost optimization",
-	  "Career Velocity Path: LinkedIn positioning, resume reframing, system design interviews & salary negotiation",
-	  "Live every Sat & Sun (8–10 AM IST) + lifetime access to all recordings & community",
-	  "Next Cohort: Jan 24 – Jul 26, 2026",
-	  "Cohort Size: Only 30 seats (intentionally selective)"
-    ],
-    "duration": "6-Month Cohort",
-    "dates": "Starts Jan 24, 2026",
-    "instructor": "Sanjay Negi",
-    "format": "Live Online (Zoom)",
-    "price": "",
-    "tags": [],
-    "image": "assets/images/aiarc-agentic-systems.png",
-    "url": "ai_architect_cohort.html"
+   {
+      "id": "6-month-cohort-2026",
+      "title": "Calm GenAI Mastery — 6 Months Live Cohort",
+      "summary": "A 6-month, mentor-led GenAI cohort designed for software professionals who want deep, structured understanding of Generative AI. Learn LLMs, Agentic AI, LangChain, AutoGen, Hugging Face, Ollama, n8n, LlamaIndex, AWS Bedrock, and Vertex AI—calmly, consistently, and without ML or architecture overwhelm.",
+      "features": [
+          "Build strong mental models of Generative AI and Large Language Models (LLMs)",
+  	      "Understand how LLMs work, including tokens, context windows, and hallucinations",
+  	      "Learn prompt engineering beyond tricks: reasoning, structure, and reliability",
+  	      "Explore Agentic AI and multi-agent systems with AutoGen concepts",
+  	      "Understand LangChain and LangGraph: why they exist and when to use them",
+  	      "Learn Retrieval-Augmented Generation (RAG) concepts using LlamaIndex",
+  	      "Understand the Hugging Face ecosystem and open-source LLMs",
+  	      "Learn local LLM concepts using Ollama and privacy-first AI workflows",
+  	      "Explore OpenRouter and multi-model routing strategies",
+  	      "Design AI-powered automations using n8n (conceptual + practical workflows)",
+  	      "Get a clear overview of enterprise GenAI platforms like AWS Bedrock and Google Vertex AI",
+  	      "Learn how professionals evaluate, trust, and safely use AI outputs",
+  	      "Understand GenAI impact across roles: developers, QA, architects, managers, PMs",
+            "Gain a clear learning roadmap to stay consistent and avoid burnout",
+            "Feb 28 - Sep 26, 2026. Every Saturday, 10:30 AM – 12:30 PM IST"
+      ],
+      "duration": "6 months (2 hours each).",
+      "dates": "Feb 28 - Sep 26, 2026",
+      "instructor": "Sanjay Negi",
+      "format": "Live Online (Zoom)",
+      "price": "",
+      "tags": [],
+      "image": "assets/images/6-month-cohort.png",
+      "url": "gen_ai_cohort.html"
   },
   {
-    "id": "ai-at-work-awareness-to-automation-feb-2026",
-    "title": "AI at Work: From Awareness to Automation",
+    "id": "ai-at-work-awareness-to-automation-mar-2026",
+    "title": "AI at Work: From Awareness to Automation (EST TIMEZONE)",
     "summary": "A 10-day live, no-code workshop designed to help professionals across roles confidently use AI at work. Learn how to use ChatGPT, build Custom GPTs, automate repetitive tasks, and understand GenAI concepts like RAG and AI Agents—without coding or technical overload.",
     "features": [
       "Understand the AI landscape and how GenAI fits into everyday work",
@@ -85,10 +42,10 @@
       "Understand core concepts of GenAI, RAG, and AI Agents without technical complexity",
       "See real AI automation and agent workflows implemented using no-code tools",
       "Create a personal 30-day AI adoption plan for your role",
-      "Feb 2 - Feb 13, 2026. Weekdays only, 7:00 PM – 8:30 PM EST"
+      "Mar 23 - Apr 03, 2026. Weekdays only, 7:00 PM – 8:30 PM EST"
     ],
     "duration": "10-Day Live Workshop (Weekdays · 90 minutes each)",
-    "dates": "Feb 2 - Feb 13, 2026",
+    "dates": "Mar 23 - Apr 03, 2026",
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
     "price": "",
@@ -96,7 +53,6 @@
     "image": "assets/images/ai-at-work-awareness-to-automation.png",
     "url": "ai_at_work.html"
   },
-
   {
     "id": "w-privacy-2025-q1",
     "title": "Becoming Creative - 12-Week Workshop",
@@ -109,12 +65,37 @@
       "Certificate of completion"
     ],
     "duration": "12-Week Workshop",
-    "dates": "Jan 3 - Mar 21, 2026",
+    "dates": "Apr 04 - June 13, 2026",
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
     "price": "",
     "tags": [],
     "image": "assets/images/becoming-creative.png",
     "url": "https://learn.sanjaynegi.in/services/creativityworkshops"
+  },
+  {
+      "id": "6mon-aiarc-agentic-systems-sep-2026",
+      "title": "AI Architecture & Agentic Systems (6-Month Live Cohort)",
+      "summary": "A career-rewriting program to help experienced backend developers transition into AI architects by translating their existing 5+ years of engineering experience into production-grade AI systems.",
+      "features": [
+        "Translate your backend experience to AI system design using the Architecture Lens Framework",
+  	  "Master 5 Agentic AI design patterns and where each fits in real-world systems",
+  	  "Design 6 production-grade systems including Customer Support AI, Financial Advisory AI, Multi-Agent Flows & more",
+  	  "Deploy 2 full production systems to AWS/GCP and capture live metrics (required for graduation)",
+  	  "Hands-on implementation: pipelines, orchestration, monitoring, observability & cost optimization",
+  	  "Career Velocity Path: LinkedIn positioning, resume reframing, system design interviews & salary negotiation",
+  	  "Start with the 5-Day GenAI Architecture Workshop. Decide later if the 6-month cohort is right for you.",
+  	  "Live every Sat & Sun (8–10 AM IST) + lifetime access to all recordings & community",
+  	  "Next Cohort: Sep 05 2026 – Feb 28, 2027",
+  	  "Cohort Size: Only 30 seats (intentionally selective)"
+      ],
+      "duration": "6-Month Cohort",
+      "dates": "Starts Sep 05, 2026",
+      "instructor": "Sanjay Negi",
+      "format": "Live Online (Zoom)",
+      "price": "",
+      "tags": [],
+      "image": "assets/images/aiarc-agentic-systems.png",
+      "url": "ai_architect_cohort.html"
   }
 ]
