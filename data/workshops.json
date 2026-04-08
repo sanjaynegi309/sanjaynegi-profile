@@ -1,29 +1,31 @@
 [
    {
-     "id": "genai-foundation-workshop-apr2026",
-     "title": "🚀 GenAI Foundations Workshop — 4 Days Live (FREE)",
-     "summary": "A fast-paced, beginner-friendly GenAI workshop for software professionals. Understand what GenAI really is, how it differs from ML/DL, explore RAG, Agents, and build real AI workflows using n8n — all in 4 live sessions.",
-     "features": [
-       "🧠 Understand what GenAI is (without ML confusion)",
-       "⚖️ GenAI vs Machine Learning vs Deep Learning — clearly explained",
-       "📦 Learn RAG (Retrieval-Augmented Generation) with real-world context",
-       "🤖 Understand AI Agents & Agentic AI (no hype, practical view)",
-       "⚙️ Live demo: Build AI workflows using n8n",
-       "🏢 How GenAI is impacting developers, QA, architects, managers",
-       "🚨 Why GenAI is no longer optional for your career",
-       "🎯 Clarity on what to learn, what to ignore, and where to start",
-       "👨‍🏫 Live teaching + real examples (not recorded content)",
-       "📺 Recording NOT available"
-     ],
-     "duration": "4 Days Weekend Workshop (2 hours each day: 8PM-10PM)",
-     "dates": "April 4, 5, 10 & 11, 2026",
-     "instructor": "Sanjay Negi",
-     "format": "Live Online (Zoom)",
-     "price": "FREE (Limited Seats)",
-     "tags": [],
-     "image": "assets/images/genai-free-workshop.png",
-     "url": "genai_free_workshop.html"
-   },
+  "id": "weekly-connection-hour",
+  "title": "GenAI Connection Hour: Build Your Path into GenAI (FREE)",
+  "summary": "A weekly 1-hour live session to talk, explore, and understand GenAI in a simple, practical way. Designed for developers and professionals who feel confused, overwhelmed, or stuck — and want clarity, direction, and real-world insight.",
+  "features": [
+    "💬 Open conversation — not a webinar or lecture",
+    "🧠 Break down GenAI concepts in simple, practical terms",
+    "🎯 Get clarity on what to learn and what to ignore",
+    "🚧 Discuss your career confusion and roadblocks",
+    "🤖 Understand real-world AI systems (RAG, Agents, workflows)",
+    "📊 Learn how GenAI actually fits into your career",
+    "🧩 Connect with like-minded professionals",
+    "👨‍🏫 Direct interaction with mentor (no one-way teaching)",
+    "🔍 Discover real use cases from industry",
+    "🚀 Move from confusion → clarity → real AI building"
+  ],
+  "duration": "Weekly (1 Hour Session)",
+  "dates": "Every Saturday",
+  "timings": "1:00 PM – 2:00 PM (IST)",
+  "instructor": "Sanjay Negi",
+  "format": "Live Online (Zoom)",
+  "price": "FREE",
+  "tags": [ 
+  ],
+  "image": "assets/images/connection-hour.png",
+  "url": "https://learn.sanjaynegi.in/l/b711e641b9"
+},
    {
   "id": "genai-fast-track-june2026",
   "title": "⚡ GenAI Developer Fast Track — 3 Months (Weekend Live Cohort)",
