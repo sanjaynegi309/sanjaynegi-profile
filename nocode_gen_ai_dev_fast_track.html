@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GenAI No-Code Fast Track — 3 Months Live Cohort</title>
+  <meta name="description" content="Build and deploy GenAI automations in 12 weeks — no coding required. Fast-paced weekend cohort using N8N & Make.com. Real workflows. Real results. No fluff.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Override accent color to purple/violet for visual distinction from coder track */
+    :root {
+      --nocode-accent: #a855f7;
+      --nocode-accent-2: #ec4899;
+      --nocode-accent-3: #6366f1;
+    }
+
+    .hot-badge {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(236, 72, 153, 0.2));
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      color: #c084fc;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+    }
+
+    .glass-card-hot {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      border-radius: 20px;
+    }
+
+    .btn-glow {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: linear-gradient(135deg, #a855f7, #ec4899);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+      font-size: 1rem;
+    }
+
+    .btn-glow:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 35px rgba(168, 85, 247, 0.7);
+    }
+
+    .btn-glow-outline {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: transparent;
+      color: #c084fc;
+      font-weight: 700;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid #a855f7;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+
+    .btn-glow-outline:hover {
+      background: rgba(168, 85, 247, 0.15);
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+    }
+
+    .highlight-date-time {
+      color: #c084fc;
+    }
+
+    .highlight-accent {
+      color: #c084fc;
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-hover::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #a855f7, transparent);
+      transition: left 0.5s ease;
+    }
+
+    .card-hover:hover::before {
+      left: 100%;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(168, 85, 247, 0.15);
+      border-color: rgba(168, 85, 247, 0.3);
+    }
+
+    /* Who-is-this-for role pills */
+    .role-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(168, 85, 247, 0.1);
+      border: 1px solid rgba(168, 85, 247, 0.25);
+      border-radius: 50px;
+      padding: 0.4rem 1rem;
+      font-size: 0.875rem;
+      color: #d8b4fe;
+      transition: all 0.2s ease;
+    }
+
+    .role-pill:hover {
+      background: rgba(168, 85, 247, 0.2);
+      border-color: rgba(168, 85, 247, 0.5);
+    }
+
+    .tool-badge {
+      display: inline-block;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 8px;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #a5b4fc;
+      margin: 0.2rem;
+    }
+
+    .week-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .week-row:last-child {
+      border-bottom: none;
+    }
+
+    .week-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #c084fc;
+      background: rgba(168, 85, 247, 0.15);
+      border-radius: 6px;
+      padding: 0.25rem 0.6rem;
+      white-space: nowrap;
+      min-width: 90px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body class="antialiased font-sans bg-gray-900 text-gray-200">
+
+<main class="container mx-auto px-6 py-12">
+
+<!-- HERO -->
+<section class="hero text-center py-20">
+
+  <div class="badge inline-block glass-card-hot py-1 px-3 rounded-full text-sm font-semibold hot-badge mb-4">
+    🧩 No-Code Fast Track · 24 Sessions · 3 Months
+  </div>
+
+  <h1 class="text-4xl md:text-6xl font-bold my-6">
+    GenAI No-Code Fast Track
+  </h1>
+
+  <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-300">
+    From <strong>"I'm not a coder" → "I'm building AI-powered systems"</strong> in 12 weeks.
+  </p>
+
+  <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+    No Python. No terminals. No excuses.<br>
+    Just weekend execution, real automations, and AI that actually works for you.
+  </p>
+
+  <div class="cta-row flex flex-wrap justify-center gap-4">
+    <a class="btn-glow" href="https://learn.sanjaynegi.in/l/4a2ee35242" target="_blank">Join No-Code Track →</a>
+    <a class="btn-glow-outline" href="#curriculum">See What You'll Build →</a>
+  </div>
+
+  <div class="hero-meta mt-10 flex flex-wrap justify-center gap-4 text-gray-400">
+    <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">
+      Saturday + Sunday · 5–7 PM IST
+    </div>
+    <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">
+      Live on Zoom · Recordings Included
+    </div>
+    <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">
+      Duration: 12 Weeks
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="py-16 text-center">
+  <div class="glass-card inline-block p-10 max-w-3xl">
+    <h3 class="text-2xl font-bold mb-4">
+      You don't need to code to build with AI
+    </h3>
+    <p class="text-gray-400">
+      You've been told AI is only for developers. That's wrong.
+    </p>
+    <p class="text-gray-400 mt-4">
+      Tools watched → Saved. YouTube → Watched. Nothing automated.
+    </p>
+    <p class="mt-6 font-semibold highlight-accent">
+      This program gives non-coders the same AI superpowers — visually, practically, and fast.
+    </p>
+  </div>
+</section>
+
+<!-- WHO IS THIS FOR -->
+<section class="py-16">
+  <h2 class="text-2xl font-bold text-center mb-4">
+    Built for professionals who work, not code
+  </h2>
+  <p class="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
+    If your day involves content, clients, communication, creativity, or coordination — this track is built for you.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto mb-12">
+    <span class="role-pill">✍️ Content Writers</span>
+    <span class="role-pill">🎨 Graphic Designers</span>
+    <span class="role-pill">🖼️ Artists & Illustrators</span>
+    <span class="role-pill">📸 Photographers</span>
+    <span class="role-pill">🎬 Video Editors</span>
+    <span class="role-pill">📣 Digital Marketers</span>
+    <span class="role-pill">📧 Email Marketers</span>
+    <span class="role-pill">📱 Social Media Managers</span>
+    <span class="role-pill">🛒 E-commerce Managers</span>
+    <span class="role-pill">🤝 Customer Support Teams</span>
+    <span class="role-pill">💼 Sales Professionals</span>
+    <span class="role-pill">📊 Business Analysts</span>
+    <span class="role-pill">📋 Project Managers</span>
+    <span class="role-pill">🏢 Operations Managers</span>
+    <span class="role-pill">📖 Technical Writers</span>
+    <span class="role-pill">✒️ Copywriters</span>
+    <span class="role-pill">🖋️ Bloggers & Journalists</span>
+    <span class="role-pill">🔠 Graphologists</span>
+    <span class="role-pill">🎓 Educators & Trainers</span>
+    <span class="role-pill">📚 Instructional Designers</span>
+    <span class="role-pill">🧑‍⚕️ Healthcare Admins</span>
+    <span class="role-pill">⚖️ Legal Assistants & Paralegals</span>
+    <span class="role-pill">🏦 Finance & Accounts</span>
+    <span class="role-pill">🧑‍💼 HR & Recruitment</span>
+    <span class="role-pill">🧑‍🎤 Personal Brand Creators</span>
+    <span class="role-pill">🎙️ Podcasters</span>
+    <span class="role-pill">🌐 Community Managers</span>
+    <span class="role-pill">📦 Product Managers (Non-Tech)</span>
+    <span class="role-pill">🚀 Solo Founders & Consultants</span>
+    <span class="role-pill">🏪 Small Business Owners</span>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="glass-card card-hover p-6">
+      <strong class="highlight-accent">Drowning in Repetition</strong>
+      <div class="text-gray-400 mt-2">
+        You do the same tasks daily — copy, paste, respond, reformat. AI can handle it all.
+      </div>
+    </div>
+    <div class="glass-card card-hover p-6">
+      <strong class="highlight-accent">Curious but Stuck</strong>
+      <div class="text-gray-400 mt-2">
+        You've played with ChatGPT but can't connect it to your actual work and workflows.
+      </div>
+    </div>
+    <div class="glass-card card-hover p-6">
+      <strong class="highlight-accent">Ready to Leap</strong>
+      <div class="text-gray-400 mt-2">
+        You want to be the most AI-capable person in your team — without learning to code.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS YOU'LL USE -->
+<section class="py-12 text-center">
+  <div class="glass-card inline-block p-10 max-w-3xl w-full">
+    <h3 class="text-2xl font-bold mb-2">Your No-Code AI Toolkit</h3>
+    <p class="text-gray-400 mb-6">Visual. Powerful. No terminal required.</p>
+    <div class="flex flex-wrap justify-center gap-2">
+      <span class="tool-badge">🔁 N8N</span>
+      <span class="tool-badge">⚙️ Make.com</span>
+      <span class="tool-badge">🤖 ChatGPT / GPT-4o</span>
+      <span class="tool-badge">🧠 Claude API</span>
+      <span class="tool-badge">🔌 Zapier (intro)</span>
+      <span class="tool-badge">📄 Notion AI</span>
+      <span class="tool-badge">📊 Google Sheets + AI</span>
+      <span class="tool-badge">📧 Gmail Automation</span>
+      <span class="tool-badge">🗂️ Airtable</span>
+      <span class="tool-badge">🖼️ Image Gen APIs</span>
+      <span class="tool-badge">🗣️ Whisper (voice-to-text)</span>
+      <span class="tool-badge">📡 Webhooks</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU BUILD -->
+<section id="curriculum" class="py-16">
+  <h2 class="text-3xl font-bold text-center mb-10">
+    What You'll Build in 12 Weeks
+  </h2>
+
+  <div class="features grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <div class="glass-card card-hover p-6">
+      <h4 class="text-xl font-bold mb-3 highlight-accent">AI Content Pipeline</h4>
+      <ul class="text-gray-400 space-y-2">
+        <li>• Auto-generate blog posts from topics</li>
+        <li>• Repurpose content across platforms</li>
+        <li>• Schedule & publish with zero manual work</li>
+      </ul>
+    </div>
+
+    <div class="glass-card card-hover p-6">
+      <h4 class="text-xl font-bold mb-3 highlight-accent">AI Agent Workflows</h4>
+      <ul class="text-gray-400 space-y-2">
+        <li>• Build agents that research & summarize</li>
+        <li>• Auto-respond to emails & messages</li>
+        <li>• Multi-step decision-making workflows</li>
+      </ul>
+    </div>
+
+    <div class="glass-card card-hover p-6">
+      <h4 class="text-xl font-bold mb-3 highlight-accent">RAG — Knowledge Systems</h4>
+      <ul class="text-gray-400 space-y-2">
+        <li>• Build a chatbot on your own documents</li>
+        <li>• Connect AI to your SOPs, FAQs, policies</li>
+        <li>• Customer support automation</li>
+      </ul>
+    </div>
+
+    <div class="glass-card card-hover p-6">
+      <h4 class="text-xl font-bold mb-3 highlight-accent">Business Integrations</h4>
+      <ul class="text-gray-400 space-y-2">
+        <li>• Connect CRMs, sheets, forms, inboxes</li>
+        <li>• AI-triggered alerts & reports</li>
+        <li>• End-to-end workflow automation</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CURRICULUM PLAN -->
+<!--
+<section class="py-16 text-center">
+  <div class="glass-card p-10 max-w-4xl mx-auto text-left">
+    <h3 class="text-2xl font-bold mb-8 text-center">
+      12-Week Execution Plan
+    </h3>
+
+    <div class="week-row">
+      <span class="week-label">Weeks 1–2</span>
+      <span class="text-gray-300">Foundations — AI concepts, prompt engineering, N8N & Make.com setup</span>
+    </div>
+    <div class="week-row">
+      <span class="week-label">Weeks 3–5</span>
+      <span class="text-gray-300">Build AI Content Pipelines — generate, transform, schedule content automatically</span>
+    </div>
+    <div class="week-row">
+      <span class="week-label">Weeks 6–8</span>
+      <span class="text-gray-300">RAG & Knowledge Systems — build your own AI assistant on your documents</span>
+    </div>
+    <div class="week-row">
+      <span class="week-label">Weeks 9–10</span>
+      <span class="text-gray-300">AI Agents — multi-step automated workflows that think and act</span>
+    </div>
+    <div class="week-row">
+      <span class="week-label">Weeks 11–12</span>
+      <span class="text-gray-300">Deploy + Production — publish, share, and run your automations in the real world</span>
+    </div>
+
+    <p class="highlight-accent mt-8 font-semibold text-center">
+      Every week = a working automation. No passive learning.
+    </p>
+  </div>
+</section>
+-->
+
+<!-- FORMAT -->
+<section class="py-16 text-center">
+  <div class="glass-card inline-block p-10">
+    <h3 class="text-2xl font-bold mb-4">
+      How This Fast Track Works
+    </h3>
+    <p class="text-gray-400">
+      • Saturday: Concepts + guided build<br>
+      • Sunday: Deep build + live review<br>
+      • Weekly assignments (mandatory)<br>
+      • Miss = fall behind
+    </p>
+    <p class="mt-4 font-semibold highlight-accent">
+      High intensity. High outcome.
+    </p>
+  </div>
+</section>
+
+<!-- WHAT MAKES NO-CODE DIFFERENT -->
+<section class="py-16">
+  <h2 class="text-2xl font-bold text-center mb-10">Why No-Code is NOT a lesser track</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+    <div class="glass-card card-hover p-6">
+      <div class="text-3xl mb-3">⚡</div>
+      <strong class="highlight-accent">Same AI Power</strong>
+      <div class="text-gray-400 mt-2">
+        You connect to the same LLMs, the same APIs. You just don't write the glue code — N8N does.
+      </div>
+    </div>
+
+    <div class="glass-card card-hover p-6">
+      <div class="text-3xl mb-3">🚀</div>
+      <strong class="highlight-accent">Faster to Ship</strong>
+      <div class="text-gray-400 mt-2">
+        No-code builders often ship automations 3–5× faster than coders. Visual = instant.
+      </div>
+    </div>
+
+    <div class="glass-card card-hover p-6">
+      <div class="text-3xl mb-3">💼</div>
+      <strong class="highlight-accent">Closer to Business</strong>
+      <div class="text-gray-400 mt-2">
+        Your automations solve your specific domain — marketing, ops, support — not generic demos.
+      </div>
+    </div>
+
+    <div class="glass-card card-hover p-6">
+      <div class="text-3xl mb-3">🔗</div>
+      <strong class="highlight-accent">Integrates Everything</strong>
+      <div class="text-gray-400 mt-2">
+        N8N + Make.com connect 1000+ apps. Email, CRM, Sheets, Slack, WhatsApp — it all talks.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENTOR -->
+<section class="py-16">
+  <h2 class="text-3xl font-bold text-center mb-8">Meet your mentor</h2>
+  <div class="mentor-card glass-card p-8 md:flex items-center max-w-3xl mx-auto">
+    <img src="assets/images/sanjay_mentor.jpg" class="w-32 h-32 rounded-full mx-auto md:mr-8 object-cover" alt="Sanjay Negi">
+    <div>
+      <h3 class="text-2xl font-bold">Sanjay Negi</h3>
+      <p class="text-gray-400 mt-4">
+        22+ years in backend engineering → now building and teaching GenAI systems for everyone.
+        Sanjay has taught both coders and non-coders to ship real AI systems. This track is built for action, not theory — regardless of your technical background.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="register" class="text-center py-24">
+  <h3 class="text-3xl font-bold mb-6">
+    90 Days From Now — Where Will You Be?
+  </h3>
+  <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+    Still copy-pasting manually — or someone who has built AI systems that work for them 24/7?
+  </p>
+  <a class="btn-glow" href="https://learn.sanjaynegi.in/l/4a2ee35242" target="_blank">
+    Join the No-Code Fast Track →
+  </a>
+  <p class="text-gray-400 mt-4">
+    Limited seats · High interaction · Execution focused
+  </p>
+</section>
+
+</main>
+</body>
+</html>
