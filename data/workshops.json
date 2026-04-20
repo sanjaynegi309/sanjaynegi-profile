@@ -1,30 +1,31 @@
 [
    {
-  "id": "weekly-connection-hour",
-  "title": "GenAI Connection Hour: Build Your Path into GenAI (FREE)",
-  "summary": "A weekly 1-hour live session to talk, explore, and understand GenAI in a simple, practical way. Designed for developers and professionals who feel confused, overwhelmed, or stuck — and want clarity, direction, and real-world insight.",
+  "id": "genai-fasttrack-linkedin-free-pass",
+  "title": "Gen AI Developer Fast Track + LinkedIn Power Session (Free Access Pass)",
+  "summary": "An exclusive FREE access pass to kickstart your journey into Generative AI with a powerful combination of personal branding and hands-on learning. Attend a live LinkedIn profile building session and get free access to the first 3 sessions of two project-based Gen AI courses (No-Code + Coding tracks).",
   "features": [
-    "💬 Open conversation — not a webinar or lecture",
-    "🧠 Break down GenAI concepts in simple, practical terms",
-    "🎯 Get clarity on what to learn and what to ignore",
-    "🚧 Discuss your career confusion and roadblocks",
-    "🤖 Understand real-world AI systems (RAG, Agents, workflows)",
-    "📊 Learn how GenAI actually fits into your career",
-    "🧩 Connect with like-minded professionals",
-    "👨‍🏫 Direct interaction with mentor (no one-way teaching)",
-    "🔍 Discover real use cases from industry",
-    "🚀 Move from confusion → clarity → real AI building"
+    "🎯 FREE LinkedIn Profile Building Session (Live)",
+    "📅 25th April | ⏰ 5:00 PM – 7:00 PM IST",
+    "💼 Learn to optimize your LinkedIn for jobs, clients, and opportunities",
+    "🤖 FREE access to first 3 sessions of No-Code Gen AI Developer course",
+    "🛠 Learn automation using n8n and Make.com (No coding required)",
+    "📅 Starts 2nd May | ⏰ 5:00 PM – 7:00 PM IST (Sat & Sun)",
+    "💻 FREE access to first 3 sessions of Gen AI Developer course for coders",
+    "🧰 Learn Python, OpenAI Agents SDK, CrewAI, LangGraph, LangChain, AutoGen",
+    "📅 Starts 2nd May | ⏰ 8:00 PM – 10:00 PM IST (Sat & Sun)",
+    "🚀 Project-based learning with real-world AI applications",
+    "🔍 Explore both No-Code and Coding paths before committing",
+    "👨‍🏫 Live guided sessions with practical implementation"
   ],
-  "duration": "Weekly (1 Hour Session)",
-  "dates": "Every Saturday",
-  "timings": "1:00 PM – 2:00 PM (IST)",
+  "duration": "LinkedIn Session (2 Hours) + Course Access (First 3 Sessions Each)",
+  "dates": "LinkedIn: 25th April | Courses Start: 2nd May (Weekends)",
+  "timings": "LinkedIn: 5–7 PM IST | No-Code: 5–7 PM IST | Coding: 8–10 PM IST",
   "instructor": "Sanjay Negi",
   "format": "Live Online (Zoom)",
   "price": "FREE",
-  "tags": [
-  ],
-  "image": "assets/images/connection-hour.png",
-  "url": "https://learn.sanjaynegi.in/l/b711e641b9"
+  "tags": [],
+  "image": "assets/images/free-linkedIn-fasttrack.png",
+  "url": "https://learn.sanjaynegi.in/l/c838c7a84c"
 },
    {
   "id": "genai-fast-track-june2026",
