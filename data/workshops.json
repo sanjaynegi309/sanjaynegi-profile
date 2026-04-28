@@ -1,12 +1,9 @@
 [
    {
   "id": "genai-fasttrack-linkedin-free-pass",
-  "title": "Gen AI Developer Fast Track + LinkedIn Power Session (Free Access Pass)",
-  "summary": "An exclusive FREE access pass to kickstart your journey into Generative AI with a powerful combination of personal branding and hands-on learning. Attend a live LinkedIn profile building session and get free access to the first 3 sessions of two project-based Gen AI courses (No-Code + Coding tracks).",
-  "features": [
-    "🎯 FREE LinkedIn Profile Building Session (Live)",
-    "📅 25th April | ⏰ 5:00 PM – 7:00 PM IST",
-    "💼 Learn to optimize your LinkedIn for jobs, clients, and opportunities",
+  "title": "Gen AI Developer Fast Track (Free Access Pass)",
+  "summary": "An exclusive FREE access pass to kickstart your journey into Generative AI with a powerful combination of personal branding and hands-on learning. Get free access to the first 3 sessions of two project-based Gen AI courses (No-Code + Coding tracks).",
+  "features": [    
     "🤖 FREE access to first 3 sessions of No-Code Gen AI Developer course",
     "🛠 Learn automation using n8n and Make.com (No coding required)",
     "📅 Starts 2nd May | ⏰ 5:00 PM – 7:00 PM IST (Sat & Sun)",
@@ -17,9 +14,9 @@
     "🔍 Explore both No-Code and Coding paths before committing",
     "👨‍🏫 Live guided sessions with practical implementation"
   ],
-  "duration": "LinkedIn Session (2 Hours) + Course Access (First 3 Sessions Each)",
-  "dates": "LinkedIn: 25th April | Courses Start: 2nd May (Weekends)",
-  "timings": "LinkedIn: 5–7 PM IST | No-Code: 5–7 PM IST | Coding: 8–10 PM IST",
+  "duration": "Course Access (First 3 Sessions Each)",
+  "dates": "Courses Start: 2nd May (Weekends)",
+  "timings": "No-Code: 5–7 PM IST | Coding: 8–10 PM IST",
   "instructor": "Sanjay Negi",
   "format": "Live Online (Zoom)",
   "price": "FREE",
