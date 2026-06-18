@@ -1,19 +1,20 @@
 [
-   {
-  "id": "ai-foundations-for-professionals",
-  "title": "AI Foundations for Professionals",
-  "summary": "A practical, career-focused AI program designed for working professionals who want to understand the modern AI landscape, master leading AI tools, build AI-powered solutions, and prepare for advanced AI engineering and implementation programs.",
+  {
+  "id": "the-10-day-vibe-engineer-workshop",
+  "title": "The 10-Day Vibe Engineer Workshop",
+  "summary": "A beginner-friendly, hands-on live workshop designed to help learners first understand GenAI foundations, RAG, and AI Agents, then go deep into AI-assisted software building using modern coding assistants with a special focus on Claude Code. The goal is to move from casual vibe coding to structured Vibe Engineering with clarity, debugging discipline, and real project-building confidence.",
   "features": [
-    "🌐 Understand the complete AI landscape, ecosystem, trends, and career opportunities",
-    "🧠 Master Prompt Engineering using ChatGPT, Claude AI, Gemini, Perplexity, Manus, and DeepSeek",
-    "🔍 Learn the evolution of LLMs from Foundation Models to Reasoning Models and Agentic AI",
-    "📚 Build a Retrieval-Augmented Generation (RAG) application with hands-on implementation",
-    "🤖 Learn AI Agents and create an agentic workflow through a practical project",
-    "💻 Explore Vibe Coding using Cursor, Claude Code, GitHub Copilot, and OpenAI Codex",
-    "⚡ Create AI-powered productivity workflows for research, documentation, learning, and automation",
-    "🚀 Gain hands-on experience with modern AI tools, frameworks, and implementation patterns",
-    "🎯 Understand AI career paths, future-ready skills, and learning roadmaps",
-    "👨‍🏫 Live interactive sessions, guided implementations, Q&A, and mentorship"
+    "🌐 Understand what GenAI is, how LLMs work, and where AI fits in the modern technology landscape",
+    "🧠 Learn the beginner roadmap for GenAI, prompts, RAG, agents, automation, and AI-assisted coding",
+    "🔍 Understand prompts, tokens, models, context, hallucinations, and practical AI limitations in simple language",
+    "📚 Learn Retrieval-Augmented Generation (RAG) and build a small RAG workflow using n8n",
+    "🤖 Understand AI Agents, tool usage, multi-step workflows, and build a small agentic automation in n8n",
+    "💻 Explore the AI coding assistant landscape including Cursor, GitHub Copilot, Replit, Lovable, Bolt, Windsurf, and Claude Code",
+    "⚡ Go deep into Claude Code for project-based AI-assisted software development",
+    "🛠️ Build a small working software project using Claude Code from idea to implementation",
+    "🔧 Learn how to prompt, review, debug, refactor, document, and improve AI-generated code",
+    "🚀 Move from Vibe Coding to Vibe Engineering with structure, judgment, and confidence",
+    "👨‍🏫 Live interactive sessions, guided implementations, practical assignments, Q&A, and mentorship"
   ],
   "duration": "10 Weekend Sessions (20 Hours Total) - Starting 27 June",
   "dates": "Weekends (Saturday & Sunday - 10:30 AM – 12:30 PM IST)",
@@ -22,8 +23,8 @@
   "format": "Live Online (Zoom)",
   "recordings": "Lifetime Access to Session Recordings",
   "price": "Low Cost (70% OFF)",
-  "tags": [ ],
-  "image": "assets/images/ai-foundations.png",
+  "tags": [],
+  "image": "assets/images/vibe-engineer-workshop.png",
   "url": "ai-foundations.html"
 },
    {
