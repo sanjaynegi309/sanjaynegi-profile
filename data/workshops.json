@@ -1,5 +1,33 @@
 [
   {
+  "id": "genai-jumpstart-build-your-first-ai-agent",
+  "title": "🚀 GenAI Jumpstart: Build Your First AI Agent in 3 Hours",
+  "summary": "A beginner-friendly, hands-on live workshop designed for working professionals who want to confidently start their Generative AI journey. Learn the fundamentals of GenAI, understand AI Agents, and build your first multi-agent AI system in just 3 hours—without needing advanced Python, mathematics, or prior AI experience.",
+  "features": [
+    "🚀 Understand the fundamentals of Generative AI in simple, practical language",
+    "🧠 Learn how LLMs, AI Agents, RAG, and modern AI workflows fit together",
+    "🤖 Understand the difference between Chatbots, AI Agents, and Agentic AI",
+    "⚡ Build your first working multi-agent AI system during the live session",
+    "🛠️ Experience hands-on implementation with guided step-by-step instruction",
+    "📚 Learn the fastest and most practical roadmap to continue your GenAI journey",
+    "❌ Bust common myths about needing advanced Python, mathematics, or machine learning to get started",
+    "🎯 Gain confidence to move from AI confusion to AI confidence",
+    "📦 Receive a curated GenAI learning roadmap and resource pack",
+    "🎥 Get lifetime access to the workshop recording",
+    "🙋 Live interactive session with Q&A and practical guidance"
+  ],
+  "duration": "3 Hours",
+  "dates": "1 August (Saturday)",
+  "timings": "10:00 AM – 1:00 PM IST",
+  "instructor": "Sanjay Negi",
+  "format": "Live Online (Zoom)",
+  "recordings": "Lifetime Access to Session Recording",
+  "price": "",
+  "tags": [],
+  "image": "assets/images/genai-jumpstart.png",
+  "url": "https://learn.sanjaynegi.in/l/77ba6e58ed"
+},
+	{
   "id": "the-10-day-vibe-engineer-workshop",
   "title": "The 10-Day Vibe Engineer Workshop",
   "summary": "A beginner-friendly, hands-on live workshop designed to help learners first understand GenAI foundations, RAG, and AI Agents, then go deep into AI-assisted software building using modern coding assistants with a special focus on Claude Code. The goal is to move from casual vibe coding to structured Vibe Engineering with clarity, debugging discipline, and real project-building confidence.",
