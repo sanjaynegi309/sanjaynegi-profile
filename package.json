@@ -1,0 +1,24 @@
+{
+  "name": "sanjaynegi-profile",
+  "version": "1.0.0",
+  "description": "This is a a static website for SkillUp with Sanjay, an EdTech company offering live workshops and self-paced AI & tech courses. The site is built with pure HTML, CSS, and JavaScript, and is ready for deployment on GitHub Pages.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjaynegi309/sanjaynegi-profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sanjaynegi309/sanjaynegi-profile/issues"
+  },
+  "homepage": "https://github.com/sanjaynegi309/sanjaynegi-profile#readme"
+}

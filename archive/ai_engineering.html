@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <base href="../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering Program - SkillUp with Sanjay</title>
+    <meta name="description" content="Join our 1-year live workshop on Generative & Agentic AI Engineering.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/ai_engineering.html">
+    <meta property="og:title" content="AI Engineering Program - SkillUp with Sanjay">
+    <meta property="og:description" content="Join our 1-year live workshop on Generative & Agentic AI Engineering.">
+    <meta property="og:image" content="https://example.com/assets/images/og-image-ai-eng.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/ai_engineering.html">
+    <meta property="twitter:title" content="AI Engineering Program - SkillUp with Sanjay">
+    <meta property="twitter:description" content="Join our 1-year live workshop on Generative & Agentic AI Engineering.">
+    <meta property="twitter:image" content="https://example.com/assets/images/og-image-ai-eng.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+ <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
+  <script>
+	   window.dataLayer = window.dataLayer || [];
+	   function gtag(){dataLayer.push(arguments);}
+	   gtag('js', new Date());
+
+	   gtag('config', 'G-NNJRMTPHZK');
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="antialiased font-sans">
+    <div id="canvas-container"></div>
+    <a href="#main-content" class="sr-only focus:not-sr-only text-indigo-600">Skip to main content</a>
+
+    <header class="bg-transparent sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center"><img src="assets/images/logo.png" alt="SkillUp with Sanjay Logo" class="h-10"></a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4 lg:space-x-6 text-sm lg:text-base">
+                <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Start Here</a>
+                <!--
+                <a href="courses.html" class="text-gray-300 hover:text-white transition-colors">Courses</a>
+                -->
+                <a href="programs.html" class="text-gray-300 hover:text-white transition-colors">Mentorship</a>
+                <a href="workshops.html" class="text-gray-300 hover:text-white transition-colors">Build Together Live</a>
+                <!-- <a href="ai_engineering.html" class="text-gray-300 hover:text-white transition-colors">AI Engineering</a> -->
+                <a href="resources.html" class="text-gray-300 hover:text-white transition-colors">Resources</a>
+                <!--
+                <a href="instructors.html" class="text-gray-300 hover:text-white transition-colors">Instructors</a>
+                <a href="dashboard.html" class="text-gray-300 hover:text-white transition-colors">Dashboard</a>
+                -->
+                <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Sanjay</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="btn-glow">Login</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block text-gray-300 hover:text-white">Start Here</a>
+             <!--
+            <a href="courses.html" class="block text-gray-300 hover:text-white">Courses</a>
+            -->
+            <a href="programs.html" class="block text-gray-300 hover:text-white">Mentorship</a>
+            <a href="workshops.html" class="block text-gray-300 hover:text-white">Build Together Live</a>
+            <!-- <a href="ai_engineering.html" class="block text-gray-300 hover:text-white">AI Engineering</a> -->
+            <a href="resources.html" class="block text-gray-300 hover:text-white">Resources</a>
+            <!--
+            <a href="instructors.html" class="block text-gray-300 hover:text-white">Instructors</a>
+            <a href="dashboard.html" class="block text-gray-300 hover:text-white">Dashboard</a>
+			-->
+			<a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Sanjay</a>
+			<a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+            <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="block btn-glow text-center mt-2">Login</a>
+        </div>
+    </header>
+
+    <main id="main-content" class="container mx-auto px-6 py-12">
+        <section id="program-hero" class="text-center py-12">
+            <h1 id="program-title" class="text-4xl md:text-6xl font-bold mb-4"></h1>
+            <p id="program-tagline" class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-300"></p>
+        </section>
+
+        <section id="program-highlights" class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card">
+                    <h3 class="font-bold text-lg mb-2">Format</h3>
+                    <div id="program-format"></div>
+                </div>
+                <div class="glass-card">
+                    <h3 class="font-bold text-lg mb-2">Duration</h3>
+                    <div id="program-duration"></div>
+                </div>
+                <div class="glass-card">
+                    <h3 class="font-bold text-lg mb-2">Ideal For</h3>
+                    <ul id="program-ideal-for" class="list-disc list-inside"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="course-details" class="mb-12">
+            <div class="text-center mb-8">
+                <a href="#" class="btn-glow">Check Course Fee & Register</a>
+            </div>
+            <div id="phases-container" class="space-y-12">
+                <!-- Phases and courses will be injected here by JavaScript -->
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="btn-glow">Check Course Fee & Register</a>
+            </div>
+        </section>
+
+        <section id="terms-and-conditions" class="glass-card">
+            <h2 class="text-2xl font-bold mb-4" id="terms-headline"></h2>
+            <div id="terms-policy" class="space-y-2"></div>
+            <p class="mt-4" id="terms-short-promise"></p>
+        </section>
+
+    </main>
+
+    <footer class="bg-transparent text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">SkillUp with Sanjay</h3>
+                    <p class="text-gray-400">Upskilling the next generation of tech leaders.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                         <!--
+						<li><a href="privacy.html" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+						<li><a href="terms.html" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        -->
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Connect With Us</h3>
+                    <div class="flex space-x-4 social-icons">
+						<a href="https://www.youtube.com/@skillupwithsanjay" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+						<a href="https://www.linkedin.com/in/sanjay-negi-ai/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/skillup_with_sanjay/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.facebook.com/skillupwithsanjay/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 flex justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 SkillUp with Sanjay. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js" defer></script>
+    <script src="assets/js/p5-particles.js" defer></script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/ai_engineering.js" defer></script>
+</body>
+</html>

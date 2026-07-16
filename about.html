@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillUp with Sanjay - About Us</title>
-    <meta name="description" content="Learn more about our mission, our team, and our story at SkillUp with Sanjay.">
+    <title>About Sanjay - SkillUp with Sanjay</title>
+    <meta name="description" content="A practical AI Engineering learning path for experienced professionals who want to translate their existing expertise into AI authority.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://example.com/about.html">
-    <meta property="og:title" content="SkillUp with Sanjay - About Us">
-    <meta property="og:description" content="Learn more about our mission, our team, and our story at SkillUp with Sanjay.">
+    <meta property="og:title" content="About Sanjay - SkillUp with Sanjay">
+    <meta property="og:description" content="A practical AI Engineering learning path for experienced professionals who want to translate their existing expertise into AI authority.">
     <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://example.com/about.html">
-    <meta property="twitter:title" content="SkillUp with Sanjay - About Us">
-    <meta property="twitter:description" content="Learn more about our mission, our team, and our story at SkillUp with Sanjay.">
+    <meta property="twitter:title" content="About Sanjay - SkillUp with Sanjay">
+    <meta property="twitter:description" content="A practical AI Engineering learning path for experienced professionals who want to translate their existing expertise into AI authority.">
     <meta property="twitter:image" content="https://example.com/assets/images/og-image.jpg">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -41,19 +41,21 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center"><img src="assets/images/logo.png" alt="SkillUp with Sanjay Logo" class="h-10"></a>
 
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
-                 <!--
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-4 lg:space-x-6 text-sm lg:text-base">
+                <a href="index.html" class="text-gray-300 hover:text-white transition-colors">Start Here</a>
+                <!--
                 <a href="courses.html" class="text-gray-300 hover:text-white transition-colors">Courses</a>
                 -->
-                <a href="workshops.html" class="text-gray-300 hover:text-white transition-colors">Workshops</a>
+                <a href="programs.html" class="text-gray-300 hover:text-white transition-colors">Mentorship</a>
+                <a href="workshops.html" class="text-gray-300 hover:text-white transition-colors">Build Together Live</a>
                 <!-- <a href="ai_engineering.html" class="text-gray-300 hover:text-white transition-colors">AI Engineering</a> -->
                 <a href="resources.html" class="text-gray-300 hover:text-white transition-colors">Resources</a>
                 <!--
                 <a href="instructors.html" class="text-gray-300 hover:text-white transition-colors">Instructors</a>
                 <a href="dashboard.html" class="text-gray-300 hover:text-white transition-colors">Dashboard</a>
                 -->
-                <a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a>
+                <a href="about.html" class="text-white transition-colors" aria-current="page">About Sanjay</a>
                 <a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
             </div>
 
@@ -61,149 +63,198 @@
                 <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="btn-glow">Login</a>
             </div>
 
-            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </nav>
 
-        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 glass-card">
-            <a href="index.html" class="block text-gray-300 hover:text-white">Home</a>
-            <!--
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block text-gray-300 hover:text-white">Start Here</a>
+             <!--
             <a href="courses.html" class="block text-gray-300 hover:text-white">Courses</a>
             -->
-            <a href="workshops.html" class="block text-gray-300 hover:text-white">Workshops</a>
+            <a href="programs.html" class="block text-gray-300 hover:text-white">Mentorship</a>
+            <a href="workshops.html" class="block text-gray-300 hover:text-white">Build Together Live</a>
             <!-- <a href="ai_engineering.html" class="block text-gray-300 hover:text-white">AI Engineering</a> -->
             <a href="resources.html" class="block text-gray-300 hover:text-white">Resources</a>
-            <a href="about.html" class="block text-gray-300 hover:text-white">About</a>
-            <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+            <!--
+            <a href="instructors.html" class="block text-gray-300 hover:text-white">Instructors</a>
+            <a href="dashboard.html" class="block text-gray-300 hover:text-white">Dashboard</a>
+			-->
+			<a href="about.html" class="block text-white" aria-current="page">About Sanjay</a>
+			<a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a>
             <a href="https://learn.sanjaynegi.in/web/login" target="_blank" rel="noopener noreferrer" class="block btn-glow text-center mt-2">Login</a>
         </div>
     </header>
 
     <main id="main-content" class="container mx-auto px-6 py-12 text-white relative z-10">
-        <section class="text-center mb-16">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 animated-gradient-text">About SkillUp with Sanjay</h1>
-            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Helping senior engineers become the GenAI architects companies rely on.</p>
-        </section>
-
-        <section class="glass-card p-8 mb-12">
-            <h2 class="text-3xl font-bold mb-4 animated-gradient-text">Our Mission</h2>
-            <p class="text-gray-300 leading-relaxed mb-4">
-                AI is changing how software is designed, built, and shipped. But most senior engineers don’t need to “start over” — they need to <strong>translate their existing architecture experience into GenAI systems</strong>.
-			</p>
-			<p class="text-gray-300 leading-relaxed mb-4">
-				At SkillUp with Sanjay, our mission is simple: <strong>To help experienced engineers become production-ready GenAI Architects — with clarity, confidence, and real deployed systems.</strong>
-			</p>
-			<p class="text-gray-300 leading-relaxed mb-4">
-
-			</p>
-			<p class="text-gray-300 leading-relaxed mb-4">
-				<strong>We believe learning must be:</strong>
-			</p>
-			<p class="text-gray-300 leading-relaxed mb-4">
-			    - Practical, not theoretical<br>
-				- Production-first, not tutorial-first<br>
-				- Architect-driven, not model-driven<br>
-				- Hands-on with real systems, not toy notebooks</p>
-
-			<p class="text-gray-300 leading-relaxed mb-4">
-				<strong>Our programs are built to help you:</strong>
-			</p>
-			<p class="text-gray-300 leading-relaxed mb-4">
-				- Understand GenAI through the architecture lens<br>
-				- Design AI systems that actually work in enterprise environments<br>
-				- Deploy production systems with observability, guardrails, and reliability<br>
-				- Build a portfolio that hiring managers trust<br>
-				- Move into architect, staff, and principal-level AI roles
-			</p>
-
-			<p><em>Because real transformation doesn’t happen from watching videos — it happens when knowledge meets action, and when experience is translated, not discarded.</em></p>
+        <section class="text-center mb-14">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300 mb-4">About SkillUp with Sanjay</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-5 animated-gradient-text">You Don't Need to Start Your Career Again</h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto">
+                Your 10-20 years of engineering, operations, or consulting experience is not outdated. It is the foundation for your next chapter in AI.
             </p>
-
+            <p class="text-gray-400 max-w-3xl mx-auto mt-4">
+                The goal is not to discard your experience. It is to translate it into AI systems, business impact, and leadership.
+            </p>
         </section>
 
-        <section class="glass-card p-8">
-            <h2 class="text-3xl font-bold mb-4 animated-gradient-text">Meet Sanjay — Your AI Mentor</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/4 mb-4 md:mb-0 md:mr-8">
-                    <img src="assets/images/sanjay_full_pic.png" alt="Sanjay Negi" class="rounded-lg shadow-lg w-full h-auto">
+        <section class="glass-card p-6 md:p-8 mb-12">
+            <h2 class="text-3xl font-bold mb-6 animated-gradient-text">You May Be Here Because...</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 leading-relaxed">
+                <p class="border border-gray-800 rounded-md p-4 bg-gray-950/40">Your company has suddenly become AI-first.</p>
+                <p class="border border-gray-800 rounded-md p-4 bg-gray-950/40">Younger engineers are experimenting with agents, copilots, and new tools.</p>
+                <p class="border border-gray-800 rounded-md p-4 bg-gray-950/40">Leadership is asking for AI use cases, automation, and measurable impact.</p>
+                <p class="border border-gray-800 rounded-md p-4 bg-gray-950/40">And despite years of experience, you are quietly wondering where you fit.</p>
+            </div>
+            <div class="mt-6 space-y-3 text-gray-300 leading-relaxed max-w-4xl">
+                <p>You may already have tried courses, YouTube playlists, prompt tutorials, or internal bootcamps.</p>
+                <p>You learned individual concepts - but still could not see the complete system.</p>
+                <p class="text-xl text-white font-semibold border-l-4 border-cyan-400 pl-4">
+                    The problem is not that you are too late. The problem is that most AI learning paths were not designed for someone with your experience.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="max-w-4xl mb-8">
+                <h2 class="text-3xl font-bold mb-5 animated-gradient-text">We Help You Translate Experience Into AI Authority</h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed">
+                    <p>You already understand systems, customers, delivery pressure, production failures, business constraints, and trade-offs.</p>
+                    <p>Our work is to help you connect that experience with LLMs, RAG, agents, evaluation, observability, security, and deployment.</p>
+                    <p>So you can become the person who designs, explains, and leads AI systems with confidence.</p>
                 </div>
-                <div class="md:w-3/4">
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                    	I’m <strong>Sanjay Negi</strong>, GenAI Architect and Mentor, with <strong>22+ years of experience</strong> building and scaling enterprise systems — and helping senior engineers transition to high-impact architecture roles.
-                    </p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">For most of my career, I worked deep in the backend stack:<br />
-						Java, REST, distributed systems, integrations, deployments, monitoring — the entire lifecycle. I’ve led architecture, coding, testing, automation, observability, and production operations across large-scale environments.
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						But when AI exploded, I went through what many senior engineers feel today:
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						<em><strong>
-						“Where do I even begin?<br />
-						Why does all AI learning feel disconnected from real software architecture?”
-						</strong></em>
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						Most tutorials taught toy notebooks.<br />
-						Most courses ignored production.<br />
-						Most GenAI examples didn’t match real enterprise constraints.
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						So I rebuilt my learning from scratch — but this time through an architect’s lens:
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						<strong>
-						• RAG systems that scale<br>
-						• LLMOps pipelines that survive production failures<br>
-						• Multi-agent workflows tied to business value<br>
-						• Monitoring, cost controls, safety layers, and observability<br>
-						• Deployment patterns that real teams can trust
-						</strong>
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						Today, I mentor senior engineers (8–20+ years experience) to do the same.
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						My teaching approach is:
-					</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-					• <strong>Hands-on</strong> (design and deploy together)<br>
-					• <strong>Architecture-centric</strong> (patterns, tradeoffs, decision logs)<br>
-					• <strong>Outcome-driven</strong> (6 architectures + 2 production systems)<br>
-					• <strong>Deeply personalized</strong> to your background and goals</p>
-
-					<p class="text-gray-300 leading-relaxed mb-4">
-						SkillUp with Sanjay isn’t a course library — it’s a career accelerator where experienced engineers learn to lead GenAI initiatives with confidence, clarity, and proof.
-					</p>
-					<p class="text-gray-300 leading-relaxed mb-4">
-						If you want to connect the dots between your existing experience and the next chapter in AI architecture, you’ll find a practical, structured, and supportive learning path here.
-					</p>
-					<p class="text-gray-300 leading-relaxed mb-4">
-						<em>Let’s build, deploy, and grow — together.</em>
-					</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">Architecture First</h3>
+                    <p class="text-gray-300 leading-relaxed">Understand how GenAI fits into real systems, APIs, data flows, cloud platforms, security, and enterprise constraints.</p>
+                </div>
+                <div class="glass-card p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">Build and Deploy</h3>
+                    <p class="text-gray-300 leading-relaxed">Move beyond notebooks and tutorials by building working systems, production-minded prototypes, and deployable solutions.</p>
+                </div>
+                <div class="glass-card p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">Rewrite Your Career Narrative</h3>
+                    <p class="text-gray-300 leading-relaxed">Become the person who can lead AI conversations, explain business impact, and own meaningful AI delivery.</p>
                 </div>
             </div>
         </section>
-    </main>
 
+        <section class="glass-card p-6 md:p-8 mb-8">
+            <div class="grid grid-cols-1 lg:grid-cols-[minmax(260px,380px)_1fr] gap-8 items-start">
+                <figure>
+                    <img src="assets/images/sanjay_full_pic.png" alt="Sanjay Negi teaching AI Engineering and enterprise architecture" class="rounded-xl shadow-lg w-full h-auto border border-cyan-400/20">
+                    <figcaption class="text-sm text-gray-400 mt-3 text-center">Sanjay Negi - GenAI Mentor and AI Engineering Coach</figcaption>
+                </figure>
+                <div>
+                    <h2 class="text-3xl font-bold mb-5 animated-gradient-text">I Was Where You Are Now</h2>
+                    <div class="space-y-4 text-gray-300 leading-relaxed">
+                        <p>I spent more than two decades building enterprise software across requirements, architecture, development, testing, CI/CD, deployment, observability, monitoring, and production support.</p>
+                        <p>When AI changed the industry, I went through the same confusion many experienced professionals feel today.</p>
+                        <p>I bought courses.</p>
+                        <p>I watched tutorials.</p>
+                        <p>I explored tools and frameworks.</p>
+                        <p>But most learning paths either treated me like a fresher or stopped at notebooks and demos.</p>
+                        <div class="rounded-md border border-gray-800 bg-gray-950/50 p-5">
+                            <p class="text-white font-semibold mb-3">I kept asking:</p>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2"><span class="text-cyan-400 mt-1">-</span><span>Where does this fit into real architecture?</span></li>
+                                <li class="flex gap-2"><span class="text-cyan-400 mt-1">-</span><span>How do I deploy it?</span></li>
+                                <li class="flex gap-2"><span class="text-cyan-400 mt-1">-</span><span>How do I make it secure and reliable?</span></li>
+                                <li class="flex gap-2"><span class="text-cyan-400 mt-1">-</span><span>How do I explain the business impact?</span></li>
+                            </ul>
+                        </div>
+                        <p>That frustration led me to rebuild the learning path around architecture, systems, deployment, and real business problems.</p>
+                        <p>Today, I help experienced professionals make that transition without discarding the expertise they spent years building.</p>
+                        <p class="text-white font-semibold">Your experience is not baggage. It is your advantage - when translated correctly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 border-y border-cyan-400/20 py-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                <div class="text-cyan-200 font-semibold">23+ Years in Software</div>
+                <div class="text-cyan-200 font-semibold">21+ Years in Enterprise Java</div>
+                <div class="text-cyan-200 font-semibold">Full SDLC Experience</div>
+                <div class="text-cyan-200 font-semibold">GenAI Mentoring and Consulting</div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 animated-gradient-text">Which Story Sounds Like Yours?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="glass-card p-6">
+                    <h3 class="text-xl font-bold text-white mb-4">Senior Engineer or Tech Lead</h3>
+                    <p class="text-gray-300 italic mb-4">"I know how to build reliable systems, but I am not yet part of the important AI conversations."</p>
+                    <p class="text-gray-300 leading-relaxed">Translate your backend, architecture, and delivery experience into AI Engineering and system leadership.</p>
+                </article>
+                <article class="glass-card p-6">
+                    <h3 class="text-xl font-bold text-white mb-4">Operations or Business Leader</h3>
+                    <p class="text-gray-300 italic mb-4">"Leadership expects me to drive AI transformation, but I do not want vague tools or deep ML theory."</p>
+                    <p class="text-gray-300 leading-relaxed">Learn to identify valuable use cases, evaluate solutions, and lead practical AI initiatives tied to real outcomes.</p>
+                </article>
+                <article class="glass-card p-6">
+                    <h3 class="text-xl font-bold text-white mb-4">Consultant or Corporate Trainer</h3>
+                    <p class="text-gray-300 italic mb-4">"My clients expect AI expertise, but I need something deeper than ChatGPT demonstrations."</p>
+                    <p class="text-gray-300 leading-relaxed">Build credible AI frameworks, systems, and advisory assets you can confidently take to clients.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="glass-card p-6 md:p-8 mb-12">
+            <h2 class="text-3xl font-bold mb-8 animated-gradient-text">What Changes When You Work With Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="rounded-md border border-gray-800 bg-gray-950/40 p-5">
+                    <div class="text-gray-500 uppercase tracking-wide text-xs mb-2">From</div>
+                    <p class="text-gray-300 mb-4">Collecting courses and disconnected concepts</p>
+                    <div class="text-cyan-300 uppercase tracking-wide text-xs mb-2">To</div>
+                    <p class="text-white font-semibold">Understanding how complete AI systems are designed</p>
+                </div>
+                <div class="rounded-md border border-gray-800 bg-gray-950/40 p-5">
+                    <div class="text-gray-500 uppercase tracking-wide text-xs mb-2">From</div>
+                    <p class="text-gray-300 mb-4">Feeling invisible in AI conversations</p>
+                    <div class="text-cyan-300 uppercase tracking-wide text-xs mb-2">To</div>
+                    <p class="text-white font-semibold">Leading architecture and delivery discussions</p>
+                </div>
+                <div class="rounded-md border border-gray-800 bg-gray-950/40 p-5">
+                    <div class="text-gray-500 uppercase tracking-wide text-xs mb-2">From</div>
+                    <p class="text-gray-300 mb-4">Calling yourself a legacy developer, manager, or consultant</p>
+                    <div class="text-cyan-300 uppercase tracking-wide text-xs mb-2">To</div>
+                    <p class="text-white font-semibold">Positioning yourself as an AI Engineer, Forward Deployed Engineer, or GenAI Architect</p>
+                </div>
+                <div class="rounded-md border border-gray-800 bg-gray-950/40 p-5">
+                    <div class="text-gray-500 uppercase tracking-wide text-xs mb-2">From</div>
+                    <p class="text-gray-300 mb-4">AI anxiety</p>
+                    <div class="text-cyan-300 uppercase tracking-wide text-xs mb-2">To</div>
+                    <p class="text-white font-semibold">AI authority</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center glass-card p-6 md:p-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-5 animated-gradient-text">Your Experience Is Not the Problem</h2>
+            <div class="space-y-3 text-gray-300 max-w-3xl mx-auto mb-8">
+                <p>You do not need to erase your past and start again.</p>
+                <p>You need a path that helps you translate what you already know into AI systems, business impact, and a stronger career identity.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="programs.html" class="btn-glow">Find My AI Career Path &rarr;</a>
+                <a href="resources.html" class="btn-glow">Start With the Free AI Foundations Sessions &rarr;</a>
+            </div>
+        </section>
+    </main>
     <footer class="text-white relative z-10 mt-12">
         <div class="container mx-auto px-6 py-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <div>
                     <h3 class="font-bold text-lg mb-2">SkillUp with Sanjay</h3>
-                    <p class="text-gray-400">Upskilling the next generation of tech leaders.</p>
+                    <p class="text-gray-400">Helping experienced professionals translate their experience into production-grade AI leadership.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-lg mb-2">Quick Links</h3>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GenAI Jumpstart - Build Your First Multi-Agent AI System Live</title>
+  <meta name="description" content="A 3-hour live, hands-on GenAI workshop for experienced software professionals. Build a working multi-agent AI system and understand prompts, tools, memory and orchestration.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NNJRMTPHZK');
+  </script>
+</head>
+
+<body class="antialiased font-sans">
+  <div id="canvas-container"></div>
+  <a href="#main-content" class="sr-only focus:not-sr-only text-indigo-600">Skip to main content</a>
+
+  <main id="main-content" class="container mx-auto px-6 py-12">
+
+    <!-- HERO -->
+    <section class="hero text-center py-16 md:py-20">
+      <div class="flex flex-wrap justify-center gap-2">
+        <div class="badge inline-block glass-card-hot py-1 px-3 rounded-full text-xs md:text-sm font-semibold hot-badge">
+          BUILD TOGETHER LIVE
+        </div>
+        <div class="badge inline-block glass-card-hot py-1 px-3 rounded-full text-xs md:text-sm font-semibold hot-badge">
+          FOR EXPERIENCED SOFTWARE PROFESSIONALS
+        </div>
+      </div>
+
+      <h1 class="text-4xl md:text-6xl font-bold my-6 leading-tight">
+        Stop Watching AI Agent Demos.<br>
+        <span>Build Your First Multi-Agent AI System in 3 Hours.</span>
+      </h1>
+
+      <p class="text-lg md:text-2xl mb-5 max-w-4xl mx-auto text-gray-200 font-semibold">
+        A live, hands-on workshop where you will build with me—not sit through another theory-heavy webinar.
+      </p>
+
+      <p class="text-lg md:text-xl mb-8 max-w-4xl mx-auto text-gray-300">
+        You already understand software, APIs, databases and production systems. In one focused Saturday session,
+        you will connect that experience to GenAI by building a working agentic workflow with prompts, tools,
+        memory and orchestration.
+      </p>
+
+      <div class="cta-row flex flex-col md:flex-row justify-center gap-4">
+        <!-- Replace the href below with the final TagMango / registration URL -->
+        <a class="btn-glow" href="https://learn.sanjaynegi.in/l/77ba6e58ed">Build My First Multi-Agent System</a>
+        <a class="btn-glow" href="#what-we-build">See What We Will Build</a>
+      </div>
+
+      <div class="hero-meta mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-400 max-w-5xl mx-auto">
+        <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">August 1, 2026</div>
+        <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Saturday · 10:00 AM-1:00 PM IST</div>
+        <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Live Online · Hands-On</div>
+        <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Starter Code Included</div>
+      </div>
+    </section>
+
+    <!-- MIND READER -->
+    <section class="py-16">
+      <div class="glass-card p-6 md:p-8">
+        <h2 class="text-3xl font-bold mb-6">Does This Sound Like You?</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+          <p class="border border-gray-700 rounded-lg p-4">
+            You have 10+ years of software experience, but GenAI still feels like a collection of disconnected tools and frameworks.
+          </p>
+          <p class="border border-gray-700 rounded-lg p-4">
+            You have watched agent tutorials, saved GitHub repositories and perhaps bought courses—but still have not built one complete system yourself.
+          </p>
+          <p class="border border-gray-700 rounded-lg p-4">
+            You keep thinking, “AI agents look useful, but this will take months before I can build anything meaningful.”
+          </p>
+          <p class="border border-gray-700 rounded-lg p-4">
+            Your company is discussing AI-first delivery, while the important GenAI work keeps moving to another team.
+          </p>
+          <p class="border border-gray-700 rounded-lg p-4">
+            You do not want a beginner-style lecture. You want someone to connect AI concepts to the engineering judgement you already have.
+          </p>
+          <p class="border border-gray-700 rounded-lg p-4">
+            You are not afraid of hard work. You are afraid of spending more time following the wrong learning path.
+          </p>
+        </div>
+
+        <p class="mt-8 text-2xl md:text-3xl font-bold">
+          You do not need six months before you write your first agent.<br>
+          <span class="animated-gradient-text">You need one guided build that makes the architecture click.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- BELIEF SHIFT -->
+    <section class="py-16">
+      <div class="glass-card p-6 md:p-8">
+        <h2 class="text-3xl font-bold mb-5">This Workshop Is Designed to Break One Belief</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="border border-gray-700 rounded-lg p-6">
+            <p class="text-gray-400 uppercase text-sm font-semibold mb-3">Before the workshop</p>
+            <p class="text-xl text-gray-200 font-semibold">
+              “Agentic AI is too complicated. I need deep ML knowledge, weeks of Python and multiple frameworks before I can begin.”
+            </p>
+          </div>
+
+          <div class="rounded-lg border border-cyan-400/30 bg-cyan-400/10 p-6">
+            <p class="text-cyan-200 uppercase text-sm font-semibold mb-3">After the workshop</p>
+            <p class="text-xl text-cyan-100 font-semibold">
+              “I understand how agents, tools, memory and orchestration fit together—and I have a working system I can run, explain and extend.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE BUILD -->
+    <section id="what-we-build" class="py-16 scroll-mt-10">
+      <h2 class="text-3xl font-bold text-center mb-4">What We Will Build Together</h2>
+      <p class="text-gray-400 text-center max-w-3xl mx-auto mb-10">
+        A practical multi-agent system that receives a task, plans the work, calls tools, shares context and produces a useful final result.
+      </p>
+
+      <div class="glass-card p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-3 text-center items-stretch">
+          <div class="border border-gray-700 rounded-lg p-5 text-gray-300">
+            <strong class="text-white block mb-2">User Request</strong>
+            A real task enters the system
+          </div>
+          <div class="hidden md:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+          <div class="border border-gray-700 rounded-lg p-5 text-gray-300">
+            <strong class="text-white block mb-2">Orchestrator</strong>
+            Understands the goal and routes work
+          </div>
+          <div class="hidden md:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+          <div class="border border-gray-700 rounded-lg p-5 text-gray-300">
+            <strong class="text-white block mb-2">Specialist Agents</strong>
+            Plan, research and execute subtasks
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-3 text-center items-stretch mt-3">
+          <div class="border border-gray-700 rounded-lg p-5 text-gray-300">
+            <strong class="text-white block mb-2">Tools &amp; Functions</strong>
+            Agents call external capabilities
+          </div>
+          <div class="hidden md:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+          <div class="border border-gray-700 rounded-lg p-5 text-gray-300">
+            <strong class="text-white block mb-2">Shared State &amp; Memory</strong>
+            Context moves through the workflow
+          </div>
+          <div class="hidden md:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+          <div class="border border-gray-700 rounded-lg p-5 text-gray-300">
+            <strong class="text-white block mb-2">Final Response</strong>
+            A useful, traceable result is produced
+          </div>
+        </div>
+
+        <p class="mt-8 rounded-md border border-cyan-400/30 bg-cyan-400/10 p-4 text-cyan-100 font-semibold">
+          The objective is not to memorise a framework. It is to understand the system architecture well enough to explain why each component exists.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT THEY DO -->
+    <section class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-10">You Will Not Just Watch Me Code</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Set Up the Project</h3>
+          <p class="text-gray-400">Start from guided starter code and understand the structure before running anything.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Build the Agents</h3>
+          <p class="text-gray-400">Define responsibilities, prompts and hand-offs for a controlled multi-agent workflow.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Connect Tools</h3>
+          <p class="text-gray-400">Let agents call functions and use external capabilities instead of only generating text.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Run and Debug</h3>
+          <p class="text-gray-400">Observe the workflow, identify failures and improve the system with engineering judgement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING OUTCOMES -->
+    <section class="py-16">
+      <div class="glass-card p-6 md:p-8">
+        <h2 class="text-3xl font-bold mb-8">What You Will Understand by the End</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+          <div class="border border-gray-700 rounded-lg p-4">How an AI agent differs from a normal LLM call or chatbot</div>
+          <div class="border border-gray-700 rounded-lg p-4">How prompts, tools, state, memory and orchestration fit together</div>
+          <div class="border border-gray-700 rounded-lg p-4">When a single agent is enough—and when multi-agent design is justified</div>
+          <div class="border border-gray-700 rounded-lg p-4">How to structure a controlled agent workflow instead of creating an unpredictable demo</div>
+          <div class="border border-gray-700 rounded-lg p-4">Where failures happen and how software engineering practices still apply</div>
+          <div class="border border-gray-700 rounded-lg p-4">How to extend the starter system into a stronger portfolio or workplace use case</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOMES -->
+    <section class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-10">What You Will Leave With</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">A Working System</h3>
+          <p class="text-gray-400">
+            A functioning multi-agent workflow that can reason through a task, call tools and produce a useful result.
+          </p>
+        </div>
+
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Architecture Clarity</h3>
+          <p class="text-gray-400">
+            A clear mental model of how the major building blocks connect—without drowning in framework jargon.
+          </p>
+        </div>
+
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Confidence to Continue</h3>
+          <p class="text-gray-400">
+            Starter code, an extension roadmap and proof that GenAI is something you can build—not merely consume.
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-8 text-center text-xl font-semibold text-gray-200 max-w-4xl mx-auto">
+        The real outcome is not “I attended an AI workshop.” It is “I built an agentic system, and I can explain how it works.”
+      </p>
+    </section>
+
+    <!-- FOR WHOM -->
+    <section class="py-16">
+      <div class="glass-card p-6 md:p-8">
+        <h2 class="text-3xl font-bold mb-5">Built for Experienced Professionals Who Want a Guided First Win</h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8">
+          <div class="space-y-4 text-gray-300 leading-relaxed">
+            <p>
+              This workshop respects the experience you already have. You may come from Java, .NET, C++, Python,
+              platform engineering, cloud, DevOps, architecture or technical consulting.
+            </p>
+
+            <p class="rounded-md border border-cyan-400/30 bg-cyan-400/10 p-4 text-cyan-100 font-semibold">
+              You are not starting your career again. You are extending your engineering experience into agentic AI.
+            </p>
+
+            <p>
+              You do not need deep machine-learning knowledge. You should be comfortable with programming concepts,
+              APIs and following a guided coding session.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Senior software engineers and tech leads</div>
+            <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Backend and platform engineers</div>
+            <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Solution and application architects</div>
+            <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Technically involved engineering managers</div>
+            <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Cloud, infra and DevOps professionals with coding exposure</div>
+            <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Technical consultants exploring agentic AI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY DIFFERENT -->
+    <section class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-10">Why This Is Not Another GenAI Webinar</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Build Before Buzzwords</h3>
+          <p class="text-gray-400">We use a working system to make the concepts real.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Architecture Before Frameworks</h3>
+          <p class="text-gray-400">You learn the pattern first, then see how the implementation supports it.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">Hands-On Before Certificates</h3>
+          <p class="text-gray-400">The confidence comes from running the system yourself.</p>
+        </div>
+        <div class="glass-card p-6">
+          <h3 class="text-xl font-bold mb-3">A Path After the Workshop</h3>
+          <p class="text-gray-400">You leave with clear next steps for moving from a guided build toward production AI Engineering.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENTOR -->
+    <section class="py-16">
+      <div class="mentor-card glass-card p-6 md:p-8 md:flex items-center">
+        <img src="assets/images/sanjay_mentor.jpg" alt="Sanjay Negi" class="w-32 h-32 rounded-full mx-auto md:mx-0 md:mr-8 object-cover">
+
+        <div>
+          <h2 class="text-3xl font-bold">Learn From Someone Who Also Struggled to Find the Right AI Path</h2>
+
+          <div class="text-gray-400 mt-4 space-y-3">
+            <p>
+              I spent more than two decades working across enterprise software design, development, testing,
+              deployment, monitoring and production support.
+            </p>
+            <p>
+              When GenAI started changing the industry, I bought courses and followed tutorials. I learned many
+              individual concepts—but I still lacked a clear system-level path.
+            </p>
+            <p>
+              The breakthrough came when I stopped approaching AI like a fresher collecting topics and started
+              connecting it to architecture, integration and production engineering.
+            </p>
+            <p>
+              This workshop gives you the guided first build I wish I had at the beginning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SESSION PLAN -->
+    <section class="py-16">
+      <div class="glass-card p-6 md:p-8">
+        <h2 class="text-3xl font-bold mb-8">Your 3-Hour Build Plan</h2>
+
+        <div class="space-y-4">
+          <div class="border border-gray-700 rounded-lg p-5">
+            <p class="text-cyan-200 font-semibold mb-1">Part 1 · Architecture First</p>
+            <p class="text-gray-400">Understand the problem, agent roles, orchestration flow, tools, memory and expected output.</p>
+          </div>
+          <div class="border border-gray-700 rounded-lg p-5">
+            <p class="text-cyan-200 font-semibold mb-1">Part 2 · Build Together</p>
+            <p class="text-gray-400">Create the agents, wire the workflow, connect tools and run the system step by step.</p>
+          </div>
+          <div class="border border-gray-700 rounded-lg p-5">
+            <p class="text-cyan-200 font-semibold mb-1">Part 3 · Debug and Improve</p>
+            <p class="text-gray-400">Inspect failures, improve instructions and understand where engineering discipline matters.</p>
+          </div>
+          <div class="border border-gray-700 rounded-lg p-5">
+            <p class="text-cyan-200 font-semibold mb-1">Part 4 · Your Extension Roadmap</p>
+            <p class="text-gray-400">See how to evolve the mini-build into a portfolio project or a workplace-relevant AI use case.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIT -->
+    <section class="py-16">
+      <div class="glass-card p-6 md:p-8">
+        <h2 class="text-3xl font-bold mb-8">Check Whether This Workshop Fits You</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Join if</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li>- You have professional software, cloud, infra or technical consulting experience</li>
+              <li>- You understand basic programming and APIs</li>
+              <li>- You want to build your first agentic AI system with guidance</li>
+              <li>- You can follow a live coding session and try the steps yourself</li>
+              <li>- You want clarity and confidence—not another broad overview</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Do not join if</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li>- You want only a non-technical AI awareness session</li>
+              <li>- You have no programming exposure at all</li>
+              <li>- You expect to master production agentic AI in three hours</li>
+              <li>- You want to watch passively without opening the code</li>
+              <li>- You are joining only to collect a certificate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-4">Frequently Asked Questions</h2>
+      <p class="text-gray-400 text-center max-w-3xl mx-auto mb-10">
+        Straight answers for experienced professionals evaluating the workshop.
+      </p>
+
+      <div class="space-y-4 max-w-4xl mx-auto">
+        <details class="glass-card p-5 rounded-lg" open>
+          <summary class="cursor-pointer font-bold text-lg">Do I need previous GenAI or machine-learning experience?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            No deep AI or ML background is required. The session starts with the system architecture and connects it to programming, APIs and workflow concepts you may already know.
+          </div>
+        </details>
+
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">Do I need to be a Python expert?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            No. You should understand programming and be comfortable following guided code. Experienced Java, .NET, C++, Go and other developers should be able to follow the Python used in the workshop.
+          </div>
+        </details>
+
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">Will I build during the session?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            Yes. This is a Build Together Live session. You will receive starter code and follow the implementation, run the workflow and make guided changes during the workshop.
+          </div>
+        </details>
+
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">What should I have ready before the workshop?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            A laptop, a stable internet connection and the development setup shared in the pre-workshop instructions. Complete the setup before the session so the live time can be used for building.
+          </div>
+        </details>
+
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">Will recordings be available?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            Live attendance is strongly encouraged because the hands-on flow, debugging and Q&amp;A are central to the experience. Recording with lifetime access will be shared though.
+          </div>
+        </details>
+
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">Will I become production-ready in three hours?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            No honest workshop should promise that. You will gain a working first system, a clear architecture model and a roadmap for progressing toward production-grade AI Engineering.
+          </div>
+        </details>
+
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">Is this suitable for non-technical business leaders?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            This version is designed primarily for professionals who can follow code and understand software or technical systems. A non-technical AI leadership session would need a different format.
+          </div>
+        </details>
+
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">What happens after the workshop?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">
+            You will receive an extension roadmap showing how the mini-build can grow into a more robust project. Professionals who want a deeper transition can also explore the longer AI Engineering mentorship path.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="text-center py-20" id="register">
+      <h2 class="text-3xl font-bold mb-6">
+        Three Hours From Now, You Could Still Be Watching AI Videos.<br>
+        <span class="animated-gradient-text">Or You Could Have Built Your First Multi-Agent System.</span>
+      </h2>
+
+      <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+        Bring your laptop, your software engineering experience and your questions. I will bring the architecture,
+        starter code and guided build.
+      </p>
+
+      <!-- Replace the href below with the final TagMango / registration URL -->
+      <a class="btn-glow" href="https://learn.sanjaynegi.in/l/77ba6e58ed" target="_blank" rel="noopener">
+        Build My First Multi-Agent System
+      </a>
+
+      <p class="text-gray-400 text-sm mt-5">
+        Live online · August 1, 2026 · 10:00 AM-1:00 PM IST · Designed for experienced professionals
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-transparent text-white">
+    <div class="container mx-auto px-6 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-2">SkillUp with Sanjay</h3>
+          <p class="text-gray-400">
+            Helping experienced professionals move from AI anxiety to AI authority through architecture-first AI Engineering.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg mb-2">Career Paths</h3>
+          <ul class="space-y-1">
+            <li><a href="ai-engineer.html" class="text-gray-400 hover:text-white">AI Engineer</a></li>
+            <li><a href="fde.html" class="text-gray-400 hover:text-white">Forward Deployed Engineer</a></li>
+            <li><a href="ai_architect_cohort.html" class="text-gray-400 hover:text-white">GenAI Architect</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+          <ul class="space-y-1">
+            <li><a href="workshops.html" class="text-gray-400 hover:text-white">Build Together Live</a></li>
+            <li><a href="resources.html" class="text-gray-400 hover:text-white">Resources</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-6 flex justify-between items-center text-sm text-gray-400">
+        <p>&copy; 2026 SkillUp with Sanjay. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js" defer></script>
+  <script src="assets/js/p5-particles.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

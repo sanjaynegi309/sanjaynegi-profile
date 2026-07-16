@@ -1,0 +1,99 @@
+[
+  {
+    "id": "ai-engineer-6-months-aug-2026",
+    "title": "AI Engineer",
+    "summary": "Move from maintaining traditional software systems to designing, building, evaluating, and deploying production-ready AI applications that you can confidently defend in an architecture review, appraisal, or interview.",
+    "features": [
+      "Build production-ready LLM, RAG, and agentic AI applications",
+      "Work with OpenAI Agents SDK, LangGraph, CrewAI, Google ADK, and LangChain",
+      "Integrate AI with APIs, databases, enterprise applications, and existing workflows",
+      "Apply evaluation, guardrails, observability, LLMOps, MLOps, and deployment practices",
+      "Create a deployed AI system with architecture diagrams and a strong career case study",
+      "Get live mentorship, architecture reviews, project clinics, and implementation feedback"
+    ],
+    "duration": "6 Months",
+    "dates": "Starts August 2, 2026",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Weekends (Saturday and Sunday)",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online (Zoom)",
+    "price": "",
+    "tags": [
+      "Career Track",
+      "Production AI Engineering"
+    ],
+    "bestFor": [
+      "Senior Software Engineers",
+      "Technical Leads",
+      "Backend and Platform Engineers",
+      "Experienced Software Professionals"
+    ],
+    "image": "assets/images/ai-engineer.png",
+    "url": "ai-engineer.html"
+  },
+  {
+    "id": "forward-deployed-engineer-8-months-aug-2026",
+    "title": "Forward Deployed Engineer",
+    "summary": "Move from receiving fixed requirements to becoming the engineer customers trust to uncover the real problem, shape the right AI solution, and own delivery through production and adoption.",
+    "features": [
+      "Run customer discovery and turn ambiguous requests into clear, high-value AI use cases",
+      "Map business workflows, stakeholders, constraints, risks, and measurable outcomes",
+      "Design, prototype, integrate, and deploy AI solutions in real customer environments",
+      "Combine AI Engineering depth with solution architecture and delivery ownership",
+      "Communicate trade-offs confidently with customers, executives, and engineering teams",
+      "Create a complete discovery-to-adoption case study with live delivery coaching"
+    ],
+    "duration": "8 Months",
+    "dates": "Starts August 2, 2026",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Weekends (Saturday and Sunday)",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online (Zoom)",
+    "price": "",
+    "tags": [
+      "Career Track",
+      "Customer-Facing AI Delivery"
+    ],
+    "bestFor": [
+      "Senior Software Engineers",
+      "Technical Leads",
+      "Solution Architects",
+      "Technical Consultants"
+    ],
+    "image": "assets/images/fde.png",
+    "url": "fde.html",
+    "recommended": true
+  },
+  {
+    "id": "gen-ai-architect-10-months-aug-2026",
+    "title": "GenAI Architect",
+    "summary": "Move from contributing to isolated AI projects to designing the enterprise platforms, standards, governance, and technical direction that help multiple teams build AI systems safely and at scale.",
+    "features": [
+      "Design enterprise GenAI reference architectures and target-state AI platforms",
+      "Architect LLM platforms, enterprise RAG, agentic systems, and integration layers",
+      "Define security, governance, evaluation, guardrails, and production-readiness standards",
+      "Make defensible decisions across models, vendors, cost, latency, scale, and reliability",
+      "Design LLMOps, MLOps, observability, and operating models for multiple delivery teams",
+      "Create an enterprise AI architecture blueprint and defend it through live design reviews"
+    ],
+    "duration": "10 Months",
+    "dates": "Starts August 2, 2026",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Weekends (Saturday and Sunday)",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online (Zoom)",
+    "price": "",
+    "tags": [
+      "Career Track",
+      "Enterprise GenAI Architecture"
+    ],
+    "bestFor": [
+      "Solution and Application Architects",
+      "Senior Technical Leads",
+      "Principal Engineers",
+      "Engineering and Platform Leaders"
+    ],
+    "image": "assets/images/genai-architect.png",
+    "url": "ai_architect_cohort.html"
+  }
+]

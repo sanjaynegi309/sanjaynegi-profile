@@ -1,369 +1,203 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From Invisible → Irreplaceable — 6-Month GenAI Architecture Mentorship</title>
-    <meta name="description" content="6-month mentorship to become a production-ready GenAI Architect. Design 6 architectures, deploy 2 systems, LLMOps, RAG, multi-agent, deployment blueprints.">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-NNJRMTPHZK');
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenAI Architect - Enterprise AI Architecture Mentorship</title>
+  <meta name="description" content="A GenAI Architect mentorship for experienced technology professionals who want to design enterprise AI platforms, standards, governance and operating models.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NNJRMTPHZK');
+  </script>
 </head>
-<body class="antialiased font-sans bg-gray-900 text-gray-200">
-    <a href="#main-content" class="sr-only focus:not-sr-only text-indigo-600">Skip to main content</a>
+<body class="antialiased font-sans">
+  <div id="canvas-container"></div>
+  <a href="#main-content" class="sr-only focus:not-sr-only text-indigo-600">Skip to main content</a>
 
-    <main id="main-content" class="container mx-auto px-6 py-12">
-        <!-- HERO -->
-        <section class="hero text-center py-20" aria-label="Hero">
-            <div class="badge inline-block glass-card-hot py-1 px-3 rounded-full text-sm font-semibold hot-badge">● Live Cohort · 30 Exclusive Seats</div>
-            <h1 class="text-4xl md:text-6xl font-bold my-4">From Invisible to Irreplaceable</h1>
-            <p class="text-lg md:text-xl mb-6 max-w-3xl mx-auto text-gray-300">In 6 months, translate your engineering experience (any role - QA, DEV, Product, Manager, DevOps, SRE, Cloud, Support, DB etc) into architect-level impact. Design 6 GenAI systems, ship 2 production systems with live metrics, and become the architect your company can't pass over.</p>
+  <main id="main-content" class="container mx-auto px-6 py-12">
+    <section class="hero text-center py-16 md:py-20">
+      <div class="badge inline-block glass-card-hot py-1 px-3 rounded-full text-xs md:text-sm font-semibold hot-badge">FOR 10+ YEAR TECHNOLOGY PROFESSIONALS</div>
+      <h1 class="text-4xl md:text-6xl font-bold my-6 leading-tight">Become the Architect Who Gives Enterprise AI<br><span>a Production-Ready Foundation</span></h1>
+      <p class="text-lg md:text-2xl mb-5 max-w-4xl mx-auto text-gray-200 font-semibold">Move from contributing to isolated AI use cases to designing the platforms, standards and guardrails that help multiple teams build AI systems safely and at scale.</p>
+      <p class="text-lg md:text-xl mb-8 max-w-4xl mx-auto text-gray-300">You already understand software systems, integration, cloud and production constraints. This mentorship helps you extend that experience into enterprise GenAI architecture, covering LLM platforms, RAG, agents, security, governance, evaluation, observability and technical leadership.</p>
+      <div class="cta-row flex flex-col md:flex-row justify-center gap-4">
+        <a class="btn-glow" href="https://learn.sanjaynegi.in/l/66f999b29d" target="_blank" rel="noopener">Build My GenAI Architect Roadmap</a>
+        <a class="btn-glow" href="#genai-architect-roadmap">Explore the Architect Roadmap</a>
+      </div>
+      <div class="hero-meta mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-400 max-w-4xl mx-auto">
+        <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Next cohort starts: Sep 05, 2026</div>
+        <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Live Cohort</div>
+        <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Seats: 30</div>
+      </div>
+    </section>
 
-            <div class="cta-row flex justify-center space-x-4">
-                <a class="btn-glow" href="https://learn.sanjaynegi.in/l/837c45f372" target="_blank" rel="noopener">Reserve My Architect Spot →</a>
-                <a class="btn-glow" href="#eligibility">Check Eligibility Criteria →</a>
+    <section class="py-16"><div class="glass-card p-6 md:p-8">
+      <h2 class="text-3xl font-bold mb-6">Does Any of This Feel Familiar?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+        <p class="border border-gray-700 rounded-lg p-4">Your organisation is launching AI pilots, but every team is choosing its own models, frameworks and patterns.</p>
+        <p class="border border-gray-700 rounded-lg p-4">You can build individual AI features, but you are not yet confident defining an enterprise-wide architecture.</p>
+        <p class="border border-gray-700 rounded-lg p-4">Leadership asks for an AI strategy, while engineering teams need decisions about data, security, evaluation and deployment.</p>
+        <p class="border border-gray-700 rounded-lg p-4">You are expected to review AI designs, but the ecosystem changes faster than traditional architecture playbooks.</p>
+        <p class="border border-gray-700 rounded-lg p-4">You can explain microservices and cloud platforms, but agentic AI, model risk and LLMOps require a new architecture lens.</p>
+        <p class="border border-gray-700 rounded-lg p-4">You do not want to become the architect who only draws boxes after the decisions have already been made.</p>
+        <p class="border border-gray-700 rounded-lg p-4">You want to lead AI direction without becoming disconnected from implementation reality.</p>
+        <p class="border border-gray-700 rounded-lg p-4">You do not need another list of tools. You need a repeatable way to make and defend architecture decisions.</p>
+      </div>
+      <p class="mt-8 text-2xl md:text-3xl font-bold">You do not need to abandon your architecture experience.<br><span class="animated-gradient-text">You need to extend it into enterprise AI systems, governance and technical leadership.</span></p>
+    </div></section>
 
-            </div>
-
-            <div class="hero-meta mt-8 flex justify-center space-x-4 text-gray-400">
-                <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Next cohort starts: Sep 05, 2026</div>
-                <div class="meta-pill bg-gray-800 py-2 px-4 rounded-lg font-semibold highlight-date-time">Seats: 30</div>
-            </div>
-        </section>
-
-        <section class="py-12">
-            <h2 class="text-2xl font-bold text-center mb-8">Do you see yourself here? If yes, this program is built for you.</h2>
-            <div class="personas grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <div class="persona glass-card p-6 text-center"><strong>Rajesh</strong><div class="text-gray-400 mt-2">Passed-over senior engineer. Fix the architecture gap blocking your promotion.</div></div>
-                <div class="persona glass-card p-6 text-center"><strong>Priya</strong><div class="text-gray-400 mt-2">Breadwinner worried about layoffs. Build irreplaceable architect credentials and secure your family.</div></div>
-                <div class="persona glass-card p-6 text-center"><strong>Arjun</strong><div class="text-gray-400 mt-2">Ambitious engineer blocked from architect work. Translate your maturity into authority and lead AI projects.</div></div>
-                <div class="persona glass-card p-6 text-center"><strong>Elena</strong><div class="text-gray-400 mt-2">Full-stack pivoting into AI. Get clarity, deploy systems, open career options.</div></div>
-                <div class="persona glass-card p-6 text-center"><strong>Vikram</strong><div class="text-gray-400 mt-2">Long-tenured engineer seeking a new chapter — reignite your career with production AI experience.</div></div>
-            </div>
-        </section>
-
-        <section class="py-12">
-            <div class="features grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="feature glass-card p-6">
-                    <h4 class="text-xl font-bold mb-2">Production deliverables</h4>
-                    <p class="text-gray-400">Design 6 architectures; graduate with 2 deployed systems with live metrics. These are production systems — not demos.</p>
-                    <div class="proof text-teal-400 mt-4 font-semibold">Graduation requires deployment; real metrics prove impact.</div>
-                </div>
-                <div class="feature glass-card p-6">
-                    <h4 class="text-xl font-bold mb-2">Architecture-first mentorship</h4>
-                    <p class="text-gray-400">Weekly live reviews, 1:1 design feedback, and instructor-led critiques focused on architect decisions.</p>
-                    <div class="proof text-teal-400 mt-4 font-semibold">Structured design reviews for every deliverable.</div>
-                </div>
-                <div class="feature glass-card p-6">
-                    <h4 class="text-xl font-bold mb-2">Career velocity</h4>
-                    <p class="text-gray-400">Resume + LinkedIn reframing, interview coaching, stakeholder presentation practice and salary negotiation support.</p>
-                    <div class="proof text-teal-400 mt-4 font-semibold">Portfolio-ready artifacts hiring managers ask for.</div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
-
-        <section id="curriculum" aria-label="Program overview">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="lg:col-span-2">
-                    <p class="text-gray-400 mb-8">Cohort-based, production-first mentorship for senior engineers (any role - QA, DEV, Product, Manager, DevOps, SRE, Cloud, Support, DB etc). Live sessions, milestone deliveries, and practical mentor feedback — designed to move you from senior engineer into architect roles with real systems on the internet.</p>
-                    <h3 class="text-2xl font-bold mb-6">What you’ll learn — Week-by-week architecture transformation</h3>
-
-                    <div class="space-y-4">
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 1 — GenAI System Design Foundations</span>
-                                <span class="text-sm text-gray-400">2–4 hrs/week</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>What you'll ship:</strong> Architecture decision log + pattern mappings.</p>
-                                <p><strong>Tools:</strong> System diagrams, decision logs, architecture templates.</p>
-                            </div>
-                        </details>
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 2 — Agentic Patterns & Decisioning</span>
-                                <span class="text-sm text-gray-400">2–3 hrs/week</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>Ship:</strong> Agent flow diagrams + failure modes.</p>
-                                <p><strong>Tools:</strong> Orchestrators, tool-calling patterns.</p>
-                            </div>
-                        </details>
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 3 — RAG Architecture Mastery</span>
-                                <span class="text-sm text-gray-400">3–4 hrs/week</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>Ship:</strong> RAG pipeline, vector store architecture, evaluation checks.</p>
-                            </div>
-                        </details>
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 4 — LLMOps: Monitoring & Evaluation</span>
-                                <span class="text-sm text-gray-400">2–3 hrs/week</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>Ship:</strong> Monitoring dashboard spec, metrics plan, prompt regression tests.</p>
-                            </div>
-                        </details>
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 5 — Production Deployment & Infra</span>
-                                <span class="text-sm text-gray-400">3–5 hrs/week</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>Ship:</strong> Deployment runbook, infra templates, autoscaling plan.</p>
-                            </div>
-                        </details>
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 6 — Architecture Portfolio</span>
-                                <span class="text-sm text-gray-400">Ongoing</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>Ship:</strong> Architecture docs, decision logs, stakeholder slides.</p>
-                            </div>
-                        </details>
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 7 — Implement & Ship</span>
-                                <span class="text-sm text-gray-400">6–10 hrs/sprint</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>Ship:</strong> Two production systems with live URLs & metrics dashboards (required for graduation).</p>
-                            </div>
-                        </details>
-                        <details class="module glass-card p-4 rounded-lg">
-                            <summary class="cursor-pointer font-bold text-lg flex justify-between items-center">
-                                <span>Module 8 — Career Velocity & Interview Prep</span>
-                                <span class="text-sm text-gray-400">2–4 hrs/week</span>
-                            </summary>
-                            <div class="module-content pt-4 mt-4 border-t border-gray-700">
-                                <p><strong>Ship:</strong> Resume + LinkedIn rewrite, mock interviews, negotiation prep.</p>
-                            </div>
-                        </details>
-                    </div>
-
-                    <div class="mt-8 flex space-x-4">
-                        <a class="btn-glow" href="https://learn.sanjaynegi.in/l/837c45f372" target="_blank" rel="noopener">Reserve My Architect Spot →</a>
-                    </div>
-                </div>
-
-                <aside class="sidebar" aria-label="Program details">
-                    <div class="glass-card p-6 text-center">
-                        <div class="price-label text-gray-400">Cohort start</div>
-                        <div class="price-value text-2xl font-bold mt-2">Sep 05, 2026</div>
-                        <p class="text-gray-400 mt-2 text-sm">Price shown at checkout</p>
-                        <a class="btn-glow block w-full mt-6" href="https://learn.sanjaynegi.in/l/837c45f372" target="_blank" rel="noopener">Reserve My Architect Spot</a>
-                    </div>
-
-                    <div class="glass-card p-6 mt-6">
-                        <h4 class="text-xl font-bold mb-4">What's included</h4>
-                        <ul class="info-list space-y-3 text-gray-300">
-                            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Weekly live sessions & lifetime recordings</li>
-                            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> 2 required deployed systems with live metrics</li>
-                            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Architecture templates, code & infra blueprints</li>
-                            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> 1:1 design reviews & mentor feedback</li>
-                            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Private cohort channel</li>
-                        </ul>
-                    </div>
-                </aside>
-            </div>
-        </section>
-
-        <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
-
-        <section class="text-center" aria-label="Guarantee">
-    <div class="guarantee glass-card inline-block p-6">
-        <h3 class="text-xl font-bold">Commitment Policy & Success Guarantee</h3>
-        <p class="text-gray-400 mt-2 max-w-xl mx-auto">
-            This is a selective, limited-seat mentorship. When you join, you take a seat someone else wanted.
-            For this reason, <strong>all enrollments are final and non-refundable.</strong>
-        </p>
-
-        <div class="mt-6 text-left max-w-xl mx-auto">
-            <div class="mb-4">
-                <strong>Architect-Ready Success Guarantee</strong>
-                <p class="text-gray-400 text-sm mt-1">
-                    If you don’t have <strong>2 deployed production systems</strong> and clear architect-level decision-making by Month 6,
-                    your mentor continues supporting you <strong>until you do</strong> — at no extra cost.
-                </p>
-            </div>
-
-            <div class="mb-4">
-                <strong>Cohort Integrity Policy</strong>
-                <p class="text-gray-400 text-sm mt-1">
-                    This mentorship works only when participants stay committed. To protect cohort quality and accountability,
-                    <strong>no refunds are offered</strong> under any circumstance.
-                </p>
-            </div>
-
-            <div>
-                <strong>Clarity Before Commitment</strong>
-                <p class="text-gray-400 text-sm mt-1">
-                    Please enroll only if you can commit 6–10 hours/week and you are serious about deploying real GenAI systems.
-                    Review the eligibility criteria before joining.
-                </p>
-            </div>
+    <section class="py-16"><div class="glass-card p-6 md:p-8">
+      <h2 class="text-3xl font-bold mb-5">Built for Experienced Professionals Ready to Lead AI Architecture</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-8">
+        <div class="space-y-4 text-gray-300 leading-relaxed">
+          <p>If you have spent years designing, building, integrating, deploying or governing production systems, this program helps you apply that experience to enterprise GenAI platforms and operating models.</p>
+          <p class="rounded-md border border-cyan-400/30 bg-cyan-400/10 p-4 text-cyan-100 font-semibold">This is not a framework course. It is an architecture and technical leadership path.</p>
+          <p>Participants may come from Java, C#, C++, Kotlin, Python, Go, Scala or another modern software engineering ecosystem. The programming language is not the centre of the page; architecture judgement is.</p>
         </div>
-
-        <div class="stats flex justify-center space-x-8 mt-6">
-            <div><div class="text-3xl font-bold">30</div><div class="text-gray-400">Limited Seats</div></div>
-            <div><div class="text-3xl font-bold">2</div><div class="text-gray-400">Production Systems Required</div></div>
-            <div><div class="text-3xl font-bold">∞</div><div class="text-gray-400">Mentor Support (Until Success)</div></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Senior engineers preparing for architecture roles</div>
+          <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Solution and application architects</div>
+          <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Enterprise and platform architects</div>
+          <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Cloud architects working on AI-enabled platforms</div>
+          <div class="border border-gray-700 rounded-lg p-4 text-gray-300">AI Engineers ready to move into architecture</div>
+          <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Technical leads, engineering managers and consultants responsible for enterprise AI decisions</div>
         </div>
-    </div>
-</section>
+      </div>
+    </div></section>
 
-        <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
+    <section class="py-16"><div class="glass-card p-6 md:p-8">
+      <h2 class="text-3xl font-bold mb-5">What Does a GenAI Architect Actually Do?</h2>
+      <p class="text-gray-300 leading-relaxed max-w-4xl">The role connects business strategy, AI use cases, data, models, applications, platforms, security, governance, operations and delivery teams. A credible GenAI Architect is not just the most senior developer, not a cloud architect adding an LLM API box, and not someone who recommends tools without understanding operating constraints.</p>
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr_auto_1fr_auto_1fr_auto_1fr] gap-3 mt-8 text-center items-stretch">
+        <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Understand enterprise goals and constraints</div><div class="hidden md:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+        <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Define architecture principles</div><div class="hidden md:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+        <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Choose platform and integration patterns</div><div class="hidden md:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+        <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Establish security, evaluation and governance</div><div class="hidden lg:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+        <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Guide implementation across teams</div><div class="hidden lg:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+        <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Review production readiness</div><div class="hidden lg:flex items-center text-cyan-300/70 font-bold">&rarr;</div>
+        <div class="border border-gray-700 rounded-lg p-4 text-gray-300">Measure, learn and evolve the platform</div>
+      </div>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <p class="rounded-md border border-cyan-400/30 bg-cyan-400/10 p-4 text-cyan-100 font-semibold">You are not only designing one AI application. You are designing the foundation that allows many AI applications to be built, governed and operated responsibly.</p>
+        <p class="rounded-md border border-gray-700 p-4 text-gray-300">An AI Engineer builds the system. An FDE drives the customer outcome. A GenAI Architect defines the technical foundation, standards and guardrails that allow systems and teams to scale.</p>
+      </div>
+    </div></section>
 
-        <section aria-label="Outcomes">
-            <h2 class="text-3xl font-bold text-center mb-8">What you'll achieve</h2>
-            <div class="glass-card p-8">
-                <h3 class="text-2xl font-bold mb-6">Top outcomes</h3>
-                <ul class="space-y-4 text-gray-300">
-                    <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> <strong>6 architecture case studies</strong>&nbsp; and stakeholder-ready documents</li>
-                    <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> <strong>2 deployed GenAI systems</strong>&nbsp; with live URLs & metrics (required for graduation)</li>
-                    <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> <strong>Interview-ready portfolio</strong>&nbsp; with resume & LinkedIn overhaul</li>
-                </ul>
+    <section class="py-16">
+      <h2 class="text-3xl font-bold text-center mb-10">Career Transformation Outcomes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Design Enterprise AI Platforms</h3><p class="text-gray-400">Create target-state and reference architectures for LLM applications, RAG systems, agent platforms, integration, evaluation and operations.</p></div>
+        <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Establish Standards and Guardrails</h3><p class="text-gray-400">Define architecture principles for security, governance, model use, data access, evaluation, observability, cost and production readiness.</p></div>
+        <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Lead Technical Direction</h3><p class="text-gray-400">Guide engineering teams, challenge vendor claims, communicate trade-offs to leadership and become a credible design authority for enterprise AI.</p></div>
+      </div>
+    </section>
 
-                <div class="mt-8 pt-8 border-t border-gray-700">
-                    <h4 class="text-2xl font-bold mb-4">Bonuses!!!</h4>
-                    <ul class="space-y-4 text-gray-300">
-                        <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> Lifetime Access to All Future Workshop Recordings</li>
-                        <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> Architecture Toolkit PDF</li>
-                        <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> 3 months WhatsApp support after cohort completion</li>
-                        <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> Lifetime session recordings for the cohort</li>
-                        <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> Private cohort community</li>
-                        <li class="flex items-start"><span class="text-teal-400 mr-3 text-lg">✓</span> 2 system codebases & templates</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <section id="genai-architect-roadmap" class="py-16 scroll-mt-10">
+      <h2 class="text-3xl font-bold text-center mb-4">Complete GenAI Architect Curriculum</h2>
+      <p class="text-gray-400 text-center max-w-3xl mx-auto mb-10">A senior architecture roadmap for enterprise AI platforms, governance, operating models and technical leadership.</p>
+      <div class="space-y-5">
+        <details class="glass-card p-5 rounded-lg" open><summary class="cursor-pointer font-bold text-lg">Module 1 - The GenAI Architect Role and Architecture Mindset</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Move from designing individual applications to shaping enterprise AI direction.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- GenAI Architect responsibilities</li><li>- AI Engineer versus FDE versus GenAI Architect</li><li>- Solution, platform and enterprise architecture perspectives</li><li>- Architecture principles</li><li>- Quality attributes</li><li>- System boundaries</li><li>- Architecture decision-making under uncertainty</li><li>- Functional and non-functional requirements</li><li>- Architecture fitness criteria</li><li>- Technical debt in AI systems</li><li>- Architecture documentation</li><li>- Architecture decision records</li><li>- Communicating assumptions and trade-offs</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 2 - Enterprise GenAI Reference Architecture</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Understand the complete set of capabilities required to run GenAI safely in an enterprise.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- Experience and application layer</li><li>- API and orchestration layer</li><li>- Model gateway</li><li>- Foundation model providers</li><li>- Model routing</li><li>- Prompt and configuration management</li><li>- RAG and enterprise knowledge layer</li><li>- Agent orchestration</li><li>- Tool and integration layer</li><li>- Identity and access</li><li>- Evaluation</li><li>- Guardrails</li><li>- Observability</li><li>- Governance</li><li>- Cost management</li><li>- Data and analytics</li><li>- Platform engineering</li><li>- Deployment environments</li><li>- Human-in-the-loop controls</li><li>- Shared versus application-specific capabilities</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 3 - LLM Platform and Model Strategy</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Choose and govern models based on enterprise constraints rather than vendor hype.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- Hosted versus self-hosted models</li><li>- Commercial versus open models</li><li>- Model selection criteria</li><li>- Quality, latency, cost and privacy trade-offs</li><li>- Model gateways</li><li>- Model routing and fallback</li><li>- Multi-model strategies</li><li>- Model lifecycle</li><li>- Version changes</li><li>- Context-window constraints</li><li>- Structured outputs</li><li>- Tool calling</li><li>- Multimodal patterns</li><li>- Fine-tuning versus prompting versus RAG</li><li>- Model contracts and abstraction</li><li>- Vendor dependency and lock-in</li><li>- Build-versus-buy decisions</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 4 - Enterprise RAG and Knowledge Architecture</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Design trusted enterprise knowledge systems with security, relevance and lifecycle controls.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- Source-system integration</li><li>- Content ingestion architecture</li><li>- Document lifecycle</li><li>- Chunking and embedding strategies</li><li>- Vector and hybrid retrieval</li><li>- Metadata</li><li>- Reranking</li><li>- Query transformation</li><li>- Knowledge freshness</li><li>- Citation and source traceability</li><li>- Access-controlled retrieval</li><li>- Tenant and domain isolation</li><li>- Sensitive information handling</li><li>- Retrieval evaluation</li><li>- RAG observability</li><li>- Enterprise search integration</li><li>- Knowledge graphs where appropriate</li><li>- Multi-domain knowledge architecture</li><li>- Failure and fallback patterns</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 5 - Agentic AI and Enterprise Workflow Architecture</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Design controlled agent systems that can act without creating unacceptable operational risk.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- Agent versus workflow decisions</li><li>- Single-agent and multi-agent patterns</li><li>- Planner-executor patterns</li><li>- State and memory</li><li>- Tool registries</li><li>- Permissions</li><li>- Human approval</li><li>- Long-running workflows</li><li>- Event-driven agents</li><li>- Failure recovery</li><li>- Idempotency</li><li>- Auditability</li><li>- Agent observability</li><li>- Agent security boundaries</li><li>- OpenAI Agents SDK</li><li>- LangGraph</li><li>- CrewAI</li><li>- Google ADK</li><li>- LangChain where appropriate</li><li>- Framework trade-offs</li><li>- Protocol and interoperability considerations</li><li>- Avoiding unnecessary agent complexity</li></ul><p class="text-cyan-200 font-semibold">Architecture patterns and framework-selection criteria matter more than tool memorisation.</p></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 6 - Evaluation, Guardrails and Responsible AI Architecture</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Define how the enterprise determines whether AI systems are useful, safe and production-ready.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- Evaluation strategy</li><li>- Offline and online evaluation</li><li>- Golden datasets</li><li>- Retrieval metrics</li><li>- Response-quality metrics</li><li>- LLM-as-judge patterns and limitations</li><li>- Task-specific evaluation</li><li>- Regression testing</li><li>- Red-team testing</li><li>- Prompt injection</li><li>- Data leakage</li><li>- Toxicity and policy controls</li><li>- Hallucination risk</li><li>- Human oversight</li><li>- Explainability requirements</li><li>- Responsible AI principles</li><li>- Approval and exception workflows</li><li>- Audit trails</li><li>- Production readiness criteria</li><li>- Continuous evaluation</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 7 - Security, Privacy and AI Governance</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Build enterprise trust through enforceable controls rather than policy documents alone.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- AI threat modelling</li><li>- Prompt injection and tool abuse</li><li>- Identity and access management</li><li>- Least-privilege tool access</li><li>- Data classification</li><li>- Sensitive data controls</li><li>- Encryption and secrets</li><li>- Tenant isolation</li><li>- Model-provider data handling</li><li>- Logging and retention</li><li>- Privacy</li><li>- Compliance considerations</li><li>- Responsible AI governance</li><li>- Model and use-case inventory</li><li>- Risk classification</li><li>- Architecture review gates</li><li>- Policy enforcement</li><li>- Auditability</li><li>- Incident response</li><li>- Third-party and vendor risk</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 8 - LLMOps, MLOps and Platform Operations</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Design the operating model required to deploy, observe and evolve AI systems across teams.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- AI platform operating model</li><li>- Development, test and production environments</li><li>- CI/CD</li><li>- Infrastructure as code</li><li>- Prompt and configuration versioning</li><li>- Model version management</li><li>- Experiment tracking where relevant</li><li>- Deployment strategies</li><li>- Model gateway operations</li><li>- Tracing</li><li>- Observability</li><li>- Quality monitoring</li><li>- Cost monitoring</li><li>- Latency monitoring</li><li>- Reliability</li><li>- Scaling</li><li>- Quotas and rate limits</li><li>- Incident management</li><li>- Rollback and fallback</li><li>- Platform service levels</li><li>- MLOps foundations</li><li>- LLMOps practices</li><li>- Shared platform ownership</li><li>- FinOps for AI workloads</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 9 - Cloud, Integration and Enterprise Systems Architecture</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Integrate GenAI into the real enterprise rather than building isolated AI islands.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- API-first integration</li><li>- Event-driven architecture</li><li>- Workflow engines</li><li>- Enterprise service integration</li><li>- Data platforms</li><li>- Existing applications</li><li>- Identity systems</li><li>- SaaS and vendor platforms</li><li>- Hybrid and multi-cloud considerations</li><li>- Network boundaries</li><li>- Private connectivity</li><li>- Deployment topologies</li><li>- Multi-tenancy</li><li>- Scalability</li><li>- Resilience</li><li>- Disaster recovery considerations</li><li>- Edge and regional requirements where relevant</li><li>- Integration governance</li><li>- Reusable enterprise services</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 10 - Architecture Leadership and Organisational Adoption</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Become the person who can align executives, architects and delivery teams around a credible AI direction.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- AI strategy translated into architecture</li><li>- Capability roadmaps</li><li>- Architecture governance</li><li>- Design authority</li><li>- Architecture review boards</li><li>- Guiding multiple teams</li><li>- Technical standards</li><li>- Reference implementations</li><li>- Platform versus product team responsibilities</li><li>- Build-versus-buy communication</li><li>- Vendor evaluation</li><li>- Executive communication</li><li>- Communicating risk and uncertainty</li><li>- Prioritisation</li><li>- Stakeholder alignment</li><li>- Coaching engineers and architects</li><li>- Organisational operating model</li><li>- AI centre-of-excellence considerations</li><li>- Balancing central governance with team autonomy</li></ul></div></details>
+        <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Module 11 - Enterprise Capstone: GenAI Platform and Governance Blueprint</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400 space-y-3"><p class="text-gray-300">Create and defend an enterprise AI architecture that could guide real implementation.</p><ul class="grid grid-cols-1 md:grid-cols-2 gap-2"><li>- Business and technology context</li><li>- Current-state assessment</li><li>- Target-state architecture</li><li>- Architecture principles</li><li>- Reference architecture</li><li>- Platform capability map</li><li>- Model strategy</li><li>- RAG strategy</li><li>- Agent strategy</li><li>- Security architecture</li><li>- Evaluation strategy</li><li>- Governance model</li><li>- LLMOps and MLOps operating model</li><li>- Integration plan</li><li>- Cost and scale considerations</li><li>- Architecture risks</li><li>- Adoption roadmap</li><li>- Architecture decision records</li><li>- Executive presentation</li><li>- Technical design defence</li><li>- Portfolio case study</li></ul></div></details>
+      </div>
+    </section>
 
-        <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
+    <section class="py-16"><h2 class="text-3xl font-bold text-center mb-10">What You Will Design - Not Just Discuss</h2><div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Architecture Artifacts</h3><ul class="text-gray-400 space-y-2"><li>- Enterprise GenAI reference architecture</li><li>- Target-state architecture</li><li>- Platform capability map</li><li>- Model gateway and routing design</li><li>- Enterprise RAG architecture</li><li>- Agent platform architecture</li><li>- Integration architecture</li><li>- Deployment topology</li></ul></div>
+      <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Governance and Operating Artifacts</h3><ul class="text-gray-400 space-y-2"><li>- Architecture principles</li><li>- AI use-case classification</li><li>- Security and risk controls</li><li>- Evaluation strategy</li><li>- Responsible AI governance model</li><li>- Architecture review checklist</li><li>- Production-readiness criteria</li><li>- LLMOps operating model</li><li>- Cost and observability framework</li></ul></div>
+      <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Leadership Artifacts</h3><ul class="text-gray-400 space-y-2"><li>- AI capability roadmap</li><li>- Build-versus-buy decision</li><li>- Vendor evaluation framework</li><li>- Architecture decision records</li><li>- Executive architecture presentation</li><li>- Cross-team technical standards</li><li>- Architecture review narrative</li></ul></div>
+    </div><p class="text-gray-300 text-center max-w-4xl mx-auto mt-8 font-semibold">The value of a GenAI Architect is not the number of diagrams created. It is the quality of decisions those diagrams make possible.</p></section>
 
-        <section aria-label="Mentor">
-            <h2 class="text-3xl font-bold text-center mb-8">Meet your mentor</h2>
-            <div class="mentor-card glass-card p-8 md:flex items-center">
-                <img src="assets/images/sanjay_mentor.jpg" alt="Sanjay Negi" class="w-32 h-32 rounded-full mx-auto md:mx-0 md:mr-8">
-                <div>
-                    <h3 class="text-2xl font-bold">Sanjay Negi</h3>
-                    <p class="text-gray-400 mt-4">GenAI Architect & Mentor • 22+ years building enterprise backend systems. Sanjay mentors senior engineers to translate architecture instincts into production GenAI systems — RAG, LLMOps, multi-agent orchestration and observability.</p>
-                </div>
-            </div>
+    <section class="py-16"><h2 class="text-3xl font-bold text-center mb-10">What You Will Be Ready to Show After the Program</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Architecture Evidence</h3><ul class="text-gray-400 space-y-2"><li>- An enterprise GenAI reference architecture</li><li>- A platform capability model</li><li>- RAG and agent architecture patterns</li><li>- Security and governance controls</li><li>- Evaluation and observability strategy</li><li>- LLMOps operating model</li><li>- Technical decision records</li><li>- An implementation roadmap</li></ul></div>
+      <div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Career Evidence</h3><ul class="text-gray-400 space-y-2"><li>- A credible GenAI Architect portfolio case study</li><li>- Interview-ready architecture stories</li><li>- Stronger architecture-review responses</li><li>- A revised LinkedIn and resume narrative</li><li>- Evidence of leading cross-team technical decisions</li><li>- A stronger internal-promotion or architecture-role story</li><li>- The ability to communicate AI trade-offs to engineers and leadership</li></ul></div>
+    </div><p class="mt-8 text-center text-xl font-semibold text-gray-200 max-w-4xl mx-auto">The goal is not to say, "I know GenAI tools." The goal is to say, "I can design the architecture, standards and operating model required to scale GenAI safely across an enterprise."</p></section>
 
-            <div id="story" class="glass-card p-8 mt-8">
-                <h3 class="text-2xl font-bold">Why I teach this</h3>
-                <p class="text-gray-400 mt-4">I spent 22 years building backend systems. When AI arrived, I felt oddly irrelevant — I failed at self-paced learning three times before discovering a production-first path that works. I learned to translate experience into architect-level decisions and ship systems that matter.</p>
-                <p class="text-gray-400 mt-4">This program is the path I wished I had: live mentorship, architecture-first training, and the accountability to ship — not tutorials or shallow projects.</p>
-            </div>
+    <section class="py-16"><div class="glass-card p-6 md:p-8"><h2 class="text-3xl font-bold mb-8">Program Delivery and Support</h2><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"><div class="border border-gray-700 rounded-lg p-4 text-gray-300">6-month architecture mentorship</div><div class="border border-gray-700 rounded-lg p-4 text-gray-300">Live cohort</div><div class="border border-gray-700 rounded-lg p-4 text-gray-300">Architecture clinics</div><div class="border border-gray-700 rounded-lg p-4 text-gray-300">Design reviews</div><div class="border border-gray-700 rounded-lg p-4 text-gray-300">Architecture case studies</div><div class="border border-gray-700 rounded-lg p-4 text-gray-300">Whiteboard sessions</div><div class="border border-gray-700 rounded-lg p-4 text-gray-300">Platform-design exercises</div><div class="border border-gray-700 rounded-lg p-4 text-gray-300">Capstone and career narrative feedback</div></div></div></section>
 
-            <div class="glass-card p-6 mt-8">
-                <h4 class="text-xl font-bold mb-2">Transformation Promise</h4>
-                <p class="text-gray-400">Not just a course. A career rewrite. You don't just learn AI. You become the 1% architect your company can't afford to lose.</p>
-            </div>
-        </section>
+    <section class="py-16"><h2 class="text-3xl font-bold text-center mb-10">Why This Is Not Another GenAI Course</h2><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"><div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Architecture Before Tools</h3><p class="text-gray-400">Frameworks and vendors change. Architecture principles and decision-making remain.</p></div><div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Enterprise Systems Before Isolated Demos</h3><p class="text-gray-400">The focus is the platform, integration, security and operating model required beyond the prototype.</p></div><div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Governance That Can Be Implemented</h3><p class="text-gray-400">Security, evaluation and responsible AI are designed into the architecture rather than added as policy slides later.</p></div><div class="glass-card p-6"><h3 class="text-xl font-bold mb-3">Technical Leadership Before Title Chasing</h3><p class="text-gray-400">The goal is to develop the judgement and evidence required to lead architecture, not simply to claim the title.</p></div></div></section>
 
-        <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
+    <section class="py-16"><div class="mentor-card glass-card p-6 md:p-8 md:flex items-center"><img src="assets/images/sanjay_mentor.jpg" alt="Sanjay Negi" class="w-32 h-32 rounded-full mx-auto md:mx-0 md:mr-8 object-cover"><div><h2 class="text-3xl font-bold">Learn Architecture From Someone Who Has Lived the Full Software Lifecycle</h2><div class="text-gray-400 mt-4 space-y-3"><p>I spent more than two decades working across enterprise software, from requirements, design and development to testing, deployment, monitoring, incidents and production support.</p><p>That experience taught me that architecture is not about drawing boxes. It is about making decisions that survive implementation, production pressure and organisational constraints.</p><p>When I moved into GenAI, I found plenty of tool tutorials but very little guidance on how experienced professionals should design complete AI systems, platforms and operating models.</p><p>This mentorship brings those worlds together: deep software lifecycle experience, modern GenAI systems and architecture-first technical leadership.</p></div></div></div></section>
 
-        <section class="text-center" aria-label="Decision">
-            <h3 class="text-3xl font-bold">Two futures — the decision you make today</h3>
-            <div class="two-futures grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
-                <div class="future glass-card p-6">
-                    <h4 class="text-2xl font-bold mb-4">Stay the same</h4>
-                    <p class="text-gray-400">Incremental raises. Routine maintenance work. Watching AI teams get the interesting projects.</p>
-                    <a class="btn-glow-secondary block w-full mt-6" href="#curriculum">Keep exploring →</a>
-                </div>
-                <div class="future glass-card p-6">
-                    <h4 class="text-2xl font-bold mb-4">Rewrite your path</h4>
-                    <p class="text-gray-400">Translate your experience into architect-level value, ship production GenAI systems, and position for leadership roles.</p>
-                    <a class="btn-glow block w-full mt-6" href="https://learn.sanjaynegi.in/l/837c45f372" target="_blank" rel="noopener">Reserve My Architect Spot →</a>
-                </div>
-            </div>
-        </section>
+    <section class="py-16"><div class="glass-card p-6 md:p-8"><h2 class="text-3xl font-bold mb-6">Commitment Policy and Success Support</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300"><div class="space-y-3"><h3 class="text-xl font-bold text-white">What this requires</h3><p>This is a small working cohort. You should expect architecture exercises, design-review participation, case-study preparation, capstone completion, consistent weekly effort, feedback and iteration.</p><p>This is not passive certificate-only participation.</p></div><div class="space-y-3"><h3 class="text-xl font-bold text-white">What this does not promise</h3><p>This is not a placement-guarantee program. The mentorship helps you build the architecture capability, portfolio evidence and professional narrative required for GenAI Architect opportunities.</p><p>It does not guarantee promotion, employment or a specific title.</p></div></div></div></section>
 
-        <div class="divider border-t border-gray-700 my-12" role="presentation"></div>
+    <section class="py-16"><h2 class="text-3xl font-bold text-center mb-4">Standard FAQs</h2><p class="text-gray-400 text-center max-w-3xl mx-auto mb-10">Straight answers for experienced professionals evaluating the GenAI Architect path.</p><div class="space-y-4 max-w-4xl mx-auto">
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Who is this mentorship designed for?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">It is designed for senior engineers, technical leads, solution architects, enterprise architects, platform architects, cloud architects, AI Engineers and technically involved managers who want to lead enterprise GenAI architecture.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Is it suitable if I come from Java, C#, C++, Kotlin, Python, Go, Scala or another language?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. Your production software and systems experience matters more than one language. Python and AI Engineering concepts appear where needed, but architecture judgement is the focus.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Do I need previous AI or machine-learning experience?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Hands-on AI experience is useful, but the program is designed to help experienced technology professionals build the architecture lens for GenAI systems. It is not an ML research curriculum.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">How much Python do I need before joining?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">You should understand software engineering and be willing to work through practical AI examples. You do not need to be a Python specialist to learn architecture patterns, trade-offs and operating models.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Is this a beginner course?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">No. It assumes substantial software, platform, architecture or enterprise systems experience.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Is this suitable for someone with fewer than 10 years of experience?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">The primary audience is 10+ year professionals. A strong technologist with fewer years may be a fit if they have serious production and architecture exposure.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will I build real projects or architecture artifacts?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. You will create reference architectures, platform capability maps, governance artifacts, decision records and an enterprise capstone blueprint.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will I work on a deployable AI architecture?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. The capstone is designed as an enterprise AI architecture and governance blueprint that could guide real implementation.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Is the program live or recorded?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">The existing page identifies this as a live cohort. The value comes from live design thinking, review and capstone feedback.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will recordings be available?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. While we strongly encourage you to attend every live session because that's where you'll benefit from discussions, Q&A, and architecture reviews, you'll also receive <strong>lifetime access to the session recordings</strong>. If you miss a session or want to revisit a concept later, the recordings will always be available.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">What happens if I miss a live session?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Life happens, especially when you're balancing a demanding job. If you miss a session, you can catch up using the lifetime recordings. However, we strongly recommend attending live whenever possible, as the discussions, project reviews, and Q&A sessions provide additional value that recordings cannot fully capture.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">How much time should I set aside each week?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">The live sessions are designed to help you understand the concepts and build working solutions together. To get the maximum value from the mentorship, plan to spend <strong>another 4-6 hours each week</strong> implementing what you've learned, experimenting with the code, reviewing the material, and progressing on your projects. The more you build, the more confident you'll become.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Is the program designed for working professionals?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. The page is designed for experienced Indian working professionals with software, architecture or enterprise systems backgrounds.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">What kind of mentor and project support will I receive?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Every live session includes opportunities to ask questions and discuss implementation challenges. In addition, if participants need extra help with their projects, architecture, or technical roadblocks, <strong>additional weekend mentoring or project review sessions may be scheduled</strong> whenever required. The goal is to help you successfully complete your project, not leave you struggling alone.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will this help with interviews, internal role changes, promotions and appraisals?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">It is designed to help you build architecture evidence, decision narratives and stronger responses for architecture reviews, interviews and internal mobility. It does not guarantee outcomes.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Do you provide placement or guarantee an architect role?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">No. This is not a placement-guarantee program. The mentorship helps you build the architecture capability, portfolio evidence and professional narrative required for GenAI Architect opportunities.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will I receive a certificate?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. You'll receive a certificate on successful completion of the mentorship.<br><br>That said, <strong>a certificate should never be your primary reason for joining</strong>. Employers are far more interested in your ability to demonstrate what you've built. Your deployed AI system, architecture diagrams, project portfolio, and ability to explain your technical decisions will create much stronger career opportunities than a certificate alone.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">What makes this different from Udemy, Coursera, YouTube or self-paced architecture programs?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Self-paced content can explain topics. This path is organised around architecture decisions, governance, platform thinking, review and capstone evidence.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">I have already purchased AI courses. Why should I consider this?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">If those courses taught tools but not enterprise architecture decisions, this mentorship helps you create repeatable architecture patterns, governance and operating models.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">What happens after the mentorship ends?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">By the end of the mentorship, you should have a much stronger GenAI Architect identity, a portfolio of real work, and a clear roadmap for continuing your learning and career growth.<br><br>If you need guidance after the program, you can always reach out to us at <strong>support@sanjaynegi.in</strong> or connect with Sanjay on LinkedIn. We'll do our best to help you move forward whenever possible.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Can my employer sponsor the program?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Employer sponsorship may be possible depending on your organisation. Use the application process to clarify payment and documentation requirements.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">How are participants selected?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">These mentorships are designed for <strong>working professionals with significant software engineering experience</strong> who are serious about building AI capabilities.<br><br>There is no competitive entrance test. Before enrolling, we simply expect you to review the program carefully and ensure it aligns with your background, goals, and commitment level. If you're unsure whether the program is the right fit, feel free to contact us before registering.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">What is the fee and what does it include?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">The current program fee is displayed during the registration process.<br><br>The fee covers the complete live mentorship, session recordings, learning resources, project guidance, architecture reviews, and community access included with your chosen program.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Are instalment options available?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">If you'd like to explore instalment options or have any payment-related questions, please write to <strong>support@sanjaynegi.in</strong> with the name of the program you're interested in. We'll let you know the options available.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Can I speak to someone before making a decision?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">We recommend reviewing the program curriculum and FAQs first to ensure it aligns with your goals.<br><br>If you still have questions or would like clarification before enrolling, feel free to write to <strong>support@sanjaynegi.in</strong>. We'll be happy to guide you and help you determine whether the program is the right fit for you.</div></details>
+        <details class="glass-card p-5 rounded-lg">
+          <summary class="cursor-pointer font-bold text-lg">What if I don't know Python?</summary>
+          <div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">You don't need to be a Python expert before joining. If you've spent years building software in Java, C#, C++, Kotlin, Go, or another programming language, you'll find Python straightforward to pick up. We'll teach the Python required for AI Engineering as part of the program, so you can focus on learning AI concepts rather than worrying about the language.</div>
+        </details>
+    </div></section>
 
-        <section aria-label="FAQ">
-            <h3 class="text-3xl font-bold text-center mb-8">FAQ — quick answers</h3>
-            <div class="space-y-4 max-w-3xl mx-auto">
-                <details class="faq glass-card p-4 rounded-lg">
-                    <summary class="cursor-pointer font-bold text-lg">Who should apply?</summary>
-                    <div class="faq-content text-gray-400 pt-4 mt-4 border-t border-gray-700">Senior engineers (8+ years experience), staff/principal engineers, platform/infra engineers, and engineering managers moving into AI leadership.</div>
-                </details>
-                <details class="faq glass-card p-4 rounded-lg">
-                    <summary class="cursor-pointer font-bold text-lg">What is the time commitment?</summary>
-                    <div class="faq-content text-gray-400 pt-4 mt-4 border-t border-gray-700">Weekly live sessions (4 hrs) on weekends, architecture assignments, and 1:1 reviews. Expect ~6–10 hours/week depending on implementation depth.</div>
-                </details>
-                <details class="faq glass-card p-4 rounded-lg">
-                    <summary class="cursor-pointer font-bold text-lg">Do I need model-building experience?</summary>
-                    <div class="faq-content text-gray-400 pt-4 mt-4 border-t border-gray-700">No. The program focuses on production architecture, orchestration and deployment. Familiarity with software architecture and cloud infra is required.</div>
-                </details>
-                <details class="faq glass-card p-4 rounded-lg">
-                    <summary class="cursor-pointer font-bold text-lg">Refund & guarantee process</summary>
-                    <div class="faq-content text-gray-400 pt-4 mt-4 border-t border-gray-700">
-                    	This is a selective, limited-seat live mentorship. All enrollments are <strong>final and non-refundable</strong> to protect cohort integrity.
-						<br><br>
-						However, your investment is backed by the <strong>Architect-Ready Success Guarantee</strong> — if you haven’t deployed 2 production systems and achieved architect‑level clarity by Month 6, your mentor continues supporting you <strong>until you do</strong> at no additional cost.
-						<br><br>
-						Please review the eligibility criteria before enrolling.
-                    </div>
-                </details>
-            </div>
-            <div class="text-center mt-8 flex space-x-4 justify-center">
-                <a class="btn-glow" href="https://learn.sanjaynegi.in/l/837c45f372" target="_blank" rel="noopener">Reserve My Architect Spot →</a>
-            </div>
-        </section>
+    <section class="py-16"><h2 class="text-3xl font-bold text-center mb-4">GenAI Architect-Specific FAQs</h2><p class="text-gray-400 text-center max-w-3xl mx-auto mb-10">How the senior architecture path works in practice.</p><div class="space-y-4 max-w-4xl mx-auto">
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">What exactly does a GenAI Architect do?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">A GenAI Architect defines the technical foundation, standards, governance and operating model that help multiple teams build AI systems safely and at scale.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">How is a GenAI Architect different from an AI Engineer?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">An AI Engineer builds and deploys production AI systems. A GenAI Architect defines platform architecture, standards, governance and technical direction across systems and teams.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">How is a GenAI Architect different from a Forward Deployed Engineer?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">An FDE works with customers to discover the right problem and drive production adoption. A GenAI Architect creates the enterprise foundation that many teams and use cases can build on.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">How is this different from a traditional solution or enterprise architecture program?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">It adds GenAI-specific model strategy, RAG, agents, evaluation, LLMOps, governance, security and responsible AI architecture to traditional architecture judgement.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Do I need to be an architect already?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">No. You should have substantial production software or enterprise systems experience, but you do not need to already hold an architect title.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Do I need hands-on AI Engineering experience before joining?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Hands-on AI experience is useful but not always mandatory. The path remains technically grounded and helps you understand implementation deeply enough to guide and challenge teams.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will I still write code?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Architects should understand implementation reality. You may work through technical examples, but the main output is architecture, governance and operating-model evidence.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">How much LLM Engineering depth is included?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Enough to make model, gateway, routing, context, cost, latency, privacy and reliability decisions credibly.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we cover enterprise RAG architecture?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. Enterprise RAG architecture is a dedicated module covering ingestion, retrieval, access control, tenant isolation, evaluation and observability.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we cover agentic AI architecture?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. Agentic AI is covered through agent versus workflow decisions, tool permissions, human approval, auditability, observability, failure recovery and enterprise risk.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will OpenAI Agents SDK, LangGraph, CrewAI, Google ADK and LangChain be included?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes, these are represented as implementation tools and architecture options. Frameworks are not the centre of the role.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we cover MLOps and LLMOps?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. The platform operations module covers LLMOps practices, MLOps foundations, deployment, observability, quality, cost, latency, reliability and incident management.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we cover security, governance and Responsible AI?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. Security, privacy, responsible AI governance, model and use-case inventory, risk classification, review gates, auditability and incident response are central.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we cover architecture on cloud platforms?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. Cloud, hybrid and multi-cloud considerations, private connectivity, deployment topologies, scalability and resilience are included at an architecture level.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we cover model and vendor selection?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. The curriculum covers hosted versus self-hosted, commercial versus open models, model gateways, routing, fallback, vendor lock-in and build-versus-buy decisions.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we cover build-versus-buy decisions?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. Build-versus-buy decisions appear in model strategy, platform strategy, vendor evaluation and executive communication.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will we create reference architectures and architecture decision records?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. Reference architectures, architecture decision records and design-review narratives are core artifacts.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Is this suitable for engineering managers and technical leads?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes, especially if you remain close to architecture and want to guide teams through GenAI decisions, standards and trade-offs.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">Will this help me prepare for architecture reviews and interviews?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">Yes. You will build architecture artifacts, trade-off narratives and capstone evidence that can support architecture reviews, interviews and internal role conversations.</div></details>
+      <details class="glass-card p-5 rounded-lg"><summary class="cursor-pointer font-bold text-lg">What kind of enterprise capstone will I complete?</summary><div class="pt-4 mt-4 border-t border-gray-700 text-gray-400">You will create and defend a GenAI platform and governance blueprint covering target-state architecture, model strategy, RAG, agents, security, evaluation, governance, LLMOps, integration, cost, risk and adoption roadmap.</div></details>
+    </div></section>
 
-        <!-- Simple inline quiz anchor section for "See If You Qualify" CTA -->
-        <section id="eligibility" class="mt-12">
-    <div class="glass-card p-8 max-w-3xl mx-auto text-center">
-        <h3 class="text-2xl font-bold mb-4">Eligibility Criteria</h3>
-        <p class="text-gray-400 mb-6">You’re a strong fit if you meet <strong>at least 3</strong> of these criteria:</p>
-        <ul class="text-left space-y-3 text-gray-300">
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> 8+ years of backend / platform / infra engineering experience</li>
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Experience building or maintaining production systems (APIs, SaaS, microservices, data platforms)</li>
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Desire to transition from senior engineer → architect roles</li>
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Preference for structured, mentor-led, live feedback over self-paced material</li>
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Commitment of 6–10 hours/week including weekend live sessions</li>
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Interest in designing 6+ AI architectures & deploying 2 production GenAI systems</li>
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Comfort with hands-on implementation (or willingness to learn)</li>
-            <li class="flex items-start"><span class="text-teal-400 mr-2">✓</span> Motivation to break stagnation, lead AI initiatives, or grow into architect roles</li>
-        </ul>
+    <section class="py-16"><div class="glass-card p-6 md:p-8"><h2 class="text-3xl font-bold mb-8">Check Whether the GenAI Architect Path Fits You</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div><h3 class="text-xl font-bold mb-4">Suitable if</h3><ul class="text-gray-400 space-y-2"><li>- You have substantial experience with software or enterprise systems</li><li>- You understand production constraints</li><li>- You want to move from feature-level decisions to system-level decisions</li><li>- You want to guide multiple engineers or teams</li><li>- You are willing to develop stronger AI Engineering depth</li><li>- You want to make and defend architecture trade-offs</li><li>- You want to work across technology, security, data and business constraints</li><li>- You can commit time to architecture exercises and capstone work</li><li>- You want technical leadership rather than only a new title</li></ul></div><div><h3 class="text-xl font-bold mb-4">Not suitable if</h3><ul class="text-gray-400 space-y-2"><li>- You have no software engineering or systems background</li><li>- You want only prompt-engineering or AI-tool demonstrations</li><li>- You want a non-technical executive-awareness program</li><li>- You want a pure data-science or ML-research program</li><li>- You do not want to understand implementation details</li><li>- You expect guaranteed promotion or placement</li><li>- You want a passive recorded course</li><li>- You are only collecting certificates</li><li>- You want to call yourself an architect without doing architecture work</li></ul></div></div></div></section>
 
-        <div class="mt-10 border-t border-gray-700 pt-6">
-            <h4 class="text-xl font-bold mb-2">Not a fit if…</h4>
-            <ul class="text-left space-y-3 text-gray-400">
-                <li class="flex items-start"><span class="text-red-400 mr-2">✗</span> You want self-paced video lectures</li>
-                <li class="flex items-start"><span class="text-red-400 mr-2">✗</span> You do not want to build real production systems</li>
-                <li class="flex items-start"><span class="text-red-400 mr-2">✗</span> You are looking for ML/deep-learning model-building courses (this is not that)</li>
-                <li class="flex items-start"><span class="text-red-400 mr-2">✗</span> You cannot commit 6–10 hours weekly</li>
-                <li class="flex items-start"><span class="text-red-400 mr-2">✗</span> You expect shortcuts or magic results without implementation</li>
-            </ul>
-        </div>
+    <section class="text-center py-20" id="apply"><h2 class="text-3xl font-bold mb-6">Move From Building Individual AI Features<br><span class="animated-gradient-text">to Shaping Enterprise AI Direction</span></h2><p class="text-gray-400 max-w-2xl mx-auto mb-8">Build the architecture judgement, platform perspective and leadership evidence required to design GenAI systems that multiple teams can trust, govern and scale.</p><a class="btn-glow" href="https://learn.sanjaynegi.in/l/66f999b29d" target="_blank" rel="noopener">Build My GenAI Architect Roadmap</a><p class="text-gray-400 text-sm mt-5">Application-based entry &middot; Built for experienced professionals &middot; Small working cohort</p></section>
+  </main>
 
-        <div class="text-center mt-8">
-            <a class="btn-glow" href="https://learn.sanjaynegi.in/l/837c45f372" target="_blank" rel="noopener">Reserve My Architect Spot →</a>
-        </div>
-    </div>
-</section>
-
-    </main>
-
-    <script src="assets/js/site.js" defer></script>
+  <footer class="bg-transparent text-white"><div class="container mx-auto px-6 py-8"><div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div><h3 class="font-bold text-lg mb-2">SkillUp with Sanjay</h3><p class="text-gray-400">Helping experienced professionals rewrite their career story through production-grade AI architecture and technical leadership.</p></div><div><h3 class="font-bold text-lg mb-2">Career Paths</h3><ul class="space-y-1"><li><a href="ai-engineer.html" class="text-gray-400 hover:text-white">AI Engineer</a></li><li><a href="fde.html" class="text-gray-400 hover:text-white">Forward Deployed Engineer</a></li><li><a href="ai_architect_cohort.html" class="text-gray-400 hover:text-white">GenAI Architect</a></li></ul></div><div><h3 class="font-bold text-lg mb-2">Quick Links</h3><ul class="space-y-1"><li><a href="workshops.html" class="text-gray-400 hover:text-white">Build Together Live</a></li><li><a href="resources.html" class="text-gray-400 hover:text-white">Resources</a></li><li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li><li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li></ul></div></div><div class="border-t border-gray-700 mt-8 pt-6 flex justify-between items-center text-sm text-gray-400"><p>&copy; 2025 SkillUp with Sanjay. All rights reserved.</p></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js" defer></script>
+  <script src="assets/js/p5-particles.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

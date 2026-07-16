@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Page-specific content loaders
     if (document.getElementById('courses-container')) loadCourses();
     if (document.getElementById('workshops-container')) loadWorkshops();
+    if (document.getElementById('programs-container')) loadPrograms();
     if (document.getElementById('instructors-list')) loadInstructors();
     if (document.getElementById('resources-list')) loadResources();
     if (document.getElementById('featured-course-container')) loadDashboard();
@@ -141,61 +142,217 @@ async function loadWorkshops() {
     const container = document.getElementById('workshops-container');
     if (!container) return;
 
+    const escapeHTML = (value = '') => String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+
     container.innerHTML = workshops.map(workshop => {
-        const imageHTML = workshop.image ? `<img src="${workshop.image}" alt="${workshop.title}" class="w-full h-48 object-cover rounded-t-xl mb-4" loading="lazy">` : '';
+        const domainTag = workshop.tags && workshop.tags.length > 1 ? workshop.tags[1] : 'WORKSHOP';
+
+        const visualHTML = workshop.image ? `
+            <img src="${escapeHTML(workshop.image)}" alt="${escapeHTML(workshop.title)}" class="w-full h-48 object-cover rounded-t-xl mb-4" loading="lazy">
+        ` : `
+            <div class="h-48 rounded-t-xl mb-4 bg-gradient-to-br from-gray-950 via-slate-900 to-cyan-950/70 border-b border-cyan-400/20 flex items-center justify-center p-6 text-center">
+                <div>
+                    <div class="text-xs uppercase tracking-[0.2em] text-cyan-300 mb-3">${escapeHTML(domainTag)}</div>
+                    <div class="text-xl font-bold text-white leading-tight">${escapeHTML(workshop.title)}</div>
+                </div>
+            </div>
+        `;
 
         const tagsHTML = workshop.tags ? workshop.tags.map(tag => {
+            const tagClass = tag.toLowerCase().includes('live') ? 'tag-blue' : 'tag-purple';
+            return `<span class="tag ${tagClass}">${escapeHTML(tag)}</span>`;
+        }).join('') : '';
+
+        const tagsContainer = tagsHTML ? `<div class="absolute top-4 left-4 flex flex-wrap gap-2 pr-4">${tagsHTML}</div>` : '';
+        const titleHTML = workshop.title ? `<h3 class="text-2xl font-bold mb-3 text-white leading-tight">${escapeHTML(workshop.title)}</h3>` : '';
+        const summaryHTML = workshop.summary ? `<p class="text-gray-300 mb-5 leading-relaxed">${escapeHTML(workshop.summary)}</p>` : '';
+
+        const metadata = [
+            ['Duration', workshop.duration],
+            ['Date', workshop.dates],
+            ['Schedule', workshop.schedule],
+            ['Time', workshop.timings],
+            ['Instructor', workshop.instructor],
+            ['Format', workshop.format]
+        ].filter(([, value]) => value);
+
+        const metadataHTML = metadata.length > 0 ? `
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5 text-sm">
+                ${metadata.map(([label, value]) => `
+                    <div class="border border-gray-800 rounded-md p-3 bg-gray-950/40">
+                        <div class="text-gray-500 uppercase tracking-wide text-xs mb-1">${escapeHTML(label)}</div>
+                        <div class="text-gray-200">${escapeHTML(value)}</div>
+                    </div>
+                `).join('')}
+            </div>
+        ` : '';
+
+        const idealForHTML = workshop.idealFor && workshop.idealFor.length > 0 ? `
+            <div class="mb-5">
+                <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">Ideal For</h4>
+                <div class="flex flex-wrap gap-2">
+                    ${workshop.idealFor.map(item => `<span class="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-100">${escapeHTML(item)}</span>`).join('')}
+                </div>
+            </div>
+        ` : '';
+
+        const buildOutcomeHTML = workshop.buildOutcome ? `
+            <div class="mb-5 rounded-md border border-cyan-400/25 bg-cyan-400/10 p-4">
+                <h4 class="text-sm font-semibold text-cyan-100 uppercase tracking-wide mb-2">You'll Leave With</h4>
+                <p class="text-gray-200 leading-relaxed">${escapeHTML(workshop.buildOutcome)}</p>
+            </div>
+        ` : '';
+
+        const featuresHTML = workshop.features && workshop.features.length > 0 ? `
+            <div class="mb-6">
+                <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-3">What You'll Build and Learn</h4>
+                <ul class="space-y-2 text-gray-300 list-none">
+                    ${workshop.features.slice(0, 5).map(feature => `<li class="flex gap-2"><span class="text-cyan-400 mt-1">-</span><span>${escapeHTML(feature)}</span></li>`).join('')}
+                </ul>
+            </div>
+        ` : '';
+
+        const ctaLabel = workshop.cta || 'Register Interest';
+        const isExternal = workshop.url && /^https?:\/\//i.test(workshop.url);
+        const ctaButton = workshop.url
+            ? `<a href="${escapeHTML(workshop.url)}" ${isExternal ? 'target="_blank" rel="noopener noreferrer"' : ''} class="btn-glow w-full text-center">${ctaLabel}</a>`
+            : `<span class="block w-full text-center rounded-md border border-gray-700 px-4 py-3 text-gray-400">Coming Soon</span>`;
+
+        return `
+        <article class="glass-card flex flex-col h-full overflow-hidden transition-all duration-300 hover:border-cyan-400/50">
+            <div class="relative">
+                ${visualHTML}
+                ${tagsContainer}
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+                ${titleHTML}
+                ${summaryHTML}
+                ${metadataHTML}
+                ${idealForHTML}
+                ${buildOutcomeHTML}
+                ${featuresHTML}
+                <div class="mt-auto pt-4">
+                    ${ctaButton}
+                </div>
+            </div>
+        </article>
+        `;
+    }).join('');
+
+    const script = document.querySelector('script[type="application/ld+json"]');
+    if (script) {
+        const jsonld = JSON.parse(script.textContent);
+        jsonld.itemListElement = workshops.map((workshop, index) => {
+            const item = {
+                "@type": "Event",
+                "name": workshop.title,
+                "description": workshop.summary,
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "SkillUp with Sanjay"
+                }
+            };
+            if (workshop.start_date) item.startDate = workshop.start_date;
+            if (workshop.url) item.url = workshop.url;
+            return {
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": item
+            };
+        });
+        script.textContent = JSON.stringify(jsonld, null, 2);
+    }
+}
+async function loadPrograms() {
+    const programs = await fetchData('data/programs.json');
+    const container = document.getElementById('programs-container');
+    if (!container) return;
+
+    container.innerHTML = programs.map(program => {
+        const imageHTML = program.image ? `<img src="${program.image}" alt="${program.title}" class="w-full h-48 object-cover rounded-t-xl mb-4" loading="lazy">` : '';
+
+        const tagsHTML = program.tags ? program.tags.map(tag => {
             const tagClass = tag.toLowerCase().includes('live') ? 'tag-blue' : 'tag-purple';
             return `<span class="tag ${tagClass}">${tag}</span>`;
         }).join('') : '';
 
         const tagsContainer = tagsHTML ? `<div class="absolute top-4 left-4 flex flex-wrap gap-2">${tagsHTML}</div>` : '';
 
-        const titleHTML = workshop.title ? `<h3 class="text-2xl font-bold mb-2 text-white">${workshop.title}</h3>` : '';
-        const summaryHTML = workshop.summary ? `<p class="text-gray-400 mb-4">${workshop.summary}</p>` : '';
+        const recommendedBadge = program.recommended ? `
+            <div class="absolute top-4 right-4">
+                <span class="bg-gray-950/90 text-cyan-300 border border-cyan-400/60 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">Recommended for Senior Engineers</span>
+            </div>
+        ` : '';
 
-        let scheduleHTML = '';
-        if (workshop.duration) {
-            scheduleHTML += `📅 ${workshop.duration}`;
-        }
-        if (workshop.dates) {
-            if (scheduleHTML) scheduleHTML += ' — ';
-            scheduleHTML += `${workshop.dates}`;
-        }
-        const scheduleContainer = scheduleHTML ? `<p class="text-gray-300 mb-4">${scheduleHTML}</p>` : '';
+        const titleHTML = program.title ? `<h3 class="text-2xl font-bold mb-2 text-white">${program.title}</h3>` : '';
+        const summaryHTML = program.summary ? `<p class="text-gray-300 mb-6 leading-relaxed">${program.summary}</p>` : '';
 
-        let instructorFormatHTML = '';
-        if (workshop.instructor) {
-            instructorFormatHTML += `👩‍🏫 Instructor: ${workshop.instructor}`;
-        }
-        if (workshop.format) {
-            if (instructorFormatHTML) instructorFormatHTML += ' | ';
-            instructorFormatHTML += `💻 Format: ${workshop.format}`;
-        }
-        const instructorFormatContainer = instructorFormatHTML ? `<p class="text-gray-300 mb-4">${instructorFormatHTML}</p>` : '';
+        const starts = program.dates ? program.dates.replace(/^Starts\s+/i, '') : '';
+        const schedule = program.schedule ? program.schedule.replace(/^Weekends\s*\((.*)\)$/i, '$1') : '';
+        const metadata = [
+            ['Duration', program.duration],
+            ['Starts', starts],
+            ['Schedule', schedule],
+            ['Time', program.timings],
+            ['Instructor', program.instructor],
+            ['Format', program.format]
+        ].filter(([, value]) => value);
 
-        const featuresHTML = workshop.features && workshop.features.length > 0 ? `
+        const metadataHTML = metadata.length > 0 ? `
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 text-sm">
+                ${metadata.map(([label, value]) => `
+                    <div class="border border-gray-800 rounded-md p-3 bg-gray-950/40">
+                        <div class="text-gray-500 uppercase tracking-wide text-xs mb-1">${label}</div>
+                        <div class="text-gray-200">${value}</div>
+                    </div>
+                `).join('')}
+            </div>
+        ` : '';
+
+        const bestForHTML = program.bestFor && program.bestFor.length > 0 ? `
             <div class="mb-6">
-                <h4 class="text-lg font-semibold text-white mb-2">✨ Highlights:</h4>
-                <ul class="space-y-2 text-gray-400 list-none">
-                    ${workshop.features.map(feature => `<li class="flex items-center"><span class="text-cyan-400 mr-2">✓</span>${feature}</li>`).join('')}
+                <h4 class="text-lg font-semibold text-white mb-3">Ideal For</h4>
+                <div class="flex flex-wrap gap-2">
+                    ${program.bestFor.map(persona => `<span class="bg-gray-800 text-gray-300 px-2 py-1 rounded-full text-sm">${persona}</span>`).join('')}
+                </div>
+            </div>
+        ` : '';
+
+        const featuresHTML = program.features && program.features.length > 0 ? `
+            <div class="mb-6">
+                <h4 class="text-lg font-semibold text-white mb-3">What You'll Be Able to Do</h4>
+                <ul class="space-y-3 text-gray-300 list-none">
+                    ${program.features.map(feature => `<li class="flex items-start leading-relaxed"><span class="text-cyan-400 mr-2" aria-hidden="true">&#10003;</span><span>${feature}</span></li>`).join('')}
                 </ul>
             </div>
         ` : '';
 
-        const ctaButton = workshop.url ? `<a href="${workshop.url}" target="_blank" rel="noopener noreferrer" class="btn-glow w-full text-center">View Details & Register</a>` : '';
+        const ctaLabels = {
+            'AI Engineer': 'Explore AI Engineer',
+            'Forward Deployed Engineer': 'Explore FDE',
+            'GenAI Architect': 'Explore GenAI Architect'
+        };
+        const ctaLabel = ctaLabels[program.title] || 'Explore Role';
+        const ctaButton = program.url ? `<a href="${program.url}" target="_blank" rel="noopener noreferrer" class="btn-glow w-full text-center">${ctaLabel} &rarr;</a>` : '';
+        const cardEmphasis = program.recommended ? ' border-cyan-400/70 shadow-[0_0_30px_rgba(0,212,255,0.12)]' : '';
 
         return `
-        <div class="glass-card flex flex-col h-full overflow-hidden transition-all duration-300 hover:border-cyan-400/50">
+        <div class="glass-card flex flex-col h-full overflow-hidden transition-all duration-300 hover:border-cyan-400/50${cardEmphasis}">
             <div class="relative">
                 ${imageHTML}
                 ${tagsContainer}
+                ${recommendedBadge}
             </div>
             <div class="p-6 flex-grow flex flex-col">
                 ${titleHTML}
                 ${summaryHTML}
-                ${scheduleContainer}
-                ${instructorFormatContainer}
+                ${metadataHTML}
+                ${bestForHTML}
                 ${featuresHTML}
                 <div class="mt-auto pt-4">
                     ${ctaButton}
@@ -208,15 +365,14 @@ async function loadWorkshops() {
     const script = document.querySelector('script[type="application/ld+json"]');
     if (script) {
         const jsonld = JSON.parse(script.textContent);
-        jsonld.itemListElement = workshops.map((workshop, index) => ({
+        jsonld.itemListElement = programs.map((program, index) => ({
             "@type": "ListItem",
             "position": index + 1,
             "item": {
-                "@type": "Event",
-                "name": workshop.title,
-                "description": workshop.summary,
-                "startDate": workshop.start_date,
-                "organizer": {
+                "@type": "Course",
+                "name": program.title,
+                "description": program.summary,
+                "provider": {
                     "@type": "Organization",
                     "name": "UpSkill with Sanjay"
                 }
@@ -374,3 +530,4 @@ async function loadDashboard() {
         offersList.innerHTML = '<p class="text-gray-400">No current offers.</p>';
     }
 }
+

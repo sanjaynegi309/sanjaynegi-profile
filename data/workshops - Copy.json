@@ -1,0 +1,197 @@
+[
+  {
+    "id": "genai-jumpstart-first-ai-agent",
+    "title": "GenAI Jumpstart: Build Your First AI Agent",
+    "summary": "Build your first working AI agent while understanding how prompts, tools, memory, and orchestration fit together inside a real GenAI system.",
+    "duration": "1-Day Live Bootcamp",
+    "dates": "August 1, 2026",
+    "timings": "10:00 AM - 1:00 PM IST",
+    "schedule": "1 Saturday",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online",
+    "tags": [
+      "BUILD TOGETHER LIVE",
+      "AI AGENTS"
+    ],
+    "idealFor": [
+      "Experienced developers new to GenAI systems",
+      "Tech leads exploring agentic AI",
+      "Professionals who want a guided first build"
+    ],
+    "buildOutcome": "A working AI agent that can reason through a task, use tools, and produce a useful result.",
+    "features": [
+      "Understand the building blocks of a practical AI agent",
+      "Connect an LLM to tools and external functions",
+      "Build and run a guided agent workflow",
+      "See where memory, RAG, and multi-agent patterns fit",
+      "Leave with starter code and an extension roadmap"
+    ],
+    "image": "",
+    "url": "https://learn.sanjaynegi.in/l/77ba6e58ed",
+    "cta": "Build My First AI Agent →"
+  },
+  {
+    "id": "vibe-coding-claude-ai",
+    "title": "Vibe Coding With Claude AI",
+    "summary": "Turn an idea into a working application using Claude AI, structured prompting, iterative development, debugging, and responsible AI-assisted coding.",
+    "duration": "3-Day Weekend Workshop",
+    "dates": "Coming Soon",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Saturday, Sunday, and following Saturday",
+    "structure": [
+      "Day 1: Saturday",
+      "Day 2: Sunday",
+      "Day 3: Following Saturday"
+    ],
+    "instructor": "Sanjay Negi",
+    "format": "Live Online",
+    "tags": [
+      "BUILD TOGETHER LIVE",
+      "CLAUDE AI"
+    ],
+    "idealFor": [
+      "Senior developers curious about AI-assisted development",
+      "Tech leads evaluating coding copilots",
+      "Professionals who want to build faster without losing engineering discipline"
+    ],
+    "buildOutcome": "A working application created through an AI-assisted development workflow using Claude AI.",
+    "features": [
+      "Convert a business idea into a clear implementation plan",
+      "Use Claude AI for requirements, design, code generation, and refactoring",
+      "Review, debug, and improve AI-generated code",
+      "Apply source control and basic testing throughout the build",
+      "Leave with a working application and a repeatable Vibe Coding workflow"
+    ],
+    "image": "",
+    "url": "contact.html",
+    "cta": "Build With Claude AI →"
+  },
+  {
+    "id": "build-genai-workflows-n8n",
+    "title": "Build GenAI Workflows With n8n",
+    "summary": "Build practical GenAI automations using n8n by connecting LLMs, business data, APIs, approvals, notifications, and operational workflows.",
+    "duration": "3-Weekend No-Code Workshop",
+    "dates": "Coming Soon",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Saturday and Sunday for 3 weekends",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online",
+    "tags": [
+      "BUILD TOGETHER LIVE",
+      "N8N AUTOMATION"
+    ],
+    "idealFor": [
+      "Operations and business leaders",
+      "Consultants and corporate trainers",
+      "Developers exploring workflow automation",
+      "Professionals who prefer low-code or no-code implementation"
+    ],
+    "buildOutcome": "A working AI-powered business workflow using n8n, an LLM, external data, and at least one business integration.",
+    "features": [
+      "Design an AI workflow around a real business use case",
+      "Connect n8n with LLMs, APIs, documents, and databases",
+      "Add conditions, human approvals, retries, and error handling",
+      "Build a usable automation rather than a disconnected demo",
+      "Leave with a reusable workflow template and deployment guidance"
+    ],
+    "image": "",
+    "url": "contact.html",
+    "cta": "Build My n8n AI Workflow →"
+  },
+  {
+    "id": "production-ready-rag-assistant",
+    "title": "Build a Production-Ready RAG Assistant",
+    "summary": "Design and build a RAG assistant over real documents with ingestion, chunking, retrieval, citations, evaluation, guardrails, and a deployable API.",
+    "duration": "4-Weekend Implementation Workshop",
+    "dates": "Coming Soon",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Saturday and Sunday for 4 weekends",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online",
+    "tags": [
+      "BUILD TOGETHER LIVE",
+      "RAG ENGINEERING"
+    ],
+    "idealFor": [
+      "Backend developers",
+      "AI engineers",
+      "Tech leads",
+      "Professionals who have already tried basic RAG tutorials"
+    ],
+    "buildOutcome": "A working RAG assistant that answers questions from a document collection and provides grounded responses with source references.",
+    "features": [
+      "Design the end-to-end RAG architecture",
+      "Build document ingestion, chunking, embedding, and retrieval",
+      "Add citations, guardrails, and response evaluation",
+      "Expose the system through an API or lightweight interface",
+      "Leave with a deployable implementation and architecture diagram"
+    ],
+    "image": "",
+    "url": "contact.html",
+    "cta": "Build My RAG Assistant →"
+  },
+  {
+    "id": "multi-agent-business-workflow",
+    "title": "Build a Multi-Agent Business Workflow",
+    "summary": "Design and build a multi-agent system where specialised agents collaborate to complete a real business workflow with clear controls and observable execution.",
+    "duration": "2-Weekend Advanced Workshop",
+    "dates": "Coming Soon",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Saturday and Sunday for 2 weekends",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online",
+    "tags": [
+      "BUILD TOGETHER LIVE",
+      "MULTI-AGENT SYSTEMS"
+    ],
+    "idealFor": [
+      "Experienced backend developers",
+      "AI engineers",
+      "Solution architects",
+      "Tech leads familiar with basic LLM applications"
+    ],
+    "buildOutcome": "A multi-agent workflow with specialised responsibilities, tool usage, shared state, and controlled hand-offs.",
+    "features": [
+      "Decide when multiple agents are justified",
+      "Define agent roles, responsibilities, and boundaries",
+      "Implement orchestration, shared state, and tool access",
+      "Add logging, failure handling, and human checkpoints",
+      "Leave with a working multi-agent system and architecture blueprint"
+    ],
+    "image": "",
+    "url": "contact.html",
+    "cta": "Build a Multi-Agent System →"
+  },
+  {
+    "id": "genai-system-design-senior-engineers",
+    "title": "GenAI System Design for Senior Engineers",
+    "summary": "Learn how to translate a GenAI use case into a production-minded architecture covering models, data, APIs, evaluation, security, observability, and deployment.",
+    "duration": "2-Day Architecture Workshop",
+    "dates": "Coming Soon",
+    "timings": "10:00 AM - 12:00 PM IST",
+    "schedule": "Saturday and Sunday",
+    "instructor": "Sanjay Negi",
+    "format": "Live Online",
+    "tags": [
+      "BUILD TOGETHER LIVE",
+      "SYSTEM DESIGN"
+    ],
+    "idealFor": [
+      "Tech leads",
+      "Solution architects",
+      "Principal engineers",
+      "Engineering managers"
+    ],
+    "buildOutcome": "A complete GenAI system architecture for a real business use case, including decisions, trade-offs, and a deployment plan.",
+    "features": [
+      "Frame functional and non-functional requirements",
+      "Choose between prompting, RAG, tools, agents, and fine-tuning",
+      "Design for security, cost, scale, reliability, and observability",
+      "Document key architecture decisions and trade-offs",
+      "Leave with an architecture blueprint and review checklist"
+    ],
+    "image": "",
+    "url": "contact.html",
+    "cta": "Design My GenAI Architecture →"
+  }
+]
