@@ -1,4 +1,33 @@
 [
+   {
+       "id": "python-experienced-engineers-8-weeks-nov-2026",
+       "title": "Python for Experienced Software Engineers",
+       "summary": "Already an experienced developer? Learn modern Python through real engineering projects—APIs, testing, async programming, and practical AI integrations—without starting from scratch.",
+       "features": [
+         "Learn Python through an experienced developer’s lens",
+         "Use modern Python tooling, testing, and clean code practices",
+         "Build professional APIs with FastAPI and Pydantic",
+         "Work with async Python and external services",
+         "Apply Python to LLMs, LangChain, and RAG",
+         "Build hands-on Python projects, including an AI-powered application"
+       ],
+       "duration": "8 Weeks",
+       "dates": "Starts November 1, 2026",
+       "timings": "12:30 PM - 2:30 PM IST",
+       "schedule": "Weekends (Saturday and Sunday)",
+       "instructor": "Sanjay Negi",
+       "format": "Live Online (Zoom)",
+       "price": "",
+       "tags": [],
+       "bestFor": [
+         "Experienced Java and .NET Developers",
+         "C# and JavaScript Developers",
+         "Senior Backend Engineers",
+         "Technical Leads and Architects"
+       ],
+       "image": "assets/images/python-experienced-engineers.png",
+       "url": "python_ai_bridge.html"
+  },
   {
     "id": "ai-engineer-6-months-aug-2026",
     "title": "AI Engineer",
@@ -18,10 +47,7 @@
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
     "price": "",
-    "tags": [
-      "Career Track",
-      "Production AI Engineering"
-    ],
+    "tags": [],
     "bestFor": [
       "Senior Software Engineers",
       "Technical Leads",
@@ -50,10 +76,7 @@
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
     "price": "",
-    "tags": [
-      "Career Track",
-      "Customer-Facing AI Delivery"
-    ],
+   "tags": [],
     "bestFor": [
       "Senior Software Engineers",
       "Technical Leads",
@@ -83,10 +106,7 @@
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
     "price": "",
-    "tags": [
-      "Career Track",
-      "Enterprise GenAI Architecture"
-    ],
+    "tags": [],
     "bestFor": [
       "Solution and Application Architects",
       "Senior Technical Leads",
