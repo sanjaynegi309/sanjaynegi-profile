@@ -1,6 +1,6 @@
 [
    {
-       "id": "python-experienced-engineers-8-weeks-nov-2026",
+       "id": "python-experienced-engineers-8-weeks-nov-2027",
        "title": "Python for Experienced Software Engineers",
        "summary": "Already an experienced developer? Learn modern Python through real engineering projects—APIs, testing, async programming, and practical AI integrations—without starting from scratch.",
        "features": [
@@ -12,7 +12,7 @@
          "Build hands-on Python projects, including an AI-powered application"
        ],
        "duration": "8 Weeks",
-       "dates": "Starts November 1, 2026",
+       "dates": "Starts November 1, 2027",
        "timings": "12:30 PM - 2:30 PM IST",
        "schedule": "Weekends (Saturday and Sunday)",
        "instructor": "Sanjay Negi",
@@ -29,7 +29,7 @@
        "url": "python_ai_bridge.html"
   },
   {
-    "id": "ai-engineer-6-months-aug-2026",
+    "id": "ai-engineer-6-months-aug-2027",
     "title": "AI Engineer",
     "summary": "Move from maintaining traditional software systems to designing, building, evaluating, and deploying production-ready AI applications that you can confidently defend in an architecture review, appraisal, or interview.",
     "features": [
@@ -41,8 +41,8 @@
       "Get live mentorship, architecture reviews, project clinics, and implementation feedback"
     ],
     "duration": "6 Months",
-    "dates": "Starts August 2, 2026",
-    "timings": "10:00 AM - 12:00 PM IST",
+    "dates": "Starts January 2, 2027",
+    "timings": "08:00 AM - 09:30 AM IST",
     "schedule": "Weekends (Saturday and Sunday)",
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
@@ -58,7 +58,7 @@
     "url": "ai-engineer.html"
   },
   {
-    "id": "forward-deployed-engineer-8-months-aug-2026",
+    "id": "forward-deployed-engineer-8-months-aug-2027",
     "title": "Forward Deployed Engineer",
     "summary": "Move from receiving fixed requirements to becoming the engineer customers trust to uncover the real problem, shape the right AI solution, and own delivery through production and adoption.",
     "features": [
@@ -70,8 +70,8 @@
       "Create a complete discovery-to-adoption case study with live delivery coaching"
     ],
     "duration": "8 Months",
-    "dates": "Starts August 2, 2026",
-    "timings": "10:00 AM - 12:00 PM IST",
+    "dates": "Starts January 2, 2027",
+    "timings": "08:00 AM - 09:30 AM IST",
     "schedule": "Weekends (Saturday and Sunday)",
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
@@ -88,7 +88,7 @@
     "recommended": true
   },
   {
-    "id": "gen-ai-architect-10-months-aug-2026",
+    "id": "gen-ai-architect-10-months-aug-2027",
     "title": "GenAI Architect",
     "summary": "Move from contributing to isolated AI projects to designing the enterprise platforms, standards, governance, and technical direction that help multiple teams build AI systems safely and at scale.",
     "features": [
@@ -100,8 +100,8 @@
       "Create an enterprise AI architecture blueprint and defend it through live design reviews"
     ],
     "duration": "10 Months",
-    "dates": "Starts August 2, 2026",
-    "timings": "10:00 AM - 12:00 PM IST",
+    "dates": "Starts January 2, 2027",
+    "timings": "08:00 AM - 09:30 AM IST",
     "schedule": "Weekends (Saturday and Sunday)",
     "instructor": "Sanjay Negi",
     "format": "Live Online (Zoom)",
