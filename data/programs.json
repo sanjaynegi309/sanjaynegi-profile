@@ -31,17 +31,17 @@
   {
       "id": "forward-deployed-ai-engineer-fast-paced-nov-2026",
       "title": "Forward Deployed AI Engineer - (7 weeks)",
-      "summary": "Turn your software engineering experience into hands-on AI delivery skills through 7 weeks of intensive live training followed by 6 months of guided project implementation.",
+      "summary": "Turn your software engineering experience into hands-on AI delivery skills through 7 weeks of intensive live training followed by 6 months (fortnightly) of guided project implementation.",
       "features": [
         "Build LLM applications, enterprise RAG, and AI agents",
         "Work with LangChain, LangGraph, and OpenAI Agents SDK",
         "Integrate AI with enterprise APIs, tools, and data",
         "Evaluate, secure, and deploy solutions with Docker, CI/CD, and AWS",
         "Complete a capstone with architecture reviews and technical defense",
-        "Build three enterprise projects with biweekly mentorship and feedback"
+        "Build three enterprise projects with fortnightly mentorship and feedback"
       ],
       "duration": "7 Weeks Live + 6 Months Project Mentorship",
-      "dates": "Starts November 9, 2026",
+      "dates": "Starts November 12, 2026",
       "timings": "9:00 PM - 10:30 PM IST",
       "schedule": "Monday, Tuesday, Thursday and Friday",
       "instructor": "Sanjay Negi",
