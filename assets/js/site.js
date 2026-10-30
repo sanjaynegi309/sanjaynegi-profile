@@ -335,6 +335,7 @@ async function loadPrograms() {
         const ctaLabels = {
             'AI Engineer': 'Explore AI Engineer',
             'Forward Deployed Engineer': 'Explore FDE',
+            'Forward Deployed AI Engineer - Fast paced for experienced engineers': 'Explore Fast-Paced FDE',
             'GenAI Architect': 'Explore GenAI Architect'
         };
         const ctaLabel = ctaLabels[program.title] || 'Explore Role';

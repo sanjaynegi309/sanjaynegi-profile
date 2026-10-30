@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Forward Deployed AI Engineer | SkillUp with Sanjay</title>
+  <meta name="description" content="7 weeks of live Forward Deployed AI Engineering training plus 6 months of project mentorship. Build, deploy, evaluate and deliver enterprise AI solutions. Starts 9 November 2026.">
+  <meta property="og:title" content="Forward Deployed AI Engineer — Build. Deploy. Deliver.">
+  <meta property="og:description" content="7 weeks live. 6 months of project mentorship. Real AI systems, architecture reviews and deployment.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Google Analytics 4: same property as the rest of the website -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNJRMTPHZK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NNJRMTPHZK');
+  </script>
+
+  <style>
+    :root {
+      --surface:var(--primary);
+      --border:var(--card-border);
+      --muted:var(--text-muted);
+      --cyan:var(--accent);
+      --purple:var(--accent-3);
+      --pink:var(--accent-2);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      font-family:Inter,system-ui,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    a { color:inherit; }
+    a:focus-visible,summary:focus-visible {
+      outline:2px solid var(--cyan);
+      outline-offset:5px;
+    }
+    .container { max-width:1160px;margin:auto;padding:0 24px; }
+    .btn-glow { display:inline-flex;align-items:center;justify-content:center;min-height:48px;max-width:100%;isolation:isolate; }
+    .hero { text-align:center;padding:95px 0 78px; }
+    .eyebrow {
+      display:inline-block;padding:7px 15px;
+      border:1px solid rgba(0,212,255,.32);
+      background:rgba(0,212,255,.07);
+      border-radius:50px;color:var(--cyan);
+      font-size:12px;font-weight:800;
+      letter-spacing:.09em;text-transform:uppercase;
+    }
+    h1,h2,h3 { font-family:"Space Grotesk",sans-serif;line-height:1.2; }
+    h1 {
+      font-size:clamp(32px,6vw,60px);
+      letter-spacing:-.045em;
+      margin:25px auto 18px;max-width:1000px;
+    }
+    h2 { font-size:clamp(26px,3.5vw,36px);letter-spacing:-.025em;margin:0 0 16px; }
+    h3 { font-size:21px;margin:0 0 12px; }
+    .gradient { color:inherit; }
+    .lead {
+      font-size:clamp(18px,2vw,23px);
+      color:#e5e7eb;max-width:820px;margin:0 auto 18px;
+    }
+    .sublead { max-width:790px;margin:0 auto;color:var(--muted); }
+    .cta-row { display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px; }
+    .meta {
+      display:grid;grid-template-columns:repeat(4,1fr);
+      gap:12px;margin-top:48px;
+    }
+    .pill {
+      background:rgba(255,255,255,.035);
+      border:1px solid var(--border);
+      border-radius:12px;padding:17px 12px;
+      font-size:13px;font-weight:700;
+    }
+    .pill strong { display:block;color:var(--cyan);font-size:19px;margin-bottom:3px; }
+    .pill.highlight-date-time { background:var(--accent-3);border-radius:9999px; }
+    .pill.highlight-date-time strong { color:var(--text); }
+    section { padding:68px 0;scroll-margin-top:24px; }
+    section.container { padding:68px 24px; }
+    section.hero { padding-top:95px;padding-bottom:78px; }
+    .section-intro { max-width:780px;color:var(--muted);margin:0 0 32px; }
+    .center { text-align:center; }
+    .center .section-intro { margin:0 auto 35px; }
+    .glass { padding:28px; }
+    .glass-card { display:block; }
+    .grid { display:grid;gap:18px; }
+    .g2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .g3 { grid-template-columns:repeat(3,minmax(0,1fr)); }
+    .g4 { grid-template-columns:repeat(4,minmax(0,1fr)); }
+    p { margin:0 0 14px; }
+    .muted { color:var(--muted); }
+    .accent { color:var(--cyan); }
+    .tag {
+      display:inline-block;color:#c6b4ff;
+      background:rgba(155,117,255,.1);
+      border:1px solid rgba(155,117,255,.24);
+      padding:4px 10px;border-radius:6px;
+      font-size:11px;font-weight:700;margin:3px 4px 3px 0;
+    }
+    .metric { font-size:36px;font-weight:800;color:var(--cyan);line-height:1.2; }
+    .number {
+      display:inline-flex;width:34px;height:34px;align-items:center;
+      justify-content:center;border-radius:9px;
+      background:rgba(0,212,255,.1);color:var(--cyan);
+      font-weight:800;margin-bottom:15px;
+    }
+    .clean-list { list-style:none;padding:0;margin:0; }
+    .clean-list li {
+      padding:9px 0 9px 22px;position:relative;
+      color:var(--muted);border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .clean-list li:last-child { border-bottom:0; }
+    .clean-list li::before {
+      content:"✓";position:absolute;left:0;color:var(--cyan);
+    }
+    .steps { display:grid;grid-template-columns:repeat(5,1fr);gap:12px; }
+    .step {
+      border:1px solid var(--border);background:var(--surface);
+      border-radius:12px;padding:19px 14px;text-align:center;
+    }
+    .step b { color:var(--cyan);display:block;margin-bottom:8px; }
+    .curriculum { display:grid;gap:13px; }
+    details {
+      border:1px solid var(--border);border-radius:14px;
+      background:var(--card);overflow:hidden;
+    }
+    summary {
+      cursor:pointer;padding:23px 26px;font-weight:700;
+      font-size:18px;list-style:none;position:relative;
+      padding-right:55px;
+    }
+    summary::-webkit-details-marker { display:none; }
+    summary::after {
+      content:"+";position:absolute;right:25px;top:18px;
+      color:var(--cyan);font-size:25px;
+    }
+    details[open] summary::after { content:"−"; }
+    .detail-body {
+      border-top:1px solid var(--border);
+      padding:24px 26px;color:var(--muted);
+    }
+    .detail-body h4 { color:#fff;margin:20px 0 8px; }
+    .detail-body ul { padding-left:20px;margin:8px 0; }
+    .detail-body li { margin-bottom:7px; }
+    .week {
+      display:inline-block;color:var(--cyan);
+      font-size:12px;letter-spacing:.07em;margin-right:12px;
+    }
+    .deliverable {
+      margin-top:18px;padding:13px 16px;
+      background:rgba(0,212,255,.07);
+      border-left:3px solid var(--cyan);
+      border-radius:5px;color:#d8f7ff;
+    }
+    .phase-label { color:var(--purple);font-weight:800;font-size:12px;letter-spacing:.08em; }
+    .project-card { border-top:3px solid var(--cyan); }
+    .project-card:nth-child(2) { border-top-color:var(--purple); }
+    .project-card:nth-child(3) { border-top-color:var(--pink); }
+    .stack-category { color:var(--cyan);font-size:13px;font-weight:800;text-transform:uppercase; }
+    .highlight {
+      border:1px solid rgba(0,212,255,.25);
+      background:linear-gradient(120deg,rgba(0,212,255,.08),rgba(155,117,255,.07));
+      border-radius:18px;padding:32px;
+    }
+    .mentor { display:flex;gap:28px;align-items:center; }
+    .mentor img {
+      width:135px;height:135px;object-fit:cover;
+      border-radius:50%;border:2px solid var(--cyan);
+      flex-shrink:0;
+    }
+    .faq { display:grid;gap:12px;max-width:900px;margin:auto; }
+    .footer {
+      border-top:1px solid var(--border);
+      padding:35px 0;color:var(--muted);font-size:13px;
+    }
+    .footer-inner { display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap; }
+    .footer a { color:var(--cyan); }
+    .mobile-cta { display:none; }
+    @media(max-width:900px) {
+      .g4,.meta { grid-template-columns:repeat(2,1fr); }
+      .g3 { grid-template-columns:repeat(2,1fr); }
+      .steps { grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:600px) {
+      .container { padding:0 18px; }
+      section.container { padding:45px 18px; }
+      .hero.container { padding:56px 18px 40px; }
+      .g2,.g3,.g4 { grid-template-columns:1fr; }
+      .glass { padding:22px; }
+      .highlight { padding:24px 20px; }
+      .meta { gap:9px; }
+      .pill { font-size:12px; }
+      .pill strong { font-size:16px; }
+      .mentor { flex-direction:column;text-align:center; }
+      .cta-row .btn-glow { width:100%; }
+      summary { font-size:16px;padding:19px 45px 19px 18px; }
+      .week { display:block;margin-bottom:6px; }
+      .detail-body { padding:19px; }
+      .mobile-cta {
+        display:block;position:fixed;bottom:0;left:0;right:0;
+        padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+        background:rgba(0,0,0,.96);border-top:1px solid var(--border);z-index:30;
+      }
+      .mobile-cta .btn-glow { width:100%; }
+      body { padding-bottom:calc(110px + env(safe-area-inset-bottom)); }
+    }
+    .grid > *, .meta > *, .steps > *, .mentor > * { min-width:0; }
+    main, footer { overflow-wrap:anywhere; }
+    .skip-link { position:absolute;left:16px;top:-100px;z-index:100;background:var(--bg);color:var(--accent);padding:12px; }
+    .skip-link:focus { top:12px; }
+    @media(max-width:380px) {
+      .meta,.steps { grid-template-columns:1fr; }
+    }
+    @media(prefers-reduced-motion:reduce) {
+      *,*::before,*::after { scroll-behavior:auto!important;transition:none!important;animation:none!important; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <span class="eyebrow">Live cohort · Suggested for 8+ years experience</span>
+      <h1>Forward Deployed<br><span class="gradient">AI Engineer</span></h1>
+      <p class="lead"><strong>Build. Deploy. Deliver.</strong></p>
+      <p class="lead">Become the engineer who can take a real business problem and deliver a working AI solution.</p>
+      <p class="sublead">7 weeks of intensive live engineering. 6 months of guided project implementation. Architecture, agents, enterprise integration, deployment and feedback — built for experienced software professionals.</p>
+      <div class="cta-row">
+        <a class="btn-glow register-link" href="https://learn.sanjaynegi.in/l/ae320c8f44" target="_blank" rel="noopener noreferrer">Join the FDE Program ↗</a>
+        <a class="btn-glow" href="#curriculum">Explore Curriculum ↓</a>
+      </div>
+      <div class="meta">
+        <div class="pill highlight-date-time"><strong>9 Nov 2026</strong>Program Starts</div>
+        <div class="pill highlight-date-time"><strong>7 Weeks</strong>Live Intensive</div>
+        <div class="pill highlight-date-time"><strong>6 Months Fortnightly</strong>Project Mentorship</div>
+        <div class="pill highlight-date-time"><strong>9–10:30 PM</strong>IST · Live on Zoom</div>
+      </div>
+    </section>
+
+    <section class="container" id="audience">
+      <div class="glass-card glass">
+        <span class="eyebrow">Suggested audience</span>
+        <h2 style="margin-top:18px">Your Software Engineering Experience Is an Advantage.</h2>
+        <p class="section-intro">Recommended for professionals with 8+ years of experience. Strong engineers with fewer years are welcome if they have solid programming and software engineering fundamentals.</p>
+        <div class="grid g3">
+          <div><h3>Software Engineers</h3><p class="muted">Frontend, backend, full-stack, platform and QA automation engineers.</p></div>
+          <div><h3>Technical Leaders</h3><p class="muted">Tech leads, staff engineers, architects and engineering managers who code.</p></div>
+          <div><h3>Technical Problem Solvers</h3><p class="muted">Technical PMs and consultants with significant hands-on coding experience.</p></div>
+        </div>
+        <p class="muted" style="margin-top:22px">Comfort with any established programming language is sufficient to start. Labs use Python; familiarity with APIs, Git and application development is expected.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="center">
+        <h2>AI Demos Are Easy. <span class="gradient">Delivery Is Engineering.</span></h2>
+        <p class="section-intro">An FDE connects customer needs, software architecture and AI implementation — then makes the system work under real constraints.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01 · Discover</b>Understand the business problem and constraints</div>
+        <div class="step"><b>02 · Design</b>Choose the right architecture and trade-offs</div>
+        <div class="step"><b>03 · Build</b>Implement agents, APIs, tools and data integration</div>
+        <div class="step"><b>04 · Operate</b>Test, deploy, evaluate and monitor</div>
+        <div class="step"><b>05 · Deliver</b>Demo, explain, defend and improve the solution</div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>One Program. Two Phases.</h2>
+      <div class="grid g2">
+        <div class="glass-card glass">
+          <span class="phase-label">PHASE 01 · NOV–DEC 2026</span>
+          <h3 style="margin-top:12px">7-Week Live Engineering Intensive</h3>
+          <div class="metric">42 Hours</div>
+          <p class="muted">28 instructor-led Zoom sessions, plus 10.5 hours of Saturday office hours.</p>
+          <ul class="clean-list">
+            <li>LLM applications and enterprise RAG</li>
+            <li>LangChain, LangGraph and OpenAI Agents SDK</li>
+            <li>Evaluation, security and production engineering</li>
+            <li>Docker, CI/CD and AWS deployment</li>
+            <li>Integrated capstone and architecture defense</li>
+          </ul>
+        </div>
+        <div class="glass-card glass">
+          <span class="phase-label">PHASE 02 · JAN–JUN 2027</span>
+          <h3 style="margin-top:12px">6-Month Project Implementation Mentorship</h3>
+          <div class="metric">Fortnightly</div>
+          <p class="muted">Guided implementation clinics, project reviews and architectural feedback across six months.</p>
+          <ul class="clean-list">
+            <li>Three progressively challenging enterprise projects</li>
+            <li>Customer-style requirements and constraints</li>
+            <li>Implementation and architecture reviews</li>
+            <li>Testing, evaluation and deployment improvements</li>
+            <li>Portfolio demonstrations and technical defense</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="curriculum">
+      <div class="center">
+        <span class="eyebrow">The learning roadmap</span>
+        <h2 style="margin-top:18px">7 Weeks. <span class="gradient">28 Live Sessions.</span></h2>
+        <p class="section-intro">A focused engineering journey. Every week produces a working artifact, not just a set of notes.</p>
+      </div>
+      <div class="curriculum">
+
+        <details open>
+          <summary><span class="week">WEEK 01</span> FDE Foundations & AI Solution Design</summary>
+          <div class="detail-body">
+            <p>Move from receiving requirements to defining and designing AI solutions.</p>
+            <h4>Session 1 — Forward Deployed Engineering</h4>
+            <ul><li>FDE responsibilities and customer-facing engineering</li><li>Problem discovery, stakeholder interviews and success metrics</li><li>When AI is the wrong solution</li></ul>
+            <h4>Session 2 — LLM Engineering Essentials</h4>
+            <ul><li>Models, tokens, context, inference and latency</li><li>Prompt and context engineering</li><li>Model selection, limitations and cost trade-offs</li></ul>
+            <h4>Session 3 — Building AI Services</h4>
+            <ul><li>Python for experienced developers</li><li>FastAPI and Pydantic</li><li>OpenAI API, structured outputs and streaming</li></ul>
+            <h4>Session 4 — Solution Architecture Workshop</h4>
+            <ul><li>Functional and nonfunctional requirements</li><li>Architecture diagrams and design decisions</li><li>Tool calling and service integration</li></ul>
+            <div class="deliverable"><strong>Build:</strong> An API-backed AI service with typed responses and a customer requirement brief.</div>
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Pydantic</span><span class="tag">OpenAI API</span>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="week">WEEK 02</span> LangChain & LLM Application Engineering</summary>
+          <div class="detail-body">
+            <p>Build reliable applications that connect models to real business functionality.</p>
+            <h4>Session 5 — LangChain Fundamentals</h4>
+            <ul><li>Models, prompts, messages and runnables</li><li>Output parsing and structured generation</li><li>Framework abstractions versus direct SDK usage</li></ul>
+            <h4>Session 6 — Tools & Function Calling</h4>
+            <ul><li>Tool definitions, schemas and validation</li><li>External APIs and business operations</li><li>Timeouts, retries and error handling</li></ul>
+            <h4>Session 7 — Reliable LLM Workflows</h4>
+            <ul><li>Context management and conversation state</li><li>Model routing, fallback and provider independence</li><li>Rate limits, token usage and cost control</li></ul>
+            <h4>Session 8 — Enterprise Integration Lab</h4>
+            <ul><li>Connecting databases and REST APIs</li><li>Authentication boundaries and secrets</li><li>Testing tool-enabled applications</li></ul>
+            <div class="deliverable"><strong>Build:</strong> A tool-enabled enterprise AI assistant connected to simulated business APIs.</div>
+            <span class="tag">LangChain</span><span class="tag">OpenAI</span><span class="tag">FastAPI</span><span class="tag">pytest</span>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="week">WEEK 03</span> Enterprise RAG & Knowledge Systems</summary>
+          <div class="detail-body">
+            <p>Ground AI applications in enterprise knowledge instead of relying on model memory.</p>
+            <h4>Session 9 — RAG Architecture</h4>
+            <ul><li>RAG versus long-context prompting and fine-tuning</li><li>Document ingestion, parsing and chunking</li><li>Embeddings and similarity search</li></ul>
+            <h4>Session 10 — Vector Retrieval</h4>
+            <ul><li>PostgreSQL and pgvector</li><li>Metadata filtering and tenant isolation</li><li>Semantic and hybrid retrieval patterns</li></ul>
+            <h4>Session 11 — Advanced Retrieval</h4>
+            <ul><li>Query rewriting and reranking</li><li>Context assembly and source citations</li><li>Retrieval failure modes</li></ul>
+            <h4>Session 12 — RAG Evaluation</h4>
+            <ul><li>Evaluation datasets and expected answers</li><li>Retrieval relevance and groundedness</li><li>Tracing and debugging with LangSmith</li></ul>
+            <div class="deliverable"><strong>Build:</strong> An evaluated enterprise knowledge assistant with document retrieval and source attribution.</div>
+            <span class="tag">LangChain</span><span class="tag">pgvector</span><span class="tag">PostgreSQL</span><span class="tag">LangSmith</span>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="week">WEEK 04</span> Agentic AI, LangGraph & MCP</summary>
+          <div class="detail-body">
+            <p>Design controlled AI workflows that can use tools, maintain state and request human approval.</p>
+            <h4>Session 13 — Agent Architecture</h4>
+            <ul><li>Workflows versus autonomous agents</li><li>Agent loops, tool selection and execution boundaries</li><li>When not to use an agent</li></ul>
+            <h4>Session 14 — LangGraph Engineering</h4>
+            <ul><li>Graphs, nodes, edges and shared state</li><li>Persistence, checkpoints and recovery</li><li>Human-in-the-loop approvals</li></ul>
+            <h4>Session 15 — Model Context Protocol</h4>
+            <ul><li>MCP clients, servers and tools</li><li>Building and connecting an MCP server</li><li>Authentication, permissions and tool safety</li></ul>
+            <h4>Session 16 — OpenAI Agents SDK</h4>
+            <ul><li>Agents, tools, handoffs and guardrails</li><li>Tracing and agent execution</li><li>OpenAI Agents SDK versus LangGraph: architecture trade-offs</li></ul>
+            <div class="deliverable"><strong>Build:</strong> A stateful enterprise agent with MCP tools and human approval for sensitive actions.</div>
+            <span class="tag">LangGraph</span><span class="tag">OpenAI Agents SDK</span><span class="tag">MCP</span><span class="tag">LangSmith</span>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="week">WEEK 05</span> Evaluation, Testing, Security & Reliability</summary>
+          <div class="detail-body">
+            <p>Make AI behavior measurable, testable and safe enough for controlled deployment.</p>
+            <h4>Session 17 — AI Evaluation Engineering</h4>
+            <ul><li>Golden datasets and evaluation design</li><li>Deterministic checks and LLM-as-judge limitations</li><li>Quality, latency and cost metrics</li></ul>
+            <h4>Session 18 — LangSmith Evaluation & Tracing</h4>
+            <ul><li>Execution traces and failure diagnosis</li><li>Dataset-based experiments</li><li>Regression testing for prompts, models and tools</li></ul>
+            <h4>Session 19 — AI Security</h4>
+            <ul><li>Prompt injection and untrusted content</li><li>Data leakage, access control and least privilege</li><li>Tool misuse and approval controls</li></ul>
+            <h4>Session 20 — Reliability Engineering</h4>
+            <ul><li>Timeouts, retries and circuit breakers</li><li>Idempotency and safe workflow recovery</li><li>Fallbacks, failure handling and incident scenarios</li></ul>
+            <div class="deliverable"><strong>Build:</strong> An automated evaluation and regression suite, security tests and an operational failure-handling plan.</div>
+            <span class="tag">LangSmith</span><span class="tag">pytest</span><span class="tag">Security</span><span class="tag">LLMOps</span>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="week">WEEK 06</span> Docker, GitHub Actions & AWS Production AI</summary>
+          <div class="detail-body">
+            <p>Move from local execution to a deployed, observable AI service.</p>
+            <h4>Session 21 — Containerization</h4>
+            <ul><li>Dockerfiles, images and containers</li><li>Environment configuration and secrets</li><li>Local integration testing</li></ul>
+            <h4>Session 22 — CI/CD for AI Systems</h4>
+            <ul><li>GitHub Actions workflows</li><li>Automated tests and evaluation gates</li><li>Build and deployment pipelines</li></ul>
+            <h4>Session 23 — AWS Deployment</h4>
+            <ul><li>AWS ECS Fargate and container deployment</li><li>IAM, Secrets Manager and service configuration</li><li>Deployment verification and rollback</li></ul>
+            <h4>Session 24 — Production Observability</h4>
+            <ul><li>CloudWatch logs and metrics</li><li>LangSmith traces and AI quality monitoring</li><li>Latency, throughput, token usage and cost</li></ul>
+            <div class="deliverable"><strong>Build:</strong> A Dockerized AI application deployed on AWS through a GitHub Actions pipeline.</div>
+            <span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">AWS ECS</span><span class="tag">CloudWatch</span>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="week">WEEK 07</span> FDE Capstone & Customer Delivery</summary>
+          <div class="detail-body">
+            <p>Integrate the complete engineering stack and defend your solution as a customer-facing engineer.</p>
+            <h4>Session 25 — Customer Requirements & Scope</h4>
+            <ul><li>Ambiguous business requirements</li><li>Acceptance criteria and success measures</li><li>Scope, assumptions and delivery risks</li></ul>
+            <h4>Session 26 — Architecture & Implementation Review</h4>
+            <ul><li>System integration and design review</li><li>Model, retrieval and agent trade-offs</li><li>Security and scalability decisions</li></ul>
+            <h4>Session 27 — Production Readiness</h4>
+            <ul><li>Evaluation evidence and release criteria</li><li>Monitoring, runbooks and failure recovery</li><li>Documentation and handover</li></ul>
+            <h4>Session 28 — Capstone Demo & Defense</h4>
+            <ul><li>Customer-facing solution demonstration</li><li>Architecture decision defense</li><li>Feedback and six-month implementation roadmap</li></ul>
+            <div class="deliverable"><strong>Build:</strong> A deployed AI solution with architecture documentation, evaluation results and a technical demonstration.</div>
+            <span class="tag">Capstone</span><span class="tag">Architecture</span><span class="tag">Deployment</span><span class="tag">Customer Delivery</span>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="container" id="stack">
+      <h2>Technologies You'll Work With</h2>
+      <p class="section-intro">Focused hands-on engineering. Tools are chosen to solve problems, not to fill a checklist.</p>
+      <div class="grid g3">
+        <div class="glass-card glass"><div class="stack-category">LLM Engineering</div><h3>Models & APIs</h3><p class="muted">OpenAI API, Python, FastAPI, Pydantic, structured outputs and tool calling.</p></div>
+        <div class="glass-card glass"><div class="stack-category">AI Frameworks</div><h3>Agents & Orchestration</h3><p class="muted">LangChain, LangGraph, OpenAI Agents SDK and MCP.</p></div>
+        <div class="glass-card glass"><div class="stack-category">Data & Retrieval</div><h3>Enterprise RAG</h3><p class="muted">Embeddings, PostgreSQL, pgvector, retrieval and reranking patterns.</p></div>
+        <div class="glass-card glass"><div class="stack-category">Quality</div><h3>Evaluation & Testing</h3><p class="muted">LangSmith, pytest, regression datasets, tracing and security testing.</p></div>
+        <div class="glass-card glass"><div class="stack-category">Production</div><h3>Cloud & DevOps</h3><p class="muted">Docker, GitHub Actions, AWS ECS Fargate, IAM, Secrets Manager and CloudWatch.</p></div>
+        <div class="glass-card glass"><div class="stack-category">Advanced Mentorship</div><h3>Explore Further</h3><p class="muted">Hugging Face, Ollama, OpenRouter, Kubernetes/EKS and advanced AWS MLOps patterns where relevant to projects.</p></div>
+      </div>
+    </section>
+
+    <section class="container" id="mentorship">
+      <div class="center">
+        <span class="eyebrow">The differentiator</span>
+        <h2 style="margin-top:18px">7 Weeks to Learn. <span class="gradient">6 Months to Build.</span></h2>
+        <p class="section-intro">Real engineering capability comes from implementation, feedback and iteration. The mentorship extends learning beyond the intensive.</p>
+      </div>
+      <div class="grid g3" id="projects">
+        <div class="glass-card glass project-card">
+          <span class="phase-label">MONTHS 01–02</span>
+          <h3 style="margin-top:13px">Enterprise Knowledge AI</h3>
+          <p class="muted">Design and implement an enterprise knowledge system with ingestion, retrieval, access controls, evaluations and operational tracing.</p>
+          <p><strong>Focus:</strong> Reliable AI application engineering.</p>
+          <span class="tag">RAG</span><span class="tag">pgvector</span><span class="tag">LangSmith</span>
+        </div>
+        <div class="glass-card glass project-card">
+          <span class="phase-label">MONTHS 03–04</span>
+          <h3 style="margin-top:13px">IT Operations AI Agent</h3>
+          <p class="muted">Build an agent that investigates incidents, interacts with operational tools and proposes actions with human approval.</p>
+          <p><strong>Focus:</strong> Agent orchestration and reliability.</p>
+          <span class="tag">LangGraph</span><span class="tag">MCP</span><span class="tag">Security</span>
+        </div>
+        <div class="glass-card glass project-card">
+          <span class="phase-label">MONTHS 05–06</span>
+          <h3 style="margin-top:13px">Customer-Facing AI Solution</h3>
+          <p class="muted">Respond to an ambiguous customer brief, handle changing requirements and deliver an evaluated, deployed solution.</p>
+          <p><strong>Focus:</strong> End-to-end FDE delivery.</p>
+          <span class="tag">AWS</span><span class="tag">Architecture</span><span class="tag">Delivery</span>
+        </div>
+      </div>
+      <div class="highlight" style="margin-top:24px">
+        <h3>How Fortnightly Project Clinics Work</h3>
+        <div class="grid g4">
+          <div><strong class="accent">01</strong><p>Sprint brief and acceptance criteria</p></div>
+          <div><strong class="accent">02</strong><p>Independent implementation</p></div>
+          <div><strong class="accent">03</strong><p>Live code and architecture review</p></div>
+          <div><strong class="accent">04</strong><p>Feedback, iteration and next milestone</p></div>
+        </div>
+        <p class="muted" style="margin-top:14px">Advanced topics such as local models, Hugging Face, Kubernetes and AWS MLOps are explored when justified by project requirements.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>What You'll Have to Show</h2>
+      <p class="section-intro">The goal is not a collection of course certificates. It's evidence of engineering capability.</p>
+      <div class="grid g2">
+        <div class="glass-card glass">
+          <h3>Technical Portfolio</h3>
+          <ul class="clean-list">
+            <li>Source-controlled AI applications</li>
+            <li>Architecture diagrams and design decisions</li>
+            <li>Automated tests and evaluation results</li>
+            <li>Deployment and observability evidence</li>
+            <li>Security considerations and operational documentation</li>
+          </ul>
+        </div>
+        <div class="glass-card glass">
+          <h3>Forward Deployed Skills</h3>
+          <ul class="clean-list">
+            <li>Translate business problems into technical requirements</li>
+            <li>Choose and defend architectural trade-offs</li>
+            <li>Integrate AI into existing software systems</li>
+            <li>Present working solutions to stakeholders</li>
+            <li>Respond to feedback and changing constraints</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="schedule">
+      <div class="glass-card glass">
+        <h2>Live Schedule & What's Included</h2>
+        <div class="grid g2">
+          <div>
+            <h3>7-Week Intensive</h3>
+            <p><strong class="accent">9 November – 25 December 2026</strong></p>
+            <p>Monday, Tuesday, Thursday & Friday<br><strong>9:00 PM – 10:30 PM IST</strong></p>
+            <p>Saturday Office Hours<br><strong>9:00 PM – 10:30 PM IST</strong></p>
+            <p class="muted">Classes and office hours are conducted live on Zoom. Saturday office hours are optional.</p>
+            <p class="muted">The final session falls on 25 December; any holiday-related adjustment will be communicated to enrolled learners.</p>
+          </div>
+          <div>
+            <h3>Program Includes</h3>
+            <ul class="clean-list">
+              <li>42 hours of live instructor-led training</li>
+              <li>10.5 hours of Saturday office hours</li>
+              <li>6 months of fortnightly project mentorship</li>
+              <li>Hands-on labs and weekly assignments</li>
+              <li>Project, code and architecture reviews</li>
+              <li>Session recordings and source code</li>
+              <li>Capstone guidance and portfolio development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a class="btn-glow register-link" href="https://learn.sanjaynegi.in/l/ae320c8f44" target="_blank" rel="noopener noreferrer">Register for the Live Cohort ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="glass-card glass mentor">
+        <img src="assets/images/sanjay_mentor.jpg" alt="Sanjay Negi, AI mentor and enterprise architect" loading="lazy">
+        <div>
+          <span class="eyebrow">Your mentor</span>
+          <h2 style="margin-top:15px">Learn with Sanjay Negi</h2>
+          <p class="muted">Enterprise AI Architect · Software Engineering Leader · Founder, SkillUp</p>
+          <p>With 22+ years in enterprise software engineering, architecture and production systems, Sanjay teaches AI through the lens of engineering decisions, real implementations and operational trade-offs.</p>
+          <p class="muted">The focus is simple: understand the system, build it, test it, deploy it and explain why it works.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="faq">
+      <div class="center">
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-intro">Clear answers before you commit.</p>
+      </div>
+      <div class="faq">
+        <details><summary>Is 8+ years of experience mandatory?</summary><div class="detail-body">No. Eight or more years is the suggested audience, not a strict eligibility requirement. Engineers with less experience can join if they have strong coding skills and software engineering fundamentals.</div></details>
+        <details><summary>Do I need prior AI or ML experience?</summary><div class="detail-body">Deep AI or ML experience is not required. You should already be comfortable with programming, APIs, debugging and application development. The course is not intended for programming beginners.</div></details>
+        <details><summary>What programming language will be used?</summary><div class="detail-body">Python is the common implementation language. Experience in Java, C#, TypeScript, C++, Kotlin or another established language is a suitable starting point, but you must be prepared to write Python during the program.</div></details>
+        <details><summary>Will we learn LangChain, LangGraph and OpenAI Agents SDK?</summary><div class="detail-body">Yes. LangChain, LangGraph, LangSmith and OpenAI Agents SDK are part of the core learning path. You'll learn their engineering use cases, implementation patterns and trade-offs rather than only their APIs.</div></details>
+        <details><summary>Will Docker, AWS and CI/CD be covered?</summary><div class="detail-body">Yes. The core deployment path uses Docker, GitHub Actions and AWS ECS Fargate, with production monitoring and secrets management. Kubernetes and advanced MLOps topics are optional extensions during project mentorship.</div></details>
+        <details><summary>Will we cover Hugging Face, Ollama and OpenRouter?</summary><div class="detail-body">These are included as advanced ecosystem topics and may be used during mentorship projects. They are not taught at the same depth as the core frameworks.</div></details>
+        <details><summary>What happens during the six-month mentorship?</summary><div class="detail-body">You'll work on progressively challenging enterprise AI projects, with fortnightly implementation clinics, architecture discussions, code feedback and iterative improvements. The emphasis is on building independently with guidance.</div></details>
+        <details><summary>How much time should I commit?</summary><div class="detail-body">The intensive has six hours of core classes each week, plus optional Saturday office hours. Plan for approximately 3–5 additional hours of independent practice and assignments. The mentorship phase requires consistent project work between clinics.</div></details>
+        <details><summary>Will I become a Forward Deployed Engineer after this course?</summary><div class="detail-body">The program is designed to develop the engineering and delivery capabilities associated with FDE work. Actual role readiness also depends on your implementation quality, customer-facing experience and the requirements of individual employers. No job or placement is guaranteed.</div></details>
+        <details><summary>What if I miss a live class?</summary><div class="detail-body">Session recordings are included to help you catch up. Live attendance is strongly recommended for hands-on implementation, discussions and feedback.</div></details>
+        <details><summary>Are additional cloud or model API charges included?</summary><div class="detail-body">Some exercises may require access to paid model APIs or cloud services. Any such usage charges are separate unless explicitly included in the registration offer. Cost-controlled configurations will be preferred wherever practical.</div></details>
+        <details><summary>Where can I see the fee?</summary><div class="detail-body">The current fee and registration details are available on the linked registration page.</div></details>
+      </div>
+    </section>
+
+    <section class="container" id="apply">
+      <div class="highlight center">
+        <span class="eyebrow">November 2026 cohort</span>
+        <h2 style="margin-top:20px">Stop Collecting AI Tutorials.<br><span class="gradient">Start Delivering AI Systems.</span></h2>
+        <p class="section-intro">Bring your software engineering experience. Build the AI engineering and customer-delivery capability to take on more complex problems.</p>
+        <a class="btn-glow register-link" href="https://learn.sanjaynegi.in/l/ae320c8f44" target="_blank" rel="noopener noreferrer">Enroll in Forward Deployed AI Engineer ↗</a>
+        <p class="muted" style="margin-top:18px;font-size:13px">7 weeks live training · 6 months project mentorship · Online via Zoom</p>
+      </div>
+    </section>
+
+    <section class="container" id="refund-policy" style="padding-top:20px">
+      <div class="glass-card glass">
+        <h3>Refund Policy</h3>
+        <p class="muted" style="margin:0">This program is offered at a discounted price. All enrollments are final and non-refundable. Please review the curriculum, schedule and program commitments before registering.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:white">SkillUp with Sanjay</strong>
+        <p>Production AI Engineering. Real Projects. Engineering Confidence.</p>
+      </div>
+      <div>
+        <a href="mailto:support@sanjaynegi.in">support@sanjaynegi.in</a>
+        <p>© 2026 SkillUp with Sanjay. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="btn-glow register-link" href="https://learn.sanjaynegi.in/l/ae320c8f44" target="_blank" rel="noopener noreferrer">Register for the Live Cohort ↗</a>
+  </div>
+
+  <script>
+    // Track registration intent in Google Analytics 4.
+    // This measures outbound clicks, not completed purchases.
+    document.querySelectorAll('.register-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'fde_registration_click', {
+            event_category: 'engagement',
+            event_label: 'Forward Deployed AI Engineer',
+            link_url: 'https://learn.sanjaynegi.in/l/ae320c8f44',
+            link_text: link.textContent.trim()
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

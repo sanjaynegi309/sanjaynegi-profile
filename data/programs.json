@@ -29,6 +29,35 @@
        "url": "python_ai_bridge.html"
   },
   {
+      "id": "forward-deployed-ai-engineer-fast-paced-nov-2026",
+      "title": "Forward Deployed AI Engineer - (7 weeks)",
+      "summary": "Turn your software engineering experience into hands-on AI delivery skills through 7 weeks of intensive live training followed by 6 months of guided project implementation.",
+      "features": [
+        "Build LLM applications, enterprise RAG, and AI agents",
+        "Work with LangChain, LangGraph, and OpenAI Agents SDK",
+        "Integrate AI with enterprise APIs, tools, and data",
+        "Evaluate, secure, and deploy solutions with Docker, CI/CD, and AWS",
+        "Complete a capstone with architecture reviews and technical defense",
+        "Build three enterprise projects with biweekly mentorship and feedback"
+      ],
+      "duration": "7 Weeks Live + 6 Months Project Mentorship",
+      "dates": "Starts November 9, 2026",
+      "timings": "9:00 PM - 10:30 PM IST",
+      "schedule": "Monday, Tuesday, Thursday and Friday",
+      "instructor": "Sanjay Negi",
+      "format": "Live Online (Zoom)",
+      "price": "",
+      "tags": [],
+      "bestFor": [
+        "Engineers with 8+ Years of Experience",
+        "Technical Leads",
+        "Software Architects",
+        "Hands-on Engineering Managers"
+      ],
+      "image": "assets/images/fde-fast-paced.png",
+      "url": "fde_fast_paced.html"
+  },
+  {
     "id": "ai-engineer-6-months-aug-2027",
     "title": "AI Engineer",
     "summary": "Move from maintaining traditional software systems to designing, building, evaluating, and deploying production-ready AI applications that you can confidently defend in an architecture review, appraisal, or interview.",
