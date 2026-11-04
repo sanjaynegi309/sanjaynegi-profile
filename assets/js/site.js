@@ -290,6 +290,11 @@ async function loadPrograms() {
         ` : '';
 
         const titleHTML = program.title ? `<h3 class="text-2xl font-bold mb-2 text-white">${program.title}</h3>` : '';
+        const offerHTML = program.offer ? `
+            <div class="mb-5 rounded-lg border border-pink-400/70 bg-pink-500/15 px-4 py-3 text-center text-sm sm:text-base font-bold text-pink-100 shadow-[0_0_22px_rgba(255,0,110,0.2)]" role="note">
+                ${program.offer}
+            </div>
+        ` : '';
         const summaryHTML = program.summary ? `<p class="text-gray-300 mb-6 leading-relaxed">${program.summary}</p>` : '';
 
         const starts = program.dates ? program.dates.replace(/^Starts\s+/i, '') : '';
@@ -335,12 +340,14 @@ async function loadPrograms() {
         const ctaLabels = {
             'AI Engineer': 'Explore AI Engineer',
             'Forward Deployed Engineer': 'Explore FDE',
-            'Forward Deployed AI Engineer - Fast paced for experienced engineers': 'Explore Fast-Paced FDE',
+            'Forward Deployed AI Engineer - (7 weeks)': 'Explore Fast-Paced FDE',
             'GenAI Architect': 'Explore GenAI Architect'
         };
         const ctaLabel = ctaLabels[program.title] || 'Explore Role';
         const ctaButton = program.url ? `<a href="${program.url}" target="_blank" rel="noopener noreferrer" class="btn-glow w-full text-center">${ctaLabel} &rarr;</a>` : '';
-        const cardEmphasis = program.recommended ? ' border-cyan-400/70 shadow-[0_0_30px_rgba(0,212,255,0.12)]' : '';
+        const cardEmphasis = program.offer
+            ? ' border-pink-400/70 shadow-[0_0_30px_rgba(255,0,110,0.16)]'
+            : (program.recommended ? ' border-cyan-400/70 shadow-[0_0_30px_rgba(0,212,255,0.12)]' : '');
 
         return `
         <div class="glass-card flex flex-col h-full overflow-hidden transition-all duration-300 hover:border-cyan-400/50${cardEmphasis}">
@@ -351,6 +358,7 @@ async function loadPrograms() {
             </div>
             <div class="p-6 flex-grow flex flex-col">
                 ${titleHTML}
+                ${offerHTML}
                 ${summaryHTML}
                 ${metadataHTML}
                 ${bestForHTML}
