@@ -203,6 +203,26 @@ h1, h2 {
     }
 }
 
+@media (max-width: 767px) {
+    .glass-card-hot {
+        padding: 1.25rem;
+        border-radius: 16px;
+    }
+
+    .glass-card-hot:hover {
+        transform: translateY(-3px);
+    }
+
+    .hot-badge {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
+    .highlight-date-time {
+        padding: 0.2rem 0.55rem;
+    }
+}
+
 .social-icons a {
     font-size: 2rem;
     transition: transform 0.3s ease, color 0.3s ease;
